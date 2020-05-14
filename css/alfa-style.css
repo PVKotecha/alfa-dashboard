@@ -1,10 +1,290 @@
+/*Common*/
+body{
+    font-family: 'Lato', sans-serif; 
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;;
+}
+.bg-cyan{
+    background-color: #00cdcd;
+}
+.card{
+    border-radius: 10px;
+}
+.alfa-bg-green{
+    background-color: #2fda61;
+}
+.alfa-bg-orange{
+    background-color: #ec935f;
+}
+.alfa-bg-red{
+    background-color: #e8342b;
+}
+.alfa-bg-blue{
+    background-color: #00cdcd;
+}
+.alfa-bg-blue-dark{
+    background-color: #185d92;
+}
 /*Nav*/
-.navbar-brand img{
+.alfa-navbar .navbar-brand img{
     max-width: 100px;
 }
-.navbar-nav .nav-link {
+.alfa-navbar .navbar-nav .nav-link {
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
     text-transform: uppercase;
+    color: #00cdcd;
 }
+.alfa-navbar .nav-link.dropdown-toggle img{
+    max-width: 40px;
+}
+.alfa-navbar .dropdown-toggle::after{
+    content: "\f107"; 
+    font-family: "Font Awesome\ 5 Free"; 
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    vertical-align: middle;
+    color: #00cdcd;
+}
+.alfa-navbar button:focus{
+    outline: none;
+}
+
+/*Alfa BODY*/
+.alfa-body{
+    margin-top: 40px;
+}
+.alfa-banner-card{
+    background-color: #00cdcd;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 36px 0;
+    font-size: 57px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 10px;
+}
+
+/*today session*/
+.alfa-today-session-card{
+    margin-top: 40px;
+    background-color: #2fda61;
+    color: #fff;
+    text-align: center;
+    border: none; 
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 10px;
+    position: relative;
+}
+.alfa-today-session-card h2{
+    font-size: 28px; 
+    font-weight: 500; 
+    margin: 0;
+    padding: 12px 22px;
+}
+.alfa-today-session-card i{
+    position: absolute;
+    background-color: #2fda61;
+    padding: 19px 16px;
+    border-radius: 50%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.15)!important;
+    right: 80px;
+    font-size: 34px;
+    top: -9px;
+}
+/*practise progress*/
+.alfa-practise-progress-card { 
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.alfa-practise-progress-card .card-header{
+    background-color: #00cdcd;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.alfa-practise-progress-card .card-header h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+.alfa-practise-progress-card .circle svg{
+    stroke-linecap: round;
+}
+.alfa-practise-progress-card .circle .circles-text{ 
+    top: 26px !important;
+    font-size: 20px !important;
+    line-height: 12px !important;
+    height: auto !important;
+}
+.alfa-practise-progress-card .circle .circles-text small{
+    font-size: 11px;
+    font-weight: 600;
+}
+.alfa-practise-progress-card .alfa-practise-progress-circle-wrapper h3 {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+.alfa-practise-progress-card .alfa-practise-progress-circle-wrapper p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.alfa-progress-bar-wrapper{
+    margin-top: 40px;
+}
+.alfa-progress-bar-wrapper .progress.alfa-progress{
+    margin-bottom: 18px;
+}
+.alfa-progress-bar-speaking h3,
+.alfa-progress-bar-reading h3,
+.alfa-progress-bar-writing h3,
+.alfa-progress-bar-listening h3{ 
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+.alfa-progress-bar-speaking p,
+.alfa-progress-bar-reading p,
+.alfa-progress-bar-writing p,
+.alfa-progress-bar-listening p{
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 14px;
+}
+ 
+.alfa-progress-bar-speaking p span,
+.alfa-progress-bar-reading p span,
+.alfa-progress-bar-writing p span,
+.alfa-progress-bar-listening p span{
+    float: right;
+}
+.alfa-progress-bar-speaking,
+.alfa-progress-bar-reading{
+    padding-left: 36px; 
+}
+.alfa-progress-bar-writing,
+.alfa-progress-bar-listening{
+    padding-right: 36px; 
+}
+.alfa-progress-bar-reading,
+.alfa-progress-bar-listening{
+    margin-top: 36px;
+}
+.alfa-progress-bar-speaking h3{
+    color: #ec935f;
+}
+.alfa-progress-bar-reading h3{
+    color: #2fda61; 
+}
+.alfa-progress-bar-writing h3{
+    color: #5fb1fb;
+}
+.alfa-progress-bar-listening h3{
+    color: #185d92;
+}
+.alfa-progress-bar-speaking p span{
+    color: #ec935f;
+}
+.alfa-progress-bar-reading p span{
+    color: #2fda61;
+}
+.alfa-progress-bar-writing p span{
+    color: #67b8fc;
+}
+.alfa-progress-bar-listening p span{
+    color: #185d92;
+}
+.alfa-progress-bar-speaking p span.alfa-progress-100{
+    color: rgba(236, 147, 95, .2);
+}
+.alfa-progress-bar-writing p span.alfa-progress-100{
+    color: rgba(103, 184, 252, .2);
+}
+.alfa-progress-bar-reading p span.alfa-progress-100{
+    color: rgba(47, 218, 97, .2);
+}
+.alfa-progress-bar-listening p span.alfa-progress-100{
+    color: rgba(24, 93, 146, .2);
+}
+/*Progress Bar*/
+.progress.alfa-progress{
+    border-radius: 10px;
+    height: 10px;
+}
+.progress.alfa-progress .progress-bar{
+    border-radius: 10px;
+}
+.progress.alfa-progress.alfa-bg-orange{
+    background-color: rgba(236, 147, 95, .2); 
+}
+.progress.alfa-progress.alfa-bg-blue{
+    background-color: rgba(103, 184, 252, .2);
+}
+.progress.alfa-progress.alfa-bg-green{
+    background-color: rgba(47, 218, 97, .2);
+}
+.progress.alfa-progress.alfa-bg-red{
+    background-color: rgba(232, 52, 43, .2); 
+}
+.progress.alfa-progress.alfa-bg-blue-dark{
+    background-color: rgba(24, 93, 146, .2); 
+}
+
+.progress.alfa-progress.alfa-bg-orange .progress-bar{
+    background-color: #ec935f;
+}
+.progress.alfa-progress.alfa-bg-green .progress-bar{
+    background-color: #2fda61;
+}
+.progress.alfa-progress.alfa-bg-blue .progress-bar{
+    background-color: #67b8fc   ;
+}
+.progress.alfa-progress.alfa-bg-red .progress-bar{
+    background-color: #e8342b;
+}
+.progress.alfa-progress.alfa-bg-blue-dark .progress-bar{
+    background-color: #185d92;
+}
+
+
+/*listen test speech test*/
+.alfa-listen-test-card,
+.alfa-speech-test-card{
+    margin-top: 30px;
+    text-align: center;
+}
+@media(min-width: 992px) and (max-width: 1199.98px){
+    .alfa-today-session-card i{
+        right: 40px;
+    }
+}   
+@media(max-width: 768px){
+    .navbar-nav .nav-item{
+        margin-bottom: 8px;
+    }
+    .navbar-nav .nav-link { 
+        padding-left: 4px;
+    }
+}
+@media (max-width: 575.98px) { 
+    .alfa-today-session-card i{
+        right: -10px;
+        font-size: 16px;
+        padding: 12px;
+    }
+ }
