@@ -28,7 +28,7 @@
 
 <body>
     <!--Nav-->
-    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm">
+    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="logo" loading="lazy">
@@ -88,7 +88,8 @@
     <div class="alfa-body">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 px-0">
+                <div class="col-lg-8 px-lg-0">
+                    <!--BANNER, TODAY's SESSION, PROGRESS-->
                     <div class="row no-gutters">
                         <div class="col-lg-12">
                             <div class="card alfa-banner-card">
@@ -102,7 +103,7 @@
                                 <div class="card-header">
                                     <h2>practise progress</h2>
                                 </div>
-                                <div class="card-body px-0">
+                                <div class="card-body px-lg-0">
                                     <div class="row alfa-practise-progress-circle-wrapper text-center">
                                         <div class="col-lg-2 offset-lg-1">
                                             <div class="circle" id="circles-reading-que"></div>
@@ -236,27 +237,37 @@
                               </div>
                         </div>
                     </div>
+                    <!--BANNER, TODAY's SESSION, PROGRESS end-->
+                    <!--SPEECH LISTEN TEST-->
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pr-lg-0">
                             <div class="card alfa-speech-test-card">
-                                <h2>Heading</h2>
-                                <i class="fa fa-user"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <input type="text">
-                                <button type="btn btn-primary btn-block">Button</button>
+                                <h3>Speech test</h3>
+                                <p>&nbsp;</p>
+                                <a href="javascript:void(0)"><i class="fa fa-microphone-alt"></i></a>
+                                <a href="javascript:void(0)" class="alfa-test-card-controller"><span class="fa fa-sync"></span></a>
+                                <p class="alfa-test-card-bottom-content">Click the mic button to speak</p>
+                                <input type="text" class="form-control alfa-form-control" placeholder="Your Response...">
+                                <div class="progress alfa-progress alfa-bg-orange">
+                                    <div class="progress-bar" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> 
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="card alfa-listen-test-card">
-                                <h2>Heading</h2>
-                                <i class="fa fa-user"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <input type="text">
-                                <button type="btn btn-primary btn-block">Button</button>
+                                <h3>Listening Test</h3>
+                                <p>Difficult words from WFD &amp; LFID</p>
+                                <a href="javascript:void(0)"><i class="fa fa-headphones-alt"></i></a>
+                                <a href="javascript:void(0)" class="alfa-test-card-controller"><span class="fa fa-chevron-right"></span></a>
+                                <p class="alfa-test-card-bottom-content">Click the headphone button to listen</p>
+                                <input type="text" class="form-control alfa-form-control" placeholder="Type Your Response...">
+                                <button class="btn btn-primary btn-block alfa-show-word-btn">Show Word</button>
                             </div>
                         </div>
                     </div>
+                    <!--SPEECH LISTEN TEST end-->
                 </div>
+                <!--SIDE BAR-->
                 <div class="col-lg-4">
                     <div class="card shadow-sm">
                         <div class="row">
@@ -319,49 +330,64 @@
                         </div>
                     </div>
                 </div>
+                <!--SIDE BAR end-->
             </div>
-            <div class="row text-center">
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+            <!--6 CARD-->
+            <div class="row text-center alfa-six-card-section">
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Templates</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Marking</h3>
+                        </div>
+                    </a> 
                 </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Grammar</h3>
+                        </div>
+                    </a>  
                 </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Score Feedback</h3>
+                        </div>
+                    </a>  
                 </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Vocab-Bank</h3>
+                        </div>
+                    </a>  
                 </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                        <i class="fa fa-home"></i>
-                        <h3>Title</h3>
-                    </div>
+                <div class="col-lg-2 pl-lg-0">
+                    <a href="javascript:void(0);">
+                        <div class="card">
+                            <img src="img/user.png" alt="">
+                            <h3>Compatibility</h3>
+                        </div>
+                    </a>  
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Title</div>
+            <!--6 CARD end-->
+            <div class="row alfa-faq-wrapper">
+                <div class="col px-lg-0">
+                    <div class="card alfa-faq-card-main">
+                        <div class="card-header alfa-faq-card-header-main">F.A.Q.</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
