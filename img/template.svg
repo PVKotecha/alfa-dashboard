@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Ellipse_87);}
+	.st1{fill:#2FDA61;}
+	.st2{fill:#FFFFFF;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="103" id="Ellipse_87" width="103" x="0" y="0">
+	<feOffset  input="SourceAlpha"></feOffset>
+	<feGaussianBlur  result="blur" stdDeviation="3"></feGaussianBlur>
+	<feFlood  flood-opacity="0.302"></feFlood>
+	<feComposite  in2="blur" operator="in"></feComposite>
+	<feComposite  in="SourceGraphic" operator="over"></feComposite>
+</filter>
+<g id="Component_1_1" transform="translate(9 9)">
+	<g transform="matrix(1, 0, 0, 1, -9, -9)" class="st0">
+		<circle id="Ellipse_87-2_1_" class="st1" cx="51.5" cy="51.5" r="42.5"/>
+	</g>
+	<g id="Group_484" transform="translate(18.788 19.296)">
+		<g id="Group_467" transform="translate(11.372 11.372)">
+			<path id="Path_79" class="st2" d="M2.3,4.5C1,4.5,0,3.5,0,2.3S1,0,2.3,0s2.3,1,2.3,2.3C4.5,3.5,3.5,4.5,2.3,4.5z"/>
+		</g>
+		<g id="Group_469" transform="translate(15.92 15.92)">
+			<path id="Path_80" class="st2" d="M2.3,4.5C1,4.5,0,3.5,0,2.3S1,0,2.3,0s2.3,1,2.3,2.3C4.5,3.5,3.5,4.5,2.3,4.5z"/>
+		</g>
+		<g id="Group_472" transform="translate(0 0)">
+			<path id="Path_82" class="st2" d="M39,0H18.2v10.3L9.5,1.6c-2.2-2.2-5.7-2.2-7.9,0s-2.2,5.7,0,7.9l14.7,14.7H0V44h18.2v3H47V8
+				L39,0z M42.5,9.1v1.5H22.7V4.5h15.2v4.6H42.5z M39.4,7.6v-5l5,5H39.4z M28.4,23.4l1.9,6.2c0.1,0.3-0.1,0.6-0.4,0.7
+				c-0.1,0-0.2,0-0.3,0l-6.2-1.9L28.4,23.4z M22,27.7L7.9,13.6l5.7-5.7L27.7,22L22,27.7z M6.8,12.6l-1.2-1.2l5.8-5.8l1.2,1.2
+				L6.8,12.6z M1.5,5.6c0-2.2,1.8-4.1,4.1-4.1c1.1,0,2.1,0.4,2.9,1.2l1.8,1.8l-5.8,5.8L2.7,8.5C1.9,7.7,1.5,6.7,1.5,5.6z M17.9,25.8
+				l0.3,0.3v10.3H1.5V25.8H17.9z M18.2,37.9v1.5H1.5v-1.5H18.2z M1.5,42.5v-1.5h16.7v1.5L1.5,42.5z M19.7,45.5V27.6l1.7,1.7l0.1,0.1
+				l7.6,2.3c1.1,0.3,2.3-0.3,2.6-1.4c0.1-0.2,0.1-0.4,0.1-0.6c0-0.2,0-0.4-0.1-0.6l-2.3-7.6l-9.8-9.8V1.5h18.2V3H21.2v9.1H44v-3h1.5
+				v36.4L19.7,45.5z"/>
+			<path id="Path_83" class="st2" d="M10.6,27.3H3v7.6h7.6L10.6,27.3z M9.1,33.4H4.5v-4.5h4.5L9.1,33.4z"/>
+			<path id="Path_84" class="st2" d="M12.1,27.3h1.5v7.6h-1.5V27.3z"/>
+			<path id="Path_85" class="st2" d="M15.2,27.3h1.5v7.6h-1.5V27.3z"/>
+			<path id="Path_86" class="st2" d="M33.4,44H44V33.4H33.4V44z M34.9,34.9h7.6v7.6h-7.6V34.9z"/>
+			<path id="Path_87" class="st2" d="M27.3,42.5h1.5V44h-1.5V42.5z"/>
+			<path id="Path_88" class="st2" d="M30.3,42.5h1.5V44h-1.5V42.5z"/>
+			<path id="Path_89" class="st2" d="M21.2,42.5h4.5V44h-4.5V42.5z"/>
+			<path id="Path_90" class="st2" d="M21.2,39.4h10.6v1.5H21.2V39.4z"/>
+			<path id="Path_91" class="st2" d="M21.2,36.4h10.6v1.5H21.2V36.4z"/>
+			<path id="Path_92" class="st2" d="M21.2,33.4h10.6v1.5H21.2V33.4z"/>
+			<path id="Path_93" class="st2" d="M42.5,13.6H44v1.5h-1.5V13.6z"/>
+			<path id="Path_94" class="st2" d="M28.8,13.6h12.1v1.5H28.8V13.6z"/>
+			<path id="Path_95" class="st2" d="M28.8,16.7H44v1.5H28.8V16.7z"/>
+			<path id="Path_96" class="st2" d="M31.8,19.7H44v1.5H31.8V19.7z"/>
+			<path id="Path_97" class="st2" d="M31.8,22.7H44v1.5H31.8V22.7z"/>
+			<path id="Path_98" class="st2" d="M33.4,25.8H44v1.5H33.4V25.8z"/>
+			<path id="Path_99" class="st2" d="M33.4,28.8H44v1.5H33.4V28.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -9,6 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
     <!--ALFA CSS-->
     <link rel="stylesheet" href="css/alfa-style.css">
 
@@ -270,7 +276,7 @@
                 <!--SIDE BAR-->
                 <div class="col-lg-4">
                    <div class="card">
-                       <div class="card-body">
+                       <div class="card-body px-2">
                             <div class="card alfa-your-target-card">
                                 <div class="row">
                                     <div class="col">
@@ -286,7 +292,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <h3>Exam Countdown</h3>
-                                        <p></p>
+                                        <div class="alfa-exam-countdown-clock"></div>
                                         <a href="javascript:void(0)"><i class="fa fa-cog"></i></a>
                                     </div>
                                 </div>
@@ -294,7 +300,7 @@
                             <div class="card alfa-daily-task-card">
                                 <div class="card-header">Daily Task</div>
                                 <div class="card-body">
-                                    calender
+                                  <div id="dailytask"></div>
                                 </div>
                             </div>
                             <div class="card alfa-today-task-card">
@@ -309,9 +315,28 @@
                                             </button>
                                             </h2>
                                         </div> 
-                                        <div id="TodayTask_Collapse_1" class="collapse" aria-labelledby="TodayTask_Heading_1" data-parent="#accordionTodayTask">
+                                        <div id="TodayTask_Collapse_1" class="collapse show" aria-labelledby="TodayTask_Heading_1" data-parent="#accordionTodayTask">
                                             <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                                                <div class="col-sm-7"><p>Read Aloud</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                                                <div class="col-sm-7"><p>Repeat Sentence</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                                                <div class="col-sm-7"><p>Describe Image</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                                                <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                                                <div class="col-sm-7"><p>Answer Short Question</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
                                             </div>
                                         </div>
                                         </div>
@@ -325,7 +350,26 @@
                                         </div>
                                         <div id="TodayTask_Collapse_2" class="collapse" aria-labelledby="TodayTask_Heading_2" data-parent="#accordionTodayTask">
                                             <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                                                <div class="col-sm-7"><p>Read Aloud</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                                                <div class="col-sm-7"><p>Repeat Sentence</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                                                <div class="col-sm-7"><p>Describe Image</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                                                <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                                                <div class="col-sm-7"><p>Answer Short Question</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
                                             </div>
                                         </div>
                                         </div>
@@ -339,7 +383,26 @@
                                         </div>
                                         <div id="TodayTask_Collapse_3" class="collapse" aria-labelledby="TodayTask_Heading_3" data-parent="#accordionTodayTask">
                                             <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                                                <div class="col-sm-7"><p>Read Aloud</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                                                <div class="col-sm-7"><p>Repeat Sentence</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                                                <div class="col-sm-7"><p>Describe Image</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                                                <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                                                <div class="col-sm-7"><p>Answer Short Question</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
                                             </div>
                                         </div>
                                         </div>
@@ -353,7 +416,26 @@
                                         </div>
                                         <div id="TodayTask_Collapse_4" class="collapse" aria-labelledby="TodayTask_Heading_4" data-parent="#accordionTodayTask">
                                             <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                                                <div class="col-sm-7"><p>Read Aloud</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                                                <div class="col-sm-7"><p>Repeat Sentence</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                                                <div class="col-sm-7"><p>Describe Image</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                                                <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
+                                              <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                                                <div class="col-sm-7"><p>Answer Short Question</p></div>
+                                                <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                                              </div>
                                             </div>
                                         </div>
                                         </div> 
@@ -380,7 +462,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/template.svg" alt="template">
                             <h3>Templates</h3>
                         </div>
                     </a>
@@ -388,7 +470,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/marking.svg" alt="marking">
                             <h3>Marking</h3>
                         </div>
                     </a> 
@@ -396,7 +478,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/grammar.svg" alt="grammar">
                             <h3>Grammar</h3>
                         </div>
                     </a>  
@@ -404,7 +486,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/score-feedback.svg" alt="score-feedback">
                             <h3>Score Feedback</h3>
                         </div>
                     </a>  
@@ -412,7 +494,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/vocab-bank.svg" alt="vocab-bank">
                             <h3>Vocab-Bank</h3>
                         </div>
                     </a>  
@@ -420,7 +502,7 @@
                 <div class="col-lg-2 pl-lg-0">
                     <a href="javascript:void(0);">
                         <div class="card">
-                            <img src="img/user.png" alt="">
+                            <img src="img/compatibility.svg" alt="compatibility">
                             <h3>Compatibility</h3>
                         </div>
                     </a>  
@@ -805,8 +887,11 @@
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/circles.min.js"></script> 
+    <script src="js/flipclock.min.js"></script>
     <script src="js/alfa-scripts.js"></script> 
+  
 </body>
 
 </html>
