@@ -1,56 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
-<style type="text/css">
-	.st0{filter:url(#Ellipse_87);}
-	.st1{fill:#2FDA61;}
-	.st2{fill:#FFFFFF;}
-</style>
-<filter  filterUnits="userSpaceOnUse" height="103" id="Ellipse_87" width="103" x="0" y="0">
-	<feOffset  input="SourceAlpha"></feOffset>
-	<feGaussianBlur  result="blur" stdDeviation="3"></feGaussianBlur>
-	<feFlood  flood-opacity="0.302"></feFlood>
-	<feComposite  in2="blur" operator="in"></feComposite>
-	<feComposite  in="SourceGraphic" operator="over"></feComposite>
-</filter>
-<g id="Component_1_1" transform="translate(9 9)">
-	<g transform="matrix(1, 0, 0, 1, -9, -9)" class="st0">
-		<circle id="Ellipse_87-2_1_" class="st1" cx="51.5" cy="51.5" r="42.5"/>
-	</g>
-	<g id="Group_484" transform="translate(18.788 19.296)">
-		<g id="Group_467" transform="translate(11.372 11.372)">
-			<path id="Path_79" class="st2" d="M2.3,4.5C1,4.5,0,3.5,0,2.3S1,0,2.3,0s2.3,1,2.3,2.3C4.5,3.5,3.5,4.5,2.3,4.5z"/>
-		</g>
-		<g id="Group_469" transform="translate(15.92 15.92)">
-			<path id="Path_80" class="st2" d="M2.3,4.5C1,4.5,0,3.5,0,2.3S1,0,2.3,0s2.3,1,2.3,2.3C4.5,3.5,3.5,4.5,2.3,4.5z"/>
-		</g>
-		<g id="Group_472" transform="translate(0 0)">
-			<path id="Path_82" class="st2" d="M39,0H18.2v10.3L9.5,1.6c-2.2-2.2-5.7-2.2-7.9,0s-2.2,5.7,0,7.9l14.7,14.7H0V44h18.2v3H47V8
-				L39,0z M42.5,9.1v1.5H22.7V4.5h15.2v4.6H42.5z M39.4,7.6v-5l5,5H39.4z M28.4,23.4l1.9,6.2c0.1,0.3-0.1,0.6-0.4,0.7
-				c-0.1,0-0.2,0-0.3,0l-6.2-1.9L28.4,23.4z M22,27.7L7.9,13.6l5.7-5.7L27.7,22L22,27.7z M6.8,12.6l-1.2-1.2l5.8-5.8l1.2,1.2
-				L6.8,12.6z M1.5,5.6c0-2.2,1.8-4.1,4.1-4.1c1.1,0,2.1,0.4,2.9,1.2l1.8,1.8l-5.8,5.8L2.7,8.5C1.9,7.7,1.5,6.7,1.5,5.6z M17.9,25.8
-				l0.3,0.3v10.3H1.5V25.8H17.9z M18.2,37.9v1.5H1.5v-1.5H18.2z M1.5,42.5v-1.5h16.7v1.5L1.5,42.5z M19.7,45.5V27.6l1.7,1.7l0.1,0.1
-				l7.6,2.3c1.1,0.3,2.3-0.3,2.6-1.4c0.1-0.2,0.1-0.4,0.1-0.6c0-0.2,0-0.4-0.1-0.6l-2.3-7.6l-9.8-9.8V1.5h18.2V3H21.2v9.1H44v-3h1.5
-				v36.4L19.7,45.5z"/>
-			<path id="Path_83" class="st2" d="M10.6,27.3H3v7.6h7.6L10.6,27.3z M9.1,33.4H4.5v-4.5h4.5L9.1,33.4z"/>
-			<path id="Path_84" class="st2" d="M12.1,27.3h1.5v7.6h-1.5V27.3z"/>
-			<path id="Path_85" class="st2" d="M15.2,27.3h1.5v7.6h-1.5V27.3z"/>
-			<path id="Path_86" class="st2" d="M33.4,44H44V33.4H33.4V44z M34.9,34.9h7.6v7.6h-7.6V34.9z"/>
-			<path id="Path_87" class="st2" d="M27.3,42.5h1.5V44h-1.5V42.5z"/>
-			<path id="Path_88" class="st2" d="M30.3,42.5h1.5V44h-1.5V42.5z"/>
-			<path id="Path_89" class="st2" d="M21.2,42.5h4.5V44h-4.5V42.5z"/>
-			<path id="Path_90" class="st2" d="M21.2,39.4h10.6v1.5H21.2V39.4z"/>
-			<path id="Path_91" class="st2" d="M21.2,36.4h10.6v1.5H21.2V36.4z"/>
-			<path id="Path_92" class="st2" d="M21.2,33.4h10.6v1.5H21.2V33.4z"/>
-			<path id="Path_93" class="st2" d="M42.5,13.6H44v1.5h-1.5V13.6z"/>
-			<path id="Path_94" class="st2" d="M28.8,13.6h12.1v1.5H28.8V13.6z"/>
-			<path id="Path_95" class="st2" d="M28.8,16.7H44v1.5H28.8V16.7z"/>
-			<path id="Path_96" class="st2" d="M31.8,19.7H44v1.5H31.8V19.7z"/>
-			<path id="Path_97" class="st2" d="M31.8,22.7H44v1.5H31.8V22.7z"/>
-			<path id="Path_98" class="st2" d="M33.4,25.8H44v1.5H33.4V25.8z"/>
-			<path id="Path_99" class="st2" d="M33.4,28.8H44v1.5H33.4V28.8z"/>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+  <defs>
+    <filter id="Ellipse_87" x="0" y="0" width="103" height="103" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_805" data-name="Group 805" transform="translate(-220 -2211)">
+    <g id="Group_485" data-name="Group 485" transform="translate(228.876 2220.384)">
+      <g transform="matrix(1, 0, 0, 1, -8.88, -9.38)" filter="url(#Ellipse_87)">
+        <circle id="Ellipse_87-2" data-name="Ellipse 87" cx="42.5" cy="42.5" r="42.5" transform="translate(9 9)" fill="#2fda61"/>
+      </g>
+      <g id="Group_484" data-name="Group 484" transform="translate(18.912 18.912)">
+        <g id="Group_467" data-name="Group 467" transform="translate(11.372 11.372)">
+          <path id="Path_79" data-name="Path 79" d="M18.274,20.549a2.274,2.274,0,1,1,2.274-2.274A2.277,2.277,0,0,1,18.274,20.549Z" transform="translate(-16 -16)" fill="#fff"/>
+        </g>
+        <g id="Group_469" data-name="Group 469" transform="translate(15.92 15.92)">
+          <path id="Path_80" data-name="Path 80" d="M24.274,26.549a2.274,2.274,0,1,1,2.274-2.274A2.277,2.277,0,0,1,24.274,26.549Z" transform="translate(-22 -22)" fill="#fff"/>
+        </g>
+        <g id="Group_472" data-name="Group 472" transform="translate(0 0)">
+          <path id="Path_82" data-name="Path 82" d="M39.978,1H19.195V11.3L10.53,2.635a5.583,5.583,0,1,0-7.9,7.9L17.365,25.26H1V44.971H19.195V48H48V9.025Zm3.477,9.1v1.516H23.743V5.549H38.906V10.1ZM40.422,8.581V3.588l4.993,4.993ZM29.447,24.419,31.3,30.6a.565.565,0,0,1-.7.7l-6.179-1.854Zm-6.461,4.317L8.9,14.646,14.646,8.9l14.09,14.09ZM7.823,13.574l-1.2-1.2,5.751-5.751,1.2,1.2ZM2.516,6.583A4.067,4.067,0,0,1,9.458,3.707L11.3,5.549,5.549,11.3,3.707,9.458A4.039,4.039,0,0,1,2.516,6.583ZM18.881,26.776l.314.314v10.3H2.516V26.776Zm.314,12.13v1.516H2.516V38.906ZM2.516,43.455V41.938H19.195v1.516Zm18.195,3.032V28.606l1.738,1.738.135.136,7.578,2.274a2.082,2.082,0,0,0,2.678-1.993,2.064,2.064,0,0,0-.088-.6l-2.274-7.579-9.768-9.768V2.516H38.906V4.032H22.227v9.1H44.971V10.1h1.516v36.39Z" transform="translate(-1 -1)" fill="#fff"/>
+          <path id="Path_83" data-name="Path 83" d="M12.581,37H5v7.581h7.581Zm-1.516,6.065H6.516V38.516h4.549Z" transform="translate(-1.968 -9.708)" fill="#fff"/>
+          <path id="Path_84" data-name="Path 84" d="M17,37h1.516v7.581H17Z" transform="translate(-4.87 -9.708)" fill="#fff"/>
+          <path id="Path_85" data-name="Path 85" d="M21,37h1.516v7.581H21Z" transform="translate(-5.838 -9.708)" fill="#fff"/>
+          <path id="Path_86" data-name="Path 86" d="M45,55.614H55.614V45H45Zm1.516-9.1H54.1V54.1H46.516Z" transform="translate(-11.643 -11.643)" fill="#fff"/>
+          <path id="Path_87" data-name="Path 87" d="M37,57h1.516v1.516H37Z" transform="translate(-9.708 -14.545)" fill="#fff"/>
+          <path id="Path_88" data-name="Path 88" d="M41,57h1.516v1.516H41Z" transform="translate(-10.675 -14.545)" fill="#fff"/>
+          <path id="Path_89" data-name="Path 89" d="M29,57h4.549v1.516H29Z" transform="translate(-7.773 -14.545)" fill="#fff"/>
+          <path id="Path_90" data-name="Path 90" d="M29,53H39.614v1.516H29Z" transform="translate(-7.773 -13.578)" fill="#fff"/>
+          <path id="Path_91" data-name="Path 91" d="M29,49H39.614v1.516H29Z" transform="translate(-7.773 -12.61)" fill="#fff"/>
+          <path id="Path_92" data-name="Path 92" d="M29,45H39.614v1.516H29Z" transform="translate(-7.773 -11.643)" fill="#fff"/>
+          <path id="Path_93" data-name="Path 93" d="M57,19h1.516v1.516H57Z" transform="translate(-14.545 -5.354)" fill="#fff"/>
+          <path id="Path_94" data-name="Path 94" d="M39,19H51.13v1.516H39Z" transform="translate(-10.192 -5.354)" fill="#fff"/>
+          <path id="Path_95" data-name="Path 95" d="M39,23H54.162v1.516H39Z" transform="translate(-10.192 -6.321)" fill="#fff"/>
+          <path id="Path_96" data-name="Path 96" d="M43,27H55.13v1.516H43Z" transform="translate(-11.159 -7.289)" fill="#fff"/>
+          <path id="Path_97" data-name="Path 97" d="M43,31H55.13v1.516H43Z" transform="translate(-11.159 -8.257)" fill="#fff"/>
+          <path id="Path_98" data-name="Path 98" d="M45,35H55.614v1.516H45Z" transform="translate(-11.643 -9.224)" fill="#fff"/>
+          <path id="Path_99" data-name="Path 99" d="M45,39H55.614v1.516H45Z" transform="translate(-11.643 -10.192)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

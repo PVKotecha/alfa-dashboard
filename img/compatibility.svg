@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#EC935F;}
-	.st1{fill:#FFFFFF;}
-</style>
-<g id="Group_805" transform="translate(-1597 -2210)">
-	<g id="Component_6_1" transform="translate(1606 2219)">
-		<g transform="matrix(1, 0, 0, 1, -9, -9)">
-			<path id="Path_190-2" class="st0" d="M51.5,9C75,9,94,28,94,51.5S75,94,51.5,94S9,75,9,51.5S28,9,51.5,9z"/>
-		</g>
-		<g id="Group_464" transform="translate(15.396 25.582)">
-			<path id="Path_76" class="st1" d="M52.5,29.1h-3.4V4.5c0-2.5-2-4.5-4.5-4.5H8.9C6.5,0,4.5,2,4.5,4.5v24.6H1.1
-				c-0.6,0-1.1,0.5-1.1,1.1c0,0,0,0,0,0v1.1c0,2.5,2,4.5,4.5,4.5h44.7c2.5,0,4.5-2,4.5-4.5v-1.1C53.6,29.6,53.1,29.1,52.5,29.1
-				C52.5,29.1,52.5,29.1,52.5,29.1z M6.7,4.5c0-1.2,1-2.2,2.2-2.2h35.8c1.2,0,2.2,1,2.2,2.2v24.6H6.7V4.5z M49.2,33.5H4.5
-				c-1.2,0-2.2-1-2.2-2.2h18.5l0.8,0.8c0.2,0.2,0.5,0.3,0.8,0.3h8.9c0.3,0,0.6-0.1,0.8-0.3l0.8-0.8h18.5
-				C51.4,32.5,50.4,33.5,49.2,33.5L49.2,33.5z"/>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+  <defs>
+    <filter id="Path_190" x="0" y="0" width="103" height="103" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_810" data-name="Group 810" transform="translate(-1597 -2210)">
+    <g transform="matrix(1, 0, 0, 1, 1597, 2210)" filter="url(#Path_190)">
+      <path id="Path_190-2" data-name="Path 190" d="M42.5,0A42.5,42.5,0,1,1,0,42.5,42.5,42.5,0,0,1,42.5,0Z" transform="translate(9 9)" fill="#ec935f"/>
+    </g>
+    <g id="Group_464" data-name="Group 464" transform="translate(1621.396 2244.582)">
+      <path id="Path_76" data-name="Path 76" d="M52.522,114.388H49.169V89.8a4.474,4.474,0,0,0-4.47-4.47H8.94A4.474,4.474,0,0,0,4.47,89.8v24.585H1.117A1.117,1.117,0,0,0,0,115.505v1.118a4.474,4.474,0,0,0,4.47,4.47h44.7a4.474,4.474,0,0,0,4.47-4.47v-1.118A1.117,1.117,0,0,0,52.522,114.388ZM6.7,89.8A2.238,2.238,0,0,1,8.94,87.568H44.7A2.238,2.238,0,0,1,46.934,89.8v24.585H6.7Zm42.464,29.055H4.47a2.238,2.238,0,0,1-2.235-2.235H20.77l.79.79a1.117,1.117,0,0,0,.79.327h8.94a1.117,1.117,0,0,0,.79-.327l.79-.79H51.4A2.238,2.238,0,0,1,49.169,118.858Z" transform="translate(0 -85.333)" fill="#fff"/>
+    </g>
+  </g>
 </svg>

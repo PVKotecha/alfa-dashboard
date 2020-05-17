@@ -673,12 +673,24 @@ p.alfa-test-card-bottom-content{
     background-color: #00cdcd;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    text-align: center;
 }
 .alfa-weekly-achievement-card .card-body p{
     color: #fff;
     margin-bottom: 0;
-    text-align: center;
+    margin-top: 10px;
 }
+.alfa-weekly-achievement-card .card-body i{
+    font-size: 42px;
+    padding: 8px 5px;
+    background-color: #fff;
+    color: #ccc;
+    border-radius: 50px;
+}
+.alfa-weekly-achievement-card .card-body i.active{
+    color: #f7f740;
+}
+
 /*Mock Test*/
 .alfa-mock-test-card{
     margin-top: 20px;
