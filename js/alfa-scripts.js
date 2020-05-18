@@ -94,7 +94,89 @@ $(document).ready(function() {
         styleWrapper: true,
         styleText: true
     }); 
-    
+
+    /*Socre Target MODAL Circles */
+
+    var myCircle = Circles.create({
+        id: 'circles-reading-target',
+        radius: 42,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
+    var myCircle = Circles.create({
+        id: 'circles-writing-target',
+        radius: 42,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(103, 184, 252, .2)', '#67b8fc'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
+    var myCircle = Circles.create({
+        id: 'circles-listening-target',
+        radius: 42,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(24, 93, 146, .2)', '#185d92'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
+    var myCircle = Circles.create({
+        id: 'circles-speaking-target',
+        radius: 42,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
+    var myCircle = Circles.create({
+        id: 'circles-overall-target',
+        radius: 42,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(232, 52, 43, .2)', '#e8342b'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
 /*Countdown*/
 // Create Countdown
 var Countdown = {
@@ -261,7 +343,9 @@ var Countdown = {
   });
   /*Calender*/
 
-  $('#dailytask').datepicker({ 
-  });
+  $('#dailytask').datepicker({});
+  $('#selectExamDate').datepicker({});
+
+  
 });
 
