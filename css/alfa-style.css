@@ -554,9 +554,12 @@ p.alfa-test-card-bottom-content{
 }
 .flip-clock-divider .flip-clock-label{
     zoom: 2;
-    left: -16px;
+    left: 0;
     color: #fff;
     text-transform: uppercase;
+}
+.flip-clock-divider.days .flip-clock-label{
+    left: -17px;
 }
 .flip-clock-wrapper .flip{
     box-shadow: none;
