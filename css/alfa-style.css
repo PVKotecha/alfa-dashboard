@@ -599,7 +599,7 @@ p.alfa-test-card-bottom-content{
 .flip-clock-wrapper{
     zoom: .415;
     margin-top: 60px;
-    margin-left: 56px;
+    margin-left: 72px;
 }
 .flip-clock-divider{
     width: 40px;
@@ -638,6 +638,7 @@ p.alfa-test-card-bottom-content{
 /*daily task*/
 .alfa-daily-task-card{
     margin-top: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 .alfa-daily-task-card .card-header{
     background-color: #676767;
@@ -812,6 +813,7 @@ p.alfa-test-card-bottom-content{
 /*Mock Test*/
 .alfa-mock-test-card{
     margin-top: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 .alfa-mock-test-card h3{
     text-transform: uppercase;
@@ -853,7 +855,7 @@ p.alfa-test-card-bottom-content{
     border-radius: 50px;
 }
 .alfa-score-target-modal .modal-body h3{
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
     margin-top: 6px;
 }

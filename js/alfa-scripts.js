@@ -353,7 +353,10 @@ var Countdown = {
   /*Calender*/
 
   $('#dailytask').datepicker({});
+  $('#dailytask').datepicker().datepicker('setDate',new Date());
+
   $('#selectExamDate').datepicker({});
+  $('#selectExamDate').datepicker().datepicker('setDate',new Date());
 
 
   //Active accordion radius
