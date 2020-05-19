@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+    //Mega menu
+    $(document).ready(function() {
+        $(".megamenu").on("click", function(e) {
+            e.stopPropagation();
+        });
+    });
+    
+
     //Circles For PRACTISE PROGRESS section Progress Bar
     var myCircle = Circles.create({
         id: 'circles-reading-que',
@@ -346,6 +355,20 @@ var Countdown = {
   $('#dailytask').datepicker({});
   $('#selectExamDate').datepicker({});
 
-  
+
+  //Active accordion radius
+  $('.alfa-faq-card-main .accordion .card .card-header button').click (function(){
+    var cardHeaderId = $(this).closest('.card-header').attr('id');
+        $('.alfa-faq-card-main .accordion .card .card-header').css("border-radius","40px");
+        $('#' + cardHeaderId).css("border-radius","0"); 
+  });
+
+  //Active accordion radius
+  $('.alfa-today-task-accordion-button').click (function(){
+    var cardHeaderId = $(this).closest('.card-header').attr('id');
+        $('.alfa-today-task-card .accordion .card .card-header').css("border-radius","40px");
+        $('#' + cardHeaderId).css("border-radius","0"); 
+  });
+
 });
 

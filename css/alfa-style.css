@@ -79,6 +79,51 @@ body{
     margin-right: 20px;
     margin-left: 8px;
 }
+
+.megamenu-li {
+    position: static;
+    line-height: 1.2;
+}
+  
+.megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 40px 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,.18)!important;
+    top: 75px;
+}  
+.megamenu .media img{
+    min-width: 46px;
+}
+.megamenu .media h5{
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding-bottom: 12px;
+}
+.megamenu .media h5.alfa-speaking-menu-title{
+    color: #ec935f;
+    border-color: #ec935f;
+}
+.megamenu .media h5.alfa-writing-menu-title{
+    color: #00cdcd;
+    border-color: #00cdcd;
+}
+.megamenu .media h5.alfa-reading-menu-title{
+    color: #2fda61;
+    border-color: #2fda61;
+}
+.megamenu .media h5.alfa-listening-menu-title{
+    color: #185d92;
+    border-color: #185d92;
+}
+.megamenu .dropdown-item{
+    margin-left: 60px;
+    font-size: 13px;
+    max-width: 200px;
+}
+
 /*Alfa BODY*/
 .alfa-body{
     margin-top: 110px;
@@ -409,10 +454,10 @@ p.alfa-test-card-bottom-content{
     top: -10px;
     right: -10px;
     padding: 2px 9px;
-    background-color: red;
+    background-color: #165d92;
     color: #fff;
     border-radius: 50px;
-    animation: pulse_animation_orange 1.3s infinite;
+    animation: pulse_animation_blue 1.3s infinite;
 }
 /*FAQ*/
 .alfa-faq-wrapper{
@@ -444,7 +489,7 @@ p.alfa-test-card-bottom-content{
      color: #2fda61;
 }
 .alfa-faq-wrapper .alfa-faq-card-main .alfa-faq-card-body-main h3.alfa-faq-PTEwriting-heading{
-     color: #11e6e6;
+     color: #67b8fc;
 }
 .alfa-faq-wrapper .alfa-faq-card-main .alfa-faq-card-body-main h3.alfa-faq-PTEspeaking-heading{
      color: #ec935f;
@@ -455,11 +500,12 @@ p.alfa-test-card-bottom-content{
 .alfa-faq-card-main .accordion .card{
     margin-bottom: 24px;
     border: 0;
-    border-radius: 40px;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.5)!important;
 }
 .alfa-faq-card-main .accordion .card .card-header{
     padding: 2px 20px;
+    border-radius: 40px;
 }
 .alfa-faq-card-main .accordion .card .card-header button{
     text-transform: uppercase;
@@ -483,7 +529,7 @@ p.alfa-test-card-bottom-content{
     background-color: #2fda61;
 }
 .alfa-PTEwriting-accordion .card-header{
-    background-color: #11e6e6;
+    background-color: #67b8fc;
 }
 .alfa-PTEspeaking-accordion .card-header{
     background-color: #ec935f;
@@ -636,8 +682,8 @@ p.alfa-test-card-bottom-content{
 .alfa-today-task-card .card-body{
     padding:20px 8px;
 }
-.alfa-TodayTask-accordion{
-    border-radius: 50px !important;
+.alfa-today-task-card .card{
+    border-radius: 20px !important;
     margin-bottom: 20px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.175)!important;
 }

@@ -2,1017 +2,1381 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!--Datepicker-->
-    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <!--Datepicker-->
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
 
-    <!--Exam Countdown css FlipClock-->
-    <link rel="stylesheet" href="css/flipclock.css">
+  <!--Exam Countdown css FlipClock-->
+  <link rel="stylesheet" href="css/flipclock.css">
 
-    <!--ALFA CSS-->
-    <link rel="stylesheet" href="css/alfa-style.css">
+  <!--ALFA CSS-->
+  <link rel="stylesheet" href="css/alfa-style.css">
 
-    <!--LATO Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--LATO Google Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/solid.min.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/solid.min.css">
 
-    <title>Alfa Dashboard</title>
+  <title>Alfa Dashboard</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png">
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png">
 </head>
 
 <body>
-    <!--Nav-->
-    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/alfa.svg" alt="logo" loading="lazy">
+  <!--Nav-->
+  <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/alfa.svg" alt="logo" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mt-4 mt-lg-0 active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li> 
+          <li class="nav-item dropdown megamenu-li">
+            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Practice</a>
+            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+             <div class="container d-block">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3"> 
+                  <div class="media">
+                    <img src="img/grammar.svg" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 alfa-speaking-menu-title">Speaking</h5>
+                    </div>
+                  </div> 
+                 <a class="dropdown-item" href="#">Read Aloud</a>
+                 <a class="dropdown-item" href="#">Repeat Sentence</a>
+                 <a class="dropdown-item" href="#">Describe  Image</a>
+                 <a class="dropdown-item" href="#">Re-Tell Lecture</a>
+                 <a class="dropdown-item" href="#">Answer Short Question</a>
+                </div>
+                <div class="col-sm-6 col-lg-3"> 
+                 <div class="media">
+                  <img src="img/grammar.svg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 alfa-writing-menu-title">writing</h5>
+                  </div>
+                </div>
+                 <a class="dropdown-item" href="#">Summerized Written Test</a>
+                 <a class="dropdown-item" href="#">Write Essay</a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="media">
+                    <img src="img/grammar.svg" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 alfa-reading-menu-title">reading</h5>
+                    </div>
+                  </div> 
+                 <a class="dropdown-item" href="#">Multiple Choice, Single Answer</a>
+                 <a class="dropdown-item" href="#">Multiple Choice, Multiple Answer</a>
+                 <a class="dropdown-item" href="#">Re-Order Paragraph</a>
+                 <a class="dropdown-item" href="#">Reading: Fill in the Blanks</a>
+                 <a class="dropdown-item" href="#">Reading &amp; Writing: Fill in the Blanks</a>
+                 <a class="dropdown-item" href="#">Summerize Written Test</a>
+                </div>
+                <div class="col-sm-6 col-lg-3"> 
+                 <div class="media">
+                  <img src="img/grammar.svg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 alfa-listening-menu-title">listening</h5>
+                  </div> 
+                  </div>
+                  <a class="dropdown-item" href="#">Summerize Spoken Test</a>
+                  <a class="dropdown-item" href="#">Multiple Choice, Multiple Answer</a>
+                  <a class="dropdown-item" href="#">Reading: Fill in the Blanks</a>
+                  <a class="dropdown-item" href="#">Highlight Correct Summery</a>
+                  <a class="dropdown-item" href="#">Summerize Written Test</a>
+                  <a class="dropdown-item" href="#">Multiple Choice, Multiple Answer</a>
+                  <a class="dropdown-item" href="#">Select Missing Words</a>
+                  <a class="dropdown-item" href="#">Highlight Correct Summery</a>
+                  <a class="dropdown-item" href="#">Write From Ditection</a>
+                </div>
+               </div>
+             </div>
+            </div>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Predictions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Online Sessions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mock Tests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Strategy Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Announcement</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="img/user.png" alt="user dd icon">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mt-4 mt-lg-0 active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Practice</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Predictions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Online Sessions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mock Tests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Strategy Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Feedback</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Announcement</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto"> 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/user.png" alt="user dd icon">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right alfa-user-dd" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item media" href="#">
-                              <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
-                              <div class="media-body align-self-center">
-                                <small>John Doe<br>
-                                  johndoe@gmail.com</small>
-                              </div>
-                            </a>
-                            <a class="dropdown-item media" href="#">
-                              <i class="fa fa-star-of-david align-self-center"></i>
-                              <div class="media-body align-self-center">
-                                Upgrade to VIP
-                              </div>  
-                            </a>
-                            <a class="dropdown-item media" href="#">
-                              <i class="fa fa-user-circle align-self-center"></i>
-                              <div class="media-body align-self-center">
-                                Profile Center
-                              </div>
-                            </a>
-                            <a class="dropdown-item media" href="#">
-                              <i class="fa fa-sign-out-alt align-self-center "></i>
-                              <div class="media-body align-self-center">
-                                Logout
-                              </div>  
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="dropdown-menu dropdown-menu-right alfa-user-dd" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item media" href="#">
+                <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
+                <div class="media-body align-self-center">
+                  <small>John Doe<br>
+                    johndoe@gmail.com</small>
+                </div>
+              </a>
+              <a class="dropdown-item media" href="#">
+                <i class="fa fa-star-of-david align-self-center"></i>
+                <div class="media-body align-self-center">
+                  Upgrade to VIP
+                </div>
+              </a>
+              <a class="dropdown-item media" href="#">
+                <i class="fa fa-user-circle align-self-center"></i>
+                <div class="media-body align-self-center">
+                  Profile Center
+                </div>
+              </a>
+              <a class="dropdown-item media" href="#">
+                <i class="fa fa-sign-out-alt align-self-center "></i>
+                <div class="media-body align-self-center">
+                  Logout
+                </div>
+              </a>
             </div>
-        </div>
-    </nav>
-    <!--Nav End-->
-
-    <!--Alfa body-->
-    <div class="alfa-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 px-lg-0">
-                    <!--BANNER, TODAY's SESSION, PROGRESS-->
-                    <div class="row no-gutters">
-                        <div class="col-lg-12">
-                            <div class="card alfa-banner-card">
-                                BANNER
-                            </div>
-                            <div class="card alfa-today-session-card">
-                                <h2>Today's Session - Reading</h2>
-                                <i class="fa fa-book-open"></i>
-                            </div>
-                            <div class="card alfa-practise-progress-card">
-                                <div class="card-header">
-                                    <h2>practise progress</h2>
-                                </div>
-                                <div class="card-body px-lg-0">
-                                    <div class="row alfa-practise-progress-circle-wrapper text-center">
-                                        <div class="col-lg-2 offset-lg-1">
-                                            <div class="circle" id="circles-reading-que"></div>
-                                            <h3>1112</h3>
-                                            <p>Reading Question</p>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="circle" id="circles-writing-que"></div>
-                                            <h3>3333</h3>
-                                            <p>Writing Question</p>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="circle" id="circles-listening-que"></div>
-                                            <h3>4444</h3>
-                                            <p>Listening Question</p>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="circle" id="circles-speaking-que"></div>
-                                            <h3>5555</h3>
-                                            <p>Speaking Question</p>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="circle" id="circles-que"></div>
-                                            <h3>2222</h3>
-                                            <p>Reading Question</p>
-                                        </div>
-                                    </div>
-                                    <div class="row alfa-progress-bar-wrapper">
-                                        <div class="col-lg-6 ">
-                                            <div class="alfa-progress-bar-speaking">
-                                                <h3>Speaking</h3> 
-                                                <p>Read Aloud <span>25 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Read Sentence <span>50 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <p>Describe Image <span>75 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <p>Re-Tell Lecture <span>99 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <p>Answer Short Question <span>44 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <p>Summerize Writter Text <span>72 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-orange">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-                                            <div class="alfa-progress-bar-reading">
-                                                <h3>Reading</h3> 
-                                                <p>Multiple Choice, Single Answer <span>33 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Multiple Choice, Multiple Answer <span>76 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Re-Order Paragraph <span>62 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Reading: Fill in The Blanks <span>91 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Reading &amp; Writing: Fill in The Blanks <span>55 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Summerize Writter Text <span>30 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-green">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="alfa-progress-bar-writing">
-                                                <h3>Writing</h3> 
-                                                <p>Summerize Writter Text<span>25 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Write Essay <span>50 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-                                            <div class="alfa-progress-bar-listening">
-                                                <h3>Listening</h3> 
-                                                <p>Summerize Spoken Text <span>30 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Multiple Choice, Multiple Answer <span>77 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Fill in The Blanks <span>69 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Highlight Correct Summery <span>60 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Multiple Choice, Single Answer <span>77 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Select Missing Words <span>40 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                                <p>Write From Ditaction <span>94 <span class="alfa-progress-100">/100</span></span></p>
-                                                <div class="progress alfa-progress alfa-bg-blue-dark">
-                                                    <div class="progress-bar" role="progressbar" style="max-width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <!--BANNER, TODAY's SESSION, PROGRESS end-->
-                    <!--SPEECH LISTEN TEST-->
-                    <div class="row">
-                        <div class="col-lg-6 pr-lg-0">
-                            <div class="card alfa-speech-test-card">
-                                <h3>Speech test</h3>
-                                <p>&nbsp;</p>
-                                <a href="javascript:void(0)"><i class="fa fa-microphone-alt"></i></a>
-                                <a href="javascript:void(0)" class="alfa-test-card-controller"><span class="fa fa-sync"></span></a>
-                                <p class="alfa-test-card-bottom-content">Click the mic button to speak</p>
-                                <input type="text" class="form-control alfa-form-control" placeholder="Your Response...">
-                                <div class="progress alfa-progress alfa-bg-orange">
-                                    <div class="progress-bar" role="progressbar" style="max-width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card alfa-listen-test-card">
-                                <h3>Listening Test</h3>
-                                <p>Difficult words from WFD &amp; LFID</p>
-                                <a href="javascript:void(0)"><i class="fa fa-headphones-alt"></i></a>
-                                <a href="javascript:void(0)" class="alfa-test-card-controller"><span class="fa fa-chevron-right"></span></a>
-                                <p class="alfa-test-card-bottom-content">Click the headphone button to listen</p>
-                                <input type="text" class="form-control alfa-form-control" placeholder="Type Your Response...">
-                                <button class="btn btn-primary btn-block alfa-show-word-btn">Show Word</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--SPEECH LISTEN TEST end-->
-                </div>
-                <!--SIDE BAR-->
-                <div class="col-lg-4"> 
-                    <div class="card alfa-your-target-card">
-                        <div class="row">
-                            <div class="col">
-                                <h3>Your Target</h3>
-                            </div>
-                            <div class="col">
-                                <p>85+</p>
-                                <a href="javascript:void(0)"  data-toggle="modal" data-target="#scoreTargetModal"><i class="fa fa-cog"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card alfa-exam-count-card">
-                        <div class="row">
-                            <div class="col">
-                                <h3>Exam Countdown</h3>
-                                <div class="alfa-exam-countdown-clock"></div>
-                                <a href="javascript:void(0)" data-toggle="modal" data-target="#examDateModal"><i class="fa fa-cog"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card alfa-daily-task-card">
-                        <div class="card-header">Daily Task</div>
-                        <div class="card-body">
-                          <div id="dailytask"></div>
-                        </div>
-                    </div>
-                    <div class="card alfa-today-task-card">
-                        <div class="card-header">Today's Task</div>
-                        <div class="card-body">
-                            <div class="accordion" id="accordionTodayTask">
-                                <div class="card alfa-TodayTask-accordion">
-                                <div class="card-header alfa-bg-orange" id="TodayTask_Heading_1">
-                                    <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#TodayTask_Collapse_1" aria-expanded="false" aria-controls="TodayTask_Collapse_1">
-                                        Speaking <i class="fas fa-chevron-down"></i>
-                                    </button>
-                                    </h2>
-                                </div> 
-                                <div id="TodayTask_Collapse_1" class="collapse show" aria-labelledby="TodayTask_Heading_1" data-parent="#accordionTodayTask">
-                                    <div class="card-body">
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
-                                        <div class="col-sm-7"><p>Read Aloud</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
-                                        <div class="col-sm-7"><p>Repeat Sentence</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
-                                        <div class="col-sm-7"><p>Describe Image</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
-                                        <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
-                                        <div class="col-sm-7"><p>Answer Short Question</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="card alfa-TodayTask-accordion">
-                                <div class="card-header alfa-bg-blue" id="TodayTask_Heading_2">
-                                    <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#TodayTask_Collapse_2" aria-expanded="false" aria-controls="TodayTask_Collapse_2">
-                                        Writing<i class="fas fa-chevron-down"></i>
-                                    </button>
-                                    </h2>
-                                </div>
-                                <div id="TodayTask_Collapse_2" class="collapse" aria-labelledby="TodayTask_Heading_2" data-parent="#accordionTodayTask">
-                                    <div class="card-body">
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing alfa-task-completed">
-                                        <div class="col-sm-7"><p>Read Aloud</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
-                                        <div class="col-sm-7"><p>Repeat Sentence</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
-                                        <div class="col-sm-7"><p>Describe Image</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
-                                        <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
-                                        <div class="col-sm-7"><p>Answer Short Question</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="card alfa-TodayTask-accordion">
-                                <div class="card-header alfa-bg-green" id="TodayTask_Heading_3">
-                                    <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#TodayTask_Collapse_3" aria-expanded="false" aria-controls="TodayTask_Collapse_3">
-                                        reading<i class="fas fa-chevron-down"></i>
-                                    </button>
-                                    </h2>
-                                </div>
-                                <div id="TodayTask_Collapse_3" class="collapse" aria-labelledby="TodayTask_Heading_3" data-parent="#accordionTodayTask">
-                                    <div class="card-body">
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading alfa-task-completed">
-                                        <div class="col-sm-7"><p>Read Aloud</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
-                                        <div class="col-sm-7"><p>Repeat Sentence</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
-                                        <div class="col-sm-7"><p>Describe Image</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
-                                        <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
-                                        <div class="col-sm-7"><p>Answer Short Question</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="card alfa-TodayTask-accordion">
-                                <div class="card-header alfa-bg-blue-dark" id="TodayTask_Heading_4">
-                                    <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#TodayTask_Collapse_4" aria-expanded="false" aria-controls="TodayTask_Collapse_4">
-                                        listening<i class="fas fa-chevron-down"></i>
-                                    </button>
-                                    </h2>
-                                </div>
-                                <div id="TodayTask_Collapse_4" class="collapse" aria-labelledby="TodayTask_Heading_4" data-parent="#accordionTodayTask">
-                                    <div class="card-body">
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening alfa-task-completed">
-                                        <div class="col-sm-7"><p>Read Aloud</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
-                                        <div class="col-sm-7"><p>Repeat Sentence</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
-                                        <div class="col-sm-7"><p>Describe Image</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
-                                        <div class="col-sm-7"><p>Re-Tell Lecture</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
-                                        <div class="col-sm-7"><p>Answer Short Question</p></div>
-                                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card alfa-weekly-achievement-card">
-                            <div class="card-header">weekly achievement</div>
-                            <div class="card-body">
-                              <i class="fa fa-star active"></i>
-                              <i class="fa fa-star mx-2 active"></i>
-                              <i class="fa fa-star"></i>
-                                <p>You Are SILVER Achiever This WEEK</p>
-                            </div>
-                    </div> 
-                   <div class="card alfa-mock-test-card">
-                        <h3>Mock test</h3>
-                    </div>
-                </div>
-                <!--SIDE BAR end-->
-            </div>
-            <!--6 CARD-->
-            <div class="row text-center alfa-six-card-section">
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/template.svg" alt="template">
-                            <h3>Templates</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/marking.svg" alt="marking">
-                            <h3>Marking</h3>
-                        </div>
-                    </a> 
-                </div>
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/grammar.svg" alt="grammar">
-                            <h3>Grammar</h3>
-                        </div>
-                    </a>  
-                </div>
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/score-feedback.svg" alt="score-feedback">
-                            <h3>Score Feedback</h3>
-                        </div>
-                    </a>  
-                </div>
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/vocab-bank.svg" alt="vocab-bank">
-                            <h3>Vocab-Bank</h3>
-                        </div>
-                    </a>  
-                </div>
-                <div class="col-lg-2 pl-lg-0">
-                    <a href="javascript:void(0);">
-                        <div class="card">
-                            <img src="img/compatibility.svg" alt="compatibility">
-                            <h3>Compatibility</h3>
-                            <span class="alfa-compatibility-indicator">2</span>
-                        </div>
-                    </a>  
-                </div>
-            </div>
-            <!--6 CARD end-->
-            <!--FAQ-->
-            <div class="row alfa-faq-wrapper">
-                <div class="col px-lg-0">
-                    <div class="card alfa-faq-card-main">
-                        <div class="card-header alfa-faq-card-header-main">PTE FAQs</div>
-                        <div class="card-body alfa-faq-card-body-main">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h3 class="alfa-faq-PTEacademy-heading">About PTE Academy</h3>
-                                    <div class="accordion" id="accordionPTEacademy">
-                                        <div class="card alfa-PTEacademy-accordion">
-                                          <div class="card-header" id="PTEacademy_Heading_1">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#PTEacademy_Collapse_1" aria-expanded="false" aria-controls="PTEacademy_Collapse_1">
-                                                what is read aloud? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div> 
-                                          <div id="PTEacademy_Collapse_1" class="collapse" aria-labelledby="PTEacademy_Heading_1" data-parent="#accordionPTEacademy">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEacademy-accordion">
-                                          <div class="card-header" id="PTEacademy_Heading_2">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEacademy_Collapse_2" aria-expanded="false" aria-controls="PTEacademy_Collapse_2">
-                                                what is repeat sentence?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEacademy_Collapse_2" class="collapse" aria-labelledby="PTEacademy_Heading_2" data-parent="#accordionPTEacademy">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEacademy-accordion">
-                                          <div class="card-header" id="PTEacademy_Heading_3">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEacademy_Collapse_3" aria-expanded="false" aria-controls="PTEacademy_Collapse_3">
-                                                what is the describe image?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEacademy_Collapse_3" class="collapse" aria-labelledby="PTEacademy_Heading_3" data-parent="#accordionPTEacademy">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEacademy-accordion">
-                                          <div class="card-header" id="PTEacademy_Heading_4">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEacademy_Collapse_4" aria-expanded="false" aria-controls="PTEacademy_Collapse_4">
-                                                what is repeat sentence?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEacademy_Collapse_4" class="collapse" aria-labelledby="PTEacademy_Heading_4" data-parent="#accordionPTEacademy">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEacademy-accordion">
-                                          <div class="card-header" id="PTEacademy_Heading_5">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEacademy_Collapse_5" aria-expanded="false" aria-controls="PTEacademy_Collapse_5">
-                                                what is the describe image?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEacademy_Collapse_5" class="collapse" aria-labelledby="PTEacademy_Heading_5" data-parent="#accordionPTEacademy">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="alfa-faq-PTEspeaking-heading">PTE Speaking</h3>
-                                    <div class="accordion" id="accordionPTEspeaking">
-                                        <div class="card alfa-PTEspeaking-accordion">
-                                          <div class="card-header" id="PTEspeaking_Heading_1">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#PTEspeaking_Collapse_1" aria-expanded="false" aria-controls="PTEspeaking_Collapse_1">
-                                                what is read aloud? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div> 
-                                          <div id="PTEspeaking_Collapse_1" class="collapse" aria-labelledby="PTEspeaking_Heading_1" data-parent="#accordionPTEspeaking">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEspeaking-accordion">
-                                          <div class="card-header" id="PTEspeaking_Heading_2">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEspeaking_Collapse_2" aria-expanded="false" aria-controls="PTEspeaking_Collapse_2">
-                                                what is repeat sentence?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEspeaking_Collapse_2" class="collapse" aria-labelledby="PTEspeaking_Heading_2" data-parent="#accordionPTEspeaking">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEspeaking-accordion">
-                                          <div class="card-header" id="PTEspeaking_Heading_3">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEspeaking_Collapse_3" aria-expanded="false" aria-controls="PTEspeaking_Collapse_3">
-                                                what is the describe image?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEspeaking_Collapse_3" class="collapse" aria-labelledby="PTEspeaking_Heading_3" data-parent="#accordionPTEspeaking">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEspeaking-accordion">
-                                          <div class="card-header" id="PTEspeaking_Heading_4">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEspeaking_Collapse_4" aria-expanded="false" aria-controls="PTEspeaking_Collapse_4">
-                                                what is repeat sentence?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEspeaking_Collapse_4" class="collapse" aria-labelledby="PTEspeaking_Heading_4" data-parent="#accordionPTEspeaking">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEspeaking-accordion">
-                                          <div class="card-header" id="PTEspeaking_Heading_5">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEspeaking_Collapse_5" aria-expanded="false" aria-controls="PTEspeaking_Collapse_5">
-                                                what is the describe image?<i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEspeaking_Collapse_5" class="collapse" aria-labelledby="PTEspeaking_Heading_5" data-parent="#accordionPTEspeaking">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="alfa-faq-PTEwriting-heading">PTE Writing</h3>
-                                    <div class="accordion" id="accordionPTEwriting">
-                                        <div class="card alfa-PTEwriting-accordion">
-                                            <div class="card-header" id="PTEwriting_Heading_1">
-                                              <h2 class="mb-0">
-                                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#PTEwriting_Collapse_1" aria-expanded="false" aria-controls="PTEwriting_Collapse_1">
-                                                  what is read aloud? <i class="fas fa-chevron-down"></i>
-                                                </button>
-                                              </h2>
-                                            </div> 
-                                            <div id="PTEwriting_Collapse_1" class="collapse" aria-labelledby="PTEwriting_Heading_1" data-parent="#accordionPTEwriting">
-                                              <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="card alfa-PTEwriting-accordion">
-                                            <div class="card-header" id="PTEwriting_Heading_2">
-                                              <h2 class="mb-0">
-                                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEwriting_Collapse_2" aria-expanded="false" aria-controls="PTEwriting_Collapse_2">
-                                                  what is repeat sentence?<i class="fas fa-chevron-down"></i>
-                                                </button>
-                                              </h2>
-                                            </div>
-                                            <div id="PTEwriting_Collapse_2" class="collapse" aria-labelledby="PTEwriting_Heading_2" data-parent="#accordionPTEwriting">
-                                              <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                              </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h3 class="alfa-faq-PTEreading-heading">PTE Reading</h3>
-                                    <div class="accordion" id="accordionPTEreading">
-                                        <div class="card alfa-PTEreading-accordion">
-                                          <div class="card-header" id="PTEreading_Heading_1">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#PTEreading_Collapse_1" aria-expanded="false" aria-controls="PTEreading_Collapse_1">
-                                                what is read aloud? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                      
-                                          <div id="PTEreading_Collapse_1" class="collapse" aria-labelledby="PTEreading_Heading_1" data-parent="#accordionPTEreading">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEreading-accordion">
-                                          <div class="card-header" id="PTEreading_Heading_2">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEreading_Collapse_2" aria-expanded="false" aria-controls="PTEreading_Collapse_2">
-                                                what is repeat sentence? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEreading_Collapse_2" class="collapse" aria-labelledby="PTEreading_Heading_2" data-parent="#accordionPTEreading">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEreading-accordion">
-                                          <div class="card-header" id="PTEreading_Heading_3">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEreading_Collapse_3" aria-expanded="false" aria-controls="PTEreading_Collapse_3">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEreading_Collapse_3" class="collapse" aria-labelledby="PTEreading_Heading_3" data-parent="#accordionPTEreading">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEreading-accordion">
-                                          <div class="card-header" id="PTEreading_Heading_4">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEreading_Collapse_4" aria-expanded="false" aria-controls="PTEreading_Collapse_4">
-                                                what is repeat sentence? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEreading_Collapse_4" class="collapse" aria-labelledby="PTEreading_Heading_4" data-parent="#accordionPTEreading">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTEreading-accordion">
-                                          <div class="card-header" id="PTEreading_Heading_5">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTEreading_Collapse_5" aria-expanded="false" aria-controls="PTEreading_Collapse_5">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTEreading_Collapse_5" class="collapse" aria-labelledby="PTEreading_Heading_5" data-parent="#accordionPTEreading">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="alfa-faq-PTElistening-heading">PTE Listening</h3>
-                                    <div class="accordion" id="accordionPTElistening">
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_1">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_1" aria-expanded="false" aria-controls="PTElistening_Collapse_1">
-                                                what is read aloud? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                      
-                                          <div id="PTElistening_Collapse_1" class="collapse" aria-labelledby="PTElistening_Heading_1" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_2">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_2" aria-expanded="false" aria-controls="PTElistening_Collapse_2">
-                                                what is repeat sentence? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_2" class="collapse" aria-labelledby="PTElistening_Heading_2" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_3">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_3" aria-expanded="false" aria-controls="PTElistening_Collapse_3">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_3" class="collapse" aria-labelledby="PTElistening_Heading_3" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_4">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_4" aria-expanded="false" aria-controls="PTElistening_Collapse_4">
-                                                what is repeat sentence? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_4" class="collapse" aria-labelledby="PTElistening_Heading_4" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_5">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_5" aria-expanded="false" aria-controls="PTElistening_Collapse_5">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_5" class="collapse" aria-labelledby="PTElistening_Heading_5" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_6">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_6" aria-expanded="false" aria-controls="PTElistening_Collapse_6">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_6" class="collapse" aria-labelledby="PTElistening_Heading_6" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card alfa-PTElistening-accordion">
-                                          <div class="card-header" id="PTElistening_Heading_7">
-                                            <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#PTElistening_Collapse_7" aria-expanded="false" aria-controls="PTElistening_Collapse_7">
-                                                what is the describe image? <i class="fas fa-chevron-down"></i>
-                                              </button>
-                                            </h2>
-                                          </div>
-                                          <div id="PTElistening_Collapse_7" class="collapse" aria-labelledby="PTElistening_Heading_7" data-parent="#accordionPTElistening">
-                                            <div class="card-body">
-                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--FAQ end-->
-        </div>
-    </div>
-    <!--Alfa body end--> 
-    
-<!--Modal Score Target--> 
-<div class="modal alfa-score-target-modal fade" id="scoreTargetModal" tabindex="-1" role="dialog" aria-labelledby="scoreTargetModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Score Target</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          </li>
+        </ul>
       </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option1" checked> ALL 50
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2"> ALL 65
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option3"> ALL 79
-                </label>
+    </div>
+  </nav>
+  <!--Nav End-->
+
+  <!--Alfa body-->
+  <div class="alfa-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 px-lg-0">
+          <!--BANNER, TODAY's SESSION, PROGRESS-->
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <div class="card alfa-banner-card">
+                BANNER
+              </div>
+              <div class="card alfa-today-session-card">
+                <h2>Today's Session - Reading</h2>
+                <i class="fa fa-book-open"></i>
+              </div>
+              <div class="card alfa-practise-progress-card">
+                <div class="card-header">
+                  <h2>practise progress</h2>
+                </div>
+                <div class="card-body px-lg-0">
+                  <div class="row alfa-practise-progress-circle-wrapper text-center">
+                    <div class="col-lg-2 offset-lg-1">
+                      <div class="circle" id="circles-reading-que"></div>
+                      <h3>1112</h3>
+                      <p>Reading Question</p>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="circle" id="circles-writing-que"></div>
+                      <h3>3333</h3>
+                      <p>Writing Question</p>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="circle" id="circles-listening-que"></div>
+                      <h3>4444</h3>
+                      <p>Listening Question</p>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="circle" id="circles-speaking-que"></div>
+                      <h3>5555</h3>
+                      <p>Speaking Question</p>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="circle" id="circles-que"></div>
+                      <h3>2222</h3>
+                      <p>Reading Question</p>
+                    </div>
+                  </div>
+                  <div class="row alfa-progress-bar-wrapper">
+                    <div class="col-lg-6 ">
+                      <div class="alfa-progress-bar-speaking">
+                        <h3>Speaking</h3>
+                        <p>Read Aloud <span>25 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Read Sentence <span>50 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Describe Image <span>75 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Re-Tell Lecture <span>99 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 99%" aria-valuenow="99"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Answer Short Question <span>44 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 44%" aria-valuenow="44"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Summerize Writter Text <span>72 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-orange">
+                          <div class="progress-bar" role="progressbar" style="max-width: 72%" aria-valuenow="72"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="alfa-progress-bar-reading">
+                        <h3>Reading</h3>
+                        <p>Multiple Choice, Single Answer <span>33 <span class="alfa-progress-100">/100</span></span>
+                        </p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 33%" aria-valuenow="33"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Multiple Choice, Multiple Answer <span>76 <span class="alfa-progress-100">/100</span></span>
+                        </p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 76%" aria-valuenow="76"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Re-Order Paragraph <span>62 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 62%" aria-valuenow="62"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Reading: Fill in The Blanks <span>91 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 91%" aria-valuenow="91"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Reading &amp; Writing: Fill in The Blanks <span>55 <span
+                              class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 55%" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Summerize Writter Text <span>30 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-green">
+                          <div class="progress-bar" role="progressbar" style="max-width: 30%" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="alfa-progress-bar-writing">
+                        <h3>Writing</h3>
+                        <p>Summerize Writter Text<span>25 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue">
+                          <div class="progress-bar" role="progressbar" style="max-width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Write Essay <span>50 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue">
+                          <div class="progress-bar" role="progressbar" style="max-width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="alfa-progress-bar-listening">
+                        <h3>Listening</h3>
+                        <p>Summerize Spoken Text <span>30 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 30%" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Multiple Choice, Multiple Answer <span>77 <span class="alfa-progress-100">/100</span></span>
+                        </p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 77%" aria-valuenow="77"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Fill in The Blanks <span>69 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 69%" aria-valuenow="69"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Highlight Correct Summery <span>60 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 60%" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Multiple Choice, Single Answer <span>77 <span class="alfa-progress-100">/100</span></span>
+                        </p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 77%" aria-valuenow="77"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Select Missing Words <span>40 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 40%" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Write From Ditaction <span>94 <span class="alfa-progress-100">/100</span></span></p>
+                        <div class="progress alfa-progress alfa-bg-blue-dark">
+                          <div class="progress-bar" role="progressbar" style="max-width: 94%" aria-valuenow="94"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col-lg-2 offset-lg-1">
-              <div class="circle" id="circles-reading-target"></div>
-              <h3>Reading</h3>
+          <!--BANNER, TODAY's SESSION, PROGRESS end-->
+          <!--SPEECH LISTEN TEST-->
+          <div class="row">
+            <div class="col-lg-6 pr-lg-0">
+              <div class="card alfa-speech-test-card">
+                <h3>Speech test</h3>
+                <p>&nbsp;</p>
+                <a href="javascript:void(0)"><i class="fa fa-microphone-alt"></i></a>
+                <a href="javascript:void(0)" class="alfa-test-card-controller"><span class="fa fa-sync"></span></a>
+                <p class="alfa-test-card-bottom-content">Click the mic button to speak</p>
+                <input type="text" class="form-control alfa-form-control" placeholder="Your Response...">
+                <div class="progress alfa-progress alfa-bg-orange">
+                  <div class="progress-bar" role="progressbar" style="max-width: 11%" aria-valuenow="11"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <div class="circle" id="circles-writing-target"></div>
-              <h3>Writing</h3>
+            <div class="col-lg-6">
+              <div class="card alfa-listen-test-card">
+                <h3>Listening Test</h3>
+                <p>Difficult words from WFD &amp; LFID</p>
+                <a href="javascript:void(0)"><i class="fa fa-headphones-alt"></i></a>
+                <a href="javascript:void(0)" class="alfa-test-card-controller"><span
+                    class="fa fa-chevron-right"></span></a>
+                <p class="alfa-test-card-bottom-content">Click the headphone button to listen</p>
+                <input type="text" class="form-control alfa-form-control" placeholder="Type Your Response...">
+                <button class="btn btn-primary btn-block alfa-show-word-btn">Show Word</button>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <div class="circle" id="circles-listening-target"></div>
-              <h3>listening</h3>
+          </div>
+          <!--SPEECH LISTEN TEST end-->
+        </div>
+        <!--SIDE BAR-->
+        <div class="col-lg-4">
+          <div class="card alfa-your-target-card">
+            <div class="row">
+              <div class="col">
+                <h3>Your Target</h3>
+              </div>
+              <div class="col">
+                <p>85+</p>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#scoreTargetModal"><i
+                    class="fa fa-cog"></i></a>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <div class="circle" id="circles-speaking-target"></div>
-              <h3>speaking</h3>
+          </div>
+          <div class="card alfa-exam-count-card">
+            <div class="row">
+              <div class="col">
+                <h3>Exam Countdown</h3>
+                <div class="alfa-exam-countdown-clock"></div>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#examDateModal"><i
+                    class="fa fa-cog"></i></a>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <div class="circle" id="circles-overall-target"></div>
-              <h3>over all</h3>
+          </div>
+          <div class="card alfa-daily-task-card">
+            <div class="card-header">Daily Task</div>
+            <div class="card-body">
+              <div id="dailytask"></div>
+            </div>
+          </div>
+          <div class="card alfa-today-task-card">
+            <div class="card-header">Today's Task</div>
+            <div class="card-body">
+              <div class="accordion" id="accordionTodayTask">
+                <div class="card alfa-TodayTask-accordion">
+                  <div class="card-header alfa-bg-orange" id="TodayTask_Heading_1">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left alfa-today-task-accordion-button" type="button" data-toggle="collapse"
+                        data-target="#TodayTask_Collapse_1" aria-expanded="false" aria-controls="TodayTask_Collapse_1">
+                        Speaking <i class="fas fa-chevron-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="TodayTask_Collapse_1" class="collapse show" aria-labelledby="TodayTask_Heading_1"
+                    data-parent="#accordionTodayTask">
+                    <div class="card-body">
+                      <div
+                        class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Read Aloud</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div
+                        class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Repeat Sentence</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div
+                        class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Describe Image</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                        <div class="col-sm-7">
+                          <p>Re-Tell Lecture</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-speacking">
+                        <div class="col-sm-7">
+                          <p>Answer Short Question</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card alfa-TodayTask-accordion">
+                  <div class="card-header alfa-bg-blue" id="TodayTask_Heading_2">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed alfa-today-task-accordion-button" type="button" data-toggle="collapse"
+                        data-target="#TodayTask_Collapse_2" aria-expanded="false" aria-controls="TodayTask_Collapse_2">
+                        Writing<i class="fas fa-chevron-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="TodayTask_Collapse_2" class="collapse" aria-labelledby="TodayTask_Heading_2"
+                    data-parent="#accordionTodayTask">
+                    <div class="card-body">
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Read Aloud</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                        <div class="col-sm-7">
+                          <p>Repeat Sentence</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                        <div class="col-sm-7">
+                          <p>Describe Image</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                        <div class="col-sm-7">
+                          <p>Re-Tell Lecture</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-writing">
+                        <div class="col-sm-7">
+                          <p>Answer Short Question</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card alfa-TodayTask-accordion">
+                  <div class="card-header alfa-bg-green" id="TodayTask_Heading_3">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left alfa-today-task-accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#TodayTask_Collapse_3" aria-expanded="false" aria-controls="TodayTask_Collapse_3">
+                        reading<i class="fas fa-chevron-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="TodayTask_Collapse_3" class="collapse" aria-labelledby="TodayTask_Heading_3"
+                    data-parent="#accordionTodayTask">
+                    <div class="card-body">
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Read Aloud</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                        <div class="col-sm-7">
+                          <p>Repeat Sentence</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                        <div class="col-sm-7">
+                          <p>Describe Image</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                        <div class="col-sm-7">
+                          <p>Re-Tell Lecture</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-reading">
+                        <div class="col-sm-7">
+                          <p>Answer Short Question</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Question</span> <i class="fa fa-check"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card alfa-TodayTask-accordion">
+                  <div class="card-header alfa-bg-blue-dark" id="TodayTask_Heading_4">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left alfa-today-task-accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#TodayTask_Collapse_4" aria-expanded="false" aria-controls="TodayTask_Collapse_4">
+                        listening<i class="fas fa-chevron-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="TodayTask_Collapse_4" class="collapse" aria-labelledby="TodayTask_Heading_4"
+                    data-parent="#accordionTodayTask">
+                    <div class="card-body">
+                      <div
+                        class="row no-gutters alfa-today-task-list alfa-today-task-list-listening alfa-task-completed">
+                        <div class="col-sm-7">
+                          <p>Read Aloud</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                        <div class="col-sm-7">
+                          <p>Repeat Sentence</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                        <div class="col-sm-7">
+                          <p>Describe Image</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                        <div class="col-sm-7">
+                          <p>Re-Tell Lecture</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                      <div class="row no-gutters alfa-today-task-list alfa-today-task-list-listening">
+                        <div class="col-sm-7">
+                          <p>Answer Short Question</p>
+                        </div>
+                        <div class="col-sm-5"><span>20 Questions</span> <i class="fa fa-check"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card alfa-weekly-achievement-card">
+            <div class="card-header">weekly achievement</div>
+            <div class="card-body">
+              <i class="fa fa-star active"></i>
+              <i class="fa fa-star mx-2 active"></i>
+              <i class="fa fa-star"></i>
+              <p>You Are SILVER Achiever This WEEK</p>
+            </div>
+          </div>
+          <div class="card alfa-mock-test-card">
+            <h3>Mock test</h3>
+          </div>
+        </div>
+        <!--SIDE BAR end-->
+      </div>
+      <!--6 CARD-->
+      <div class="row text-center alfa-six-card-section">
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/template.svg" alt="template">
+              <h3>Templates</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/marking.svg" alt="marking">
+              <h3>Marking</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/grammar.svg" alt="grammar">
+              <h3>Grammar</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/score-feedback.svg" alt="score-feedback">
+              <h3>Score Feedback</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/vocab-bank.svg" alt="vocab-bank">
+              <h3>Vocab-Bank</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 pl-lg-0">
+          <a href="javascript:void(0);">
+            <div class="card">
+              <img src="img/compatibility.svg" alt="compatibility">
+              <h3>Compatibility</h3>
+              <span class="alfa-compatibility-indicator">2</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--6 CARD end-->
+      <!--FAQ-->
+      <div class="row alfa-faq-wrapper">
+        <div class="col px-lg-0">
+          <div class="card alfa-faq-card-main">
+            <div class="card-header alfa-faq-card-header-main">PTE FAQs</div>
+            <div class="card-body alfa-faq-card-body-main">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="alfa-faq-PTEacademy-heading">About PTE Academy</h3>
+                  <div class="accordion" id="accordionPTEacademy">
+                    <div class="card alfa-PTEacademy-accordion">
+                      <div class="card-header" id="PTEacademy_Heading_1">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#PTEacademy_Collapse_1" aria-expanded="false"
+                            aria-controls="PTEacademy_Collapse_1">
+                            what is read aloud? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEacademy_Collapse_1" class="collapse" aria-labelledby="PTEacademy_Heading_1"
+                        data-parent="#accordionPTEacademy">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEacademy-accordion">
+                      <div class="card-header" id="PTEacademy_Heading_2">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEacademy_Collapse_2" aria-expanded="false"
+                            aria-controls="PTEacademy_Collapse_2">
+                            what is repeat sentence?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEacademy_Collapse_2" class="collapse" aria-labelledby="PTEacademy_Heading_2"
+                        data-parent="#accordionPTEacademy">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEacademy-accordion">
+                      <div class="card-header" id="PTEacademy_Heading_3">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEacademy_Collapse_3" aria-expanded="false"
+                            aria-controls="PTEacademy_Collapse_3">
+                            what is the describe image?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEacademy_Collapse_3" class="collapse" aria-labelledby="PTEacademy_Heading_3"
+                        data-parent="#accordionPTEacademy">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEacademy-accordion">
+                      <div class="card-header" id="PTEacademy_Heading_4">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEacademy_Collapse_4" aria-expanded="false"
+                            aria-controls="PTEacademy_Collapse_4">
+                            what is repeat sentence?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEacademy_Collapse_4" class="collapse" aria-labelledby="PTEacademy_Heading_4"
+                        data-parent="#accordionPTEacademy">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEacademy-accordion">
+                      <div class="card-header" id="PTEacademy_Heading_5">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEacademy_Collapse_5" aria-expanded="false"
+                            aria-controls="PTEacademy_Collapse_5">
+                            what is the describe image?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEacademy_Collapse_5" class="collapse" aria-labelledby="PTEacademy_Heading_5"
+                        data-parent="#accordionPTEacademy">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="alfa-faq-PTEspeaking-heading">PTE Speaking</h3>
+                  <div class="accordion" id="accordionPTEspeaking">
+                    <div class="card alfa-PTEspeaking-accordion">
+                      <div class="card-header" id="PTEspeaking_Heading_1">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#PTEspeaking_Collapse_1" aria-expanded="false"
+                            aria-controls="PTEspeaking_Collapse_1">
+                            what is read aloud? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEspeaking_Collapse_1" class="collapse" aria-labelledby="PTEspeaking_Heading_1"
+                        data-parent="#accordionPTEspeaking">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEspeaking-accordion">
+                      <div class="card-header" id="PTEspeaking_Heading_2">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEspeaking_Collapse_2" aria-expanded="false"
+                            aria-controls="PTEspeaking_Collapse_2">
+                            what is repeat sentence?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEspeaking_Collapse_2" class="collapse" aria-labelledby="PTEspeaking_Heading_2"
+                        data-parent="#accordionPTEspeaking">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEspeaking-accordion">
+                      <div class="card-header" id="PTEspeaking_Heading_3">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEspeaking_Collapse_3" aria-expanded="false"
+                            aria-controls="PTEspeaking_Collapse_3">
+                            what is the describe image?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEspeaking_Collapse_3" class="collapse" aria-labelledby="PTEspeaking_Heading_3"
+                        data-parent="#accordionPTEspeaking">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEspeaking-accordion">
+                      <div class="card-header" id="PTEspeaking_Heading_4">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEspeaking_Collapse_4" aria-expanded="false"
+                            aria-controls="PTEspeaking_Collapse_4">
+                            what is repeat sentence?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEspeaking_Collapse_4" class="collapse" aria-labelledby="PTEspeaking_Heading_4"
+                        data-parent="#accordionPTEspeaking">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEspeaking-accordion">
+                      <div class="card-header" id="PTEspeaking_Heading_5">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEspeaking_Collapse_5" aria-expanded="false"
+                            aria-controls="PTEspeaking_Collapse_5">
+                            what is the describe image?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEspeaking_Collapse_5" class="collapse" aria-labelledby="PTEspeaking_Heading_5"
+                        data-parent="#accordionPTEspeaking">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="alfa-faq-PTEwriting-heading">PTE Writing</h3>
+                  <div class="accordion" id="accordionPTEwriting">
+                    <div class="card alfa-PTEwriting-accordion">
+                      <div class="card-header" id="PTEwriting_Heading_1">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#PTEwriting_Collapse_1" aria-expanded="false"
+                            aria-controls="PTEwriting_Collapse_1">
+                            what is read aloud? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEwriting_Collapse_1" class="collapse" aria-labelledby="PTEwriting_Heading_1"
+                        data-parent="#accordionPTEwriting">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEwriting-accordion">
+                      <div class="card-header" id="PTEwriting_Heading_2">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEwriting_Collapse_2" aria-expanded="false"
+                            aria-controls="PTEwriting_Collapse_2">
+                            what is repeat sentence?<i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEwriting_Collapse_2" class="collapse" aria-labelledby="PTEwriting_Heading_2"
+                        data-parent="#accordionPTEwriting">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="alfa-faq-PTEreading-heading">PTE Reading</h3>
+                  <div class="accordion" id="accordionPTEreading">
+                    <div class="card alfa-PTEreading-accordion">
+                      <div class="card-header" id="PTEreading_Heading_1">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#PTEreading_Collapse_1" aria-expanded="false"
+                            aria-controls="PTEreading_Collapse_1">
+                            what is read aloud? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="PTEreading_Collapse_1" class="collapse" aria-labelledby="PTEreading_Heading_1"
+                        data-parent="#accordionPTEreading">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEreading-accordion">
+                      <div class="card-header" id="PTEreading_Heading_2">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEreading_Collapse_2" aria-expanded="false"
+                            aria-controls="PTEreading_Collapse_2">
+                            what is repeat sentence? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEreading_Collapse_2" class="collapse" aria-labelledby="PTEreading_Heading_2"
+                        data-parent="#accordionPTEreading">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEreading-accordion">
+                      <div class="card-header" id="PTEreading_Heading_3">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEreading_Collapse_3" aria-expanded="false"
+                            aria-controls="PTEreading_Collapse_3">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEreading_Collapse_3" class="collapse" aria-labelledby="PTEreading_Heading_3"
+                        data-parent="#accordionPTEreading">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEreading-accordion">
+                      <div class="card-header" id="PTEreading_Heading_4">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEreading_Collapse_4" aria-expanded="false"
+                            aria-controls="PTEreading_Collapse_4">
+                            what is repeat sentence? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEreading_Collapse_4" class="collapse" aria-labelledby="PTEreading_Heading_4"
+                        data-parent="#accordionPTEreading">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTEreading-accordion">
+                      <div class="card-header" id="PTEreading_Heading_5">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTEreading_Collapse_5" aria-expanded="false"
+                            aria-controls="PTEreading_Collapse_5">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTEreading_Collapse_5" class="collapse" aria-labelledby="PTEreading_Heading_5"
+                        data-parent="#accordionPTEreading">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="alfa-faq-PTElistening-heading">PTE Listening</h3>
+                  <div class="accordion" id="accordionPTElistening">
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_1">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#PTElistening_Collapse_1" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_1">
+                            what is read aloud? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="PTElistening_Collapse_1" class="collapse" aria-labelledby="PTElistening_Heading_1"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_2">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_2" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_2">
+                            what is repeat sentence? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_2" class="collapse" aria-labelledby="PTElistening_Heading_2"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_3">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_3" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_3">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_3" class="collapse" aria-labelledby="PTElistening_Heading_3"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_4">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_4" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_4">
+                            what is repeat sentence? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_4" class="collapse" aria-labelledby="PTElistening_Heading_4"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_5">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_5" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_5">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_5" class="collapse" aria-labelledby="PTElistening_Heading_5"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_6">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_6" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_6">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_6" class="collapse" aria-labelledby="PTElistening_Heading_6"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card alfa-PTElistening-accordion">
+                      <div class="card-header" id="PTElistening_Heading_7">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            data-toggle="collapse" data-target="#PTElistening_Collapse_7" aria-expanded="false"
+                            aria-controls="PTElistening_Collapse_7">
+                            what is the describe image? <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="PTElistening_Collapse_7" class="collapse" aria-labelledby="PTElistening_Heading_7"
+                        data-parent="#accordionPTElistening">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Cancel</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-primary btn-block">Save</button>
-          </div>
-        </div>
-      </div>
+      <!--FAQ end-->
     </div>
   </div>
-</div>
-<!--Modal Score Target End-->
+  <!--Alfa body end-->
 
-<!--Modal Score Target--> 
-<div class="modal alfa-score-target-modal fade" id="examDateModal" tabindex="-1" role="dialog" aria-labelledby="examDateModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Select Exam Date</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row text-center">
+  <!--Modal Score Target-->
+  <div class="modal alfa-score-target-modal fade" id="scoreTargetModal" tabindex="-1" role="dialog"
+    aria-labelledby="scoreTargetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Score Target</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" checked> ALL 50
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2"> ALL 65
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3"> ALL 79
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-lg-2 offset-lg-1">
+                <div class="circle" id="circles-reading-target"></div>
+                <h3>Reading</h3>
+              </div>
+              <div class="col-lg-2">
+                <div class="circle" id="circles-writing-target"></div>
+                <h3>Writing</h3>
+              </div>
+              <div class="col-lg-2">
+                <div class="circle" id="circles-listening-target"></div>
+                <h3>listening</h3>
+              </div>
+              <div class="col-lg-2">
+                <div class="circle" id="circles-speaking-target"></div>
+                <h3>speaking</h3>
+              </div>
+              <div class="col-lg-2">
+                <div class="circle" id="circles-overall-target"></div>
+                <h3>over all</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
             <div class="col">
-              <div id="selectExamDate" class="alfa-selectExamDate"></div>
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Cancel</button>
             </div>
-          </div> 
-        </div>
-      </div>
-      <div class="modal-footer">
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Cancel</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-primary btn-block">Save</button>
+            <div class="col">
+              <button type="button" class="btn btn-primary btn-block">Save</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--Modal Score Target End-->
+  <!--Modal Score Target End-->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/circles.min.js"></script> 
-    <script src="js/flipclock.min.js"></script>
-    <script src="js/alfa-scripts.js"></script> 
-    
-  
+  <!--Modal Score Target-->
+  <div class="modal alfa-score-target-modal fade" id="examDateModal" tabindex="-1" role="dialog"
+    aria-labelledby="examDateModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select Exam Date</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col">
+                <div id="selectExamDate" class="alfa-selectExamDate"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Cancel</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary btn-block">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Score Target End-->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/circles.min.js"></script>
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/alfa-scripts.js"></script>
+
+
 </body>
 
 </html>
