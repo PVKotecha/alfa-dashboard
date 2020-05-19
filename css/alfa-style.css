@@ -123,6 +123,12 @@ body{
     font-size: 13px;
     max-width: 200px;
 }
+.alfa-navbar .dropdown-item:focus,
+.alfa-navbar  .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: hsla(180, 99%, 41%, 0.1);
+}
 
 /*Alfa BODY*/
 .alfa-body{
