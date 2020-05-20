@@ -93,6 +93,8 @@ body{
     padding: 40px 15px;
     box-shadow: 0 0 8px rgba(0,0,0,.18)!important;
     top: 75px;
+    max-height: 500px !important;
+    overflow: auto;
 }  
 .megamenu .media img{
     min-width: 46px;
@@ -512,6 +514,7 @@ p.alfa-test-card-bottom-content{
 .alfa-faq-card-main .accordion .card .card-header{
     padding: 2px 20px;
     border-radius: 40px;
+    position: relative;
 }
 .alfa-faq-card-main .accordion .card .card-header button{
     text-transform: uppercase;
@@ -524,9 +527,13 @@ p.alfa-test-card-bottom-content{
 }
 .alfa-faq-card-main .accordion .card .card-header button i{
     font-size: 20px;
-    float: right;
+    /* float: right; */
     margin-top: 2px;
     margin-right: -15px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 .alfa-PTEacademy-accordion .card-header{
     background-color: #e8342b;
@@ -582,6 +589,7 @@ p.alfa-test-card-bottom-content{
     padding: 20px 0;
     position: relative;
     margin-top: 20px;
+    overflow: hidden;
 }
 .alfa-exam-count-card h3{ 
     text-align: center;
@@ -667,10 +675,17 @@ p.alfa-test-card-bottom-content{
 .alfa-daily-task-card .datepicker table tr td.active {
     background: none;
 }
-.alfa-daily-task-card .datepicker table tr td.active.active{
+.alfa-daily-task-card .datepicker table tr td.today{
     background: #00cdcd;
+    color: #fff;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
+.highlight {
+    background-color: #5FBA7D !important;
+    color: #ffffff !important;
+} 
+
+
 /*today's task*/
 .alfa-today-task-card{
     margin-top: 20px;
@@ -934,10 +949,28 @@ p.alfa-test-card-bottom-content{
     } */
 }
 @media(min-width: 992px) and (max-width: 1199.98px){
+    .alfa-your-target-card h3{
+        padding-left: 44px;
+    }
     .alfa-today-session-card i{
         right: 40px;
     }
-}   
+    .flip-clock-wrapper{
+        margin-left: 12px;
+    }
+    .alfa-today-task-list span{
+        padding-left: 0;
+    }
+}
+@media(min-width: 767px) and (max-width: 992px){
+    .alfa-your-target-card h3{
+        text-align: right;
+        margin-top: 10px; 
+    }
+    .flip-clock-wrapper{
+        left: 25%;
+    }
+} 
 @media(max-width: 768px){
     .navbar-nav .nav-item{
         margin-bottom: 8px;
@@ -948,11 +981,39 @@ p.alfa-test-card-bottom-content{
     .alfa-six-card-section .card{
         margin-bottom: 16px;
     }
+    .alfa-practise-progress-card .alfa-practise-progress-circle-wrapper p{
+        margin-bottom: 16px;
+    }
+    .alfa-progress-bar-speaking, .alfa-progress-bar-reading{
+        padding-left: 0;
+    }
+    .alfa-progress-bar-writing, .alfa-progress-bar-listening{
+        padding-right: 0;
+    }
+    .alfa-progress-bar-writing{
+        margin-top: 18px;
+    }
+    .alfa-your-target-card{
+        margin-top: 20px;
+    }
 }
 @media (max-width: 575.98px) { 
     .alfa-today-session-card i{
         right: -10px;
         font-size: 16px;
         padding: 12px;
+    }
+    .alfa-faq-card-main .accordion .card{
+        border-radius: 50px;
+    }
+ }
+ @media(min-width: 376px) and (max-width: 425px){
+    .flip-clock-wrapper{
+        margin-left: 116px;
+    }
+ }
+ @media(min-width: 320px) and (max-width: 360px){
+    .flip-clock-wrapper{
+        margin-left: 56px;
     }
  }

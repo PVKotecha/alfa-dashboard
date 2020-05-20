@@ -351,9 +351,11 @@ var Countdown = {
 
   });
   /*Calender*/
+ 
+    
+      
+   $('#dailytask').datepicker().datepicker('setDate',new Date());        ///todayHighlight: true,  
 
-  $('#dailytask').datepicker({});
-  $('#dailytask').datepicker().datepicker('setDate',new Date());
 
   $('#selectExamDate').datepicker({});
   $('#selectExamDate').datepicker().datepicker('setDate',new Date());
