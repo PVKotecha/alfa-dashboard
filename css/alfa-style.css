@@ -62,6 +62,9 @@ body{
 .alfa-navbar button:focus{
     outline: none;
 }
+.alfa-navbar .dropdown-menu{
+    min-width: 12rem;
+}
 .alfa-navbar .dropdown-menu.alfa-user-dd{
     top: 140%;
 }
@@ -574,7 +577,7 @@ p.alfa-test-card-bottom-content{
     padding: 16px 10px;
     background-color: #fff;
     border-radius: 10px;
-    display: initial;
+    display: inline; 
 }
 .alfa-your-target-card i{
     position: absolute;
@@ -590,6 +593,7 @@ p.alfa-test-card-bottom-content{
     position: relative;
     margin-top: 20px;
     overflow: hidden;
+    max-height: 160px;
 }
 .alfa-exam-count-card h3{ 
     text-align: center;
@@ -604,10 +608,16 @@ p.alfa-test-card-bottom-content{
     top: -14px;
     right: 20px;
 }
-.flip-clock-wrapper{
-    zoom: .415;
+.flip-clock-wrapper{ 
     margin-top: 60px;
-    margin-left: 72px;
+    margin-left: 72px; 
+    -o-transform: scale(.415); /* Opera */
+    -o-transform-origin: 0 0;
+    -moz-transform: scale(.415); /* Safari And Chrome */
+    -moz-transform-origin: -60px -40px;
+    zoom: .415; /* IE */
+    -ms-transform: translate(-13%, -50%);
+    width: 700px;
 }
 .flip-clock-divider{
     width: 40px;
@@ -617,6 +627,8 @@ p.alfa-test-card-bottom-content{
     left: 0;
     color: #fff;
     text-transform: uppercase;
+    -moz-transform: scale(2); /* Safari And Chrome */
+    -moz-transform-origin: 20px 10px;
 }
 .flip-clock-divider.days .flip-clock-label{
     left: -17px;
@@ -673,18 +685,24 @@ p.alfa-test-card-bottom-content{
     padding: 10px 13px;
 }
 .alfa-daily-task-card .datepicker table tr td.active {
-    background: none;
+    background: rgba(0, 205, 205, .25);
+    color: #000;
+    border-radius: 50px;
 }
 .alfa-daily-task-card .datepicker table tr td.today{
     background: #00cdcd;
     color: #fff;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
-.highlight {
+/* .highlight {
     background-color: #5FBA7D !important;
     color: #ffffff !important;
-} 
-
+}  */
+.activeGray{
+    background-color: #b3b3b3;
+    color: #fff;
+    border-radius: 50px !important;
+}
 
 /*today's task*/
 .alfa-today-task-card{

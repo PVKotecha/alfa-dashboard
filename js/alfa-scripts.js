@@ -352,10 +352,44 @@ var Countdown = {
   });
   /*Calender*/
  
-    
-      
-   $('#dailytask').datepicker().datepicker('setDate',new Date());        ///todayHighlight: true,  
+//   $('#dailytask').datepicker({
+//     todayHighlight: true,
+//     multidate: true,
+//   }) 
 
+  var active_dates = ["18/5/2020","19/5/2020"];
+  var active_dates_2 = ["20/5/2020"];
+
+  $("#dailytask").datepicker({
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    todayHighlight: true,
+    beforeShowDay: function(date){
+        var d = date;
+        var curr_date = d.getDate();
+        var curr_month = d.getMonth() + 1; //Months are zero based
+        var curr_year = d.getFullYear();
+        var formattedDate = curr_date + "/" + curr_month + "/" + curr_year
+
+        if ($.inArray(formattedDate, active_dates) != -1){
+          return {
+             classes: 'active'
+          };
+        }
+
+        if($.inArray(formattedDate, active_dates_2) != -1){
+            return {
+               classes: 'activeGray'
+            };
+          }
+     return;
+ }
+})
+
+
+  //$("#dailytask").datepicker("update", new Date('2020-05-19'), new Date('2020-05-20'), new Date('2020-05-22')) 
+ 
+  
 
   $('#selectExamDate').datepicker({});
   $('#selectExamDate').datepicker().datepicker('setDate',new Date());
