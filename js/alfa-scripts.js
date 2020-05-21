@@ -395,14 +395,14 @@ var Countdown = {
   $('#selectExamDate').datepicker().datepicker('setDate',new Date());
 
 
-  //Active accordion radius
+  //Active FAQ accordion radius
   $('.alfa-faq-card-main .accordion .card .card-header button').click (function(){
     var cardHeaderId = $(this).closest('.card-header').attr('id');
         $('.alfa-faq-card-main .accordion .card .card-header').css("border-radius","40px");
-        $('#' + cardHeaderId).css("border-radius","0"); 
+        $('#' + cardHeaderId).css("border-radius","0");  
   });
 
-  //Active accordion radius
+  //Active Today Task accordion radius
   $('.alfa-today-task-accordion-button').click (function(){
     var cardHeaderId = $(this).closest('.card-header').attr('id');
         $('.alfa-today-task-card .accordion .card .card-header').css("border-radius","40px");
