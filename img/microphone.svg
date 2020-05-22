@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 152 152" style="enable-background:new 0 0 152 152;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#2FDA61;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.5;}
-</style>
-<g id="Group_909" transform="translate(-1391 -327)">
-	<g transform="matrix(1, 0, 0, 1, 1391, 327)">
-		<path id="Rectangle_937-2" class="st0" d="M19,9h114c5.5,0,10,4.5,10,10v114c0,5.5-4.5,10-10,10H19c-5.5,0-10-4.5-10-10V19
-			C9,13.5,13.5,9,19,9z"/>
-	</g>
-	<g id="Group_751" transform="translate(1446 372)">
-		<path id="Path_10" class="st1" d="M36.5,21.2v10.7c0,6-7.2,11-15.7,11s-15.7-5-15.7-11V21.2H0v10.7c0,8.2,8.1,15,18.5,15.9v9.1
-			H6.3v4.6h28.9v-4.6H23.1v-9.1c10.4-0.9,18.5-7.6,18.5-15.9V21.2H36.5z"/>
-		<path id="Path_11" class="st1" d="M31.3,15.6V9.1c0-5-4.1-9.1-9.1-9.1h-2.8c-5,0-9.1,4.1-9.1,9.1v0.6h7v2h-7v8.7h7v2h-7v6.8
-			c0,5,4.1,9.1,9.1,9.1h2.8c5,0,9.1-4.1,9.1-9.1v-0.9h-7v-2h7v-8.7h-7v-2H31.3z"/>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="152" viewBox="0 0 152 152">
+  <defs>
+    <filter id="Rectangle_937" x="0" y="0" width="152" height="152" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="SPEAKER" transform="translate(-1391 -327)">
+    <g transform="matrix(1, 0, 0, 1, 1391, 327)" filter="url(#Rectangle_937)">
+      <rect id="Rectangle_937-2" data-name="Rectangle 937" width="134" height="134" rx="10" transform="translate(9 9)" fill="#2fda61"/>
+    </g>
+    <g id="Group_751" data-name="Group 751" transform="translate(1446 372)">
+      <path id="Path_10" data-name="Path 10" d="M773.933,201.462v10.747c0,5.953-7.193,10.984-15.7,10.984s-15.7-5.031-15.7-10.984V201.462H737.45v10.747c0,8.243,8.1,14.974,18.458,15.879v9.052H743.77v4.644h28.918V237.14H760.551v-9.052c10.355-.905,18.458-7.636,18.458-15.879V201.462Z" transform="translate(-737.45 -180.264)" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <path id="Path_11" data-name="Path 11" d="M779.286,174.108V167.6a9.131,9.131,0,0,0-9.1-9.1H767.4a9.131,9.131,0,0,0-9.1,9.1v.642h6.952v2h-6.952v8.728h6.952v2h-6.952v6.774a9.131,9.131,0,0,0,9.1,9.1h2.782a9.132,9.132,0,0,0,9.1-9.1v-.908h-6.952v-2h6.952v-8.728h-6.952v-2Z" transform="translate(-748.011 -158.495)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    </g>
+  </g>
 </svg>

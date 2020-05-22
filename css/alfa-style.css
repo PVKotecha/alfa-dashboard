@@ -1058,6 +1058,7 @@ p.alfa-test-card-bottom-content{
     left: 50%;
     transform: translate(-50%, 0);
     min-width: 455px;
+    max-width: 455px;
 }
 .alfa-SRT-coockies i,
 .alfa-SRT-javascript i,
