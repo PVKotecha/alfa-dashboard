@@ -960,13 +960,13 @@ p.alfa-test-card-bottom-content{
 --*/
 
 .alfa-system-req-test-wrapper h1{
-    font-size: 32px;
+    font-size: 30px;
     text-transform: uppercase;
     color: #fff;
     background-color: #00cdcd;
     border-radius: 10px;
     text-align: center;
-    padding: 16px;
+    padding: 10px;
     box-shadow: 0 0 3.5px rgba(0,0,0,0.3); 
 }
 .alfa-SRT-coockies,
@@ -978,7 +978,7 @@ p.alfa-test-card-bottom-content{
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 3.5px rgba(0,0,0,0.3);
-    margin-top: 80px;
+    margin-top: 64px;
     position: relative;
 }
 .alfa-SRT-coockies h2,
@@ -988,9 +988,13 @@ p.alfa-test-card-bottom-content{
 .alfa-SRT-resolution h2,
 .alfa-SRT-micAndspecker h2{
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     padding-top: 60px;
     text-transform: capitalize;
+}
+.alfa-SRT-resolution h2,
+.alfa-SRT-micAndspecker h2{
+    padding-top: 75px;
 }
 .alfa-SRT-coockies h2{
     color: #ec935f;
@@ -1019,7 +1023,7 @@ p.alfa-test-card-bottom-content{
 .alfa-SRT-micAndspecker p{
     font-size: 14px;
     color: #b3b3b3;
-    padding-bottom: 50px;
+    padding-bottom: 42px;
     margin-bottom: 0;
     text-transform: capitalize;
 }
@@ -1027,16 +1031,16 @@ p.alfa-test-card-bottom-content{
     padding-bottom: 20px;
 }
 .alfa-SRT-micAndspecker p{
-    padding-bottom: 24px;
+    padding-bottom: 14px;
 }
 .alfa-SRT-resolution p{
-    padding-bottom: 104px;
+    padding-bottom: 85px;
 }
 .alfa-SRT-browser h3,
 .alfa-SRT-resolution h3{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
 }
 .alfa-SRT-coockies img,
 .alfa-SRT-javascript img,
@@ -1053,7 +1057,7 @@ p.alfa-test-card-bottom-content{
     top: -37px;
     left: 50%;
     transform: translate(-50%, 0);
-    min-width: 330px;
+    min-width: 455px;
 }
 .alfa-SRT-coockies i,
 .alfa-SRT-javascript i,
@@ -1079,7 +1083,7 @@ p.alfa-test-card-bottom-content{
     background-color: #e8342b; 
 }
 .alfa-SRT-micAndspecker .progress.alfa-progress {
-    height: 38px; 
+    height: 30px; 
 }
 .alfa-SRT-micAndspecker .progress.alfa-progress .progress-bar{ 
     background-color: #00cdcd;
@@ -1088,6 +1092,10 @@ p.alfa-test-card-bottom-content{
     max-width: 320px;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+.alfa-SRT-card-footer .btn{
+    margin-top: 8px;
+    padding: 4px;
 }
 /*pulse_animation*/
 @keyframes pulse_animation_orange {
