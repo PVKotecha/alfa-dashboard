@@ -137,7 +137,7 @@ body{
 
 /*Alfa BODY*/
 .alfa-body{
-    margin-top: 110px;
+    padding: 110px 0 40px 0;
 }
 .alfa-banner-card{
     background-color: #00cdcd;
@@ -433,6 +433,7 @@ p.alfa-test-card-bottom-content{
     padding-top: 3px;
     font-weight: 500;
     text-transform: uppercase;
+    border: none;
 }
 
 /*SIX CARDS*/
@@ -952,6 +953,142 @@ p.alfa-test-card-bottom-content{
     background-image: none;
     background-color: #00cdcd;
 }
+
+
+/*--
+    SYSTEM REQUIREMENT TEST (SRT) PAGE
+--*/
+
+.alfa-system-req-test-wrapper h1{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00cdcd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 0 3.5px rgba(0,0,0,0.3); 
+}
+.alfa-SRT-coockies,
+.alfa-SRT-javascript,
+.alfa-SRT-browser,
+.alfa-SRT-micStatus,
+.alfa-SRT-resolution,
+.alfa-SRT-micAndspecker{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3.5px rgba(0,0,0,0.3);
+    margin-top: 80px;
+    position: relative;
+}
+.alfa-SRT-coockies h2,
+.alfa-SRT-javascript h2,
+.alfa-SRT-browser h2,
+.alfa-SRT-micStatus h2,
+.alfa-SRT-resolution h2,
+.alfa-SRT-micAndspecker h2{
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-top: 60px;
+    text-transform: capitalize;
+}
+.alfa-SRT-coockies h2{
+    color: #ec935f;
+}
+.alfa-SRT-javascript h2{
+    color: #e8342b;
+}
+.alfa-SRT-browser h2{
+    color: #67b8fc;
+} 
+.alfa-SRT-micStatus h2{
+    color: #2fda61;
+}
+.alfa-SRT-resolution h2{
+    color: #185d92;
+}
+.alfa-SRT-micAndspecker h2{
+    color: #01dada;
+}
+
+.alfa-SRT-coockies p,
+.alfa-SRT-javascript p,
+.alfa-SRT-browser p,
+.alfa-SRT-micStatus p,
+.alfa-SRT-resolution p,
+.alfa-SRT-micAndspecker p{
+    font-size: 14px;
+    color: #b3b3b3;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.alfa-SRT-browser p{
+    padding-bottom: 20px;
+}
+.alfa-SRT-micAndspecker p{
+    padding-bottom: 24px;
+}
+.alfa-SRT-resolution p{
+    padding-bottom: 104px;
+}
+.alfa-SRT-browser h3,
+.alfa-SRT-resolution h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.alfa-SRT-coockies img,
+.alfa-SRT-javascript img,
+.alfa-SRT-browser img,
+.alfa-SRT-micStatus img{
+    position: absolute;
+    left: 10px;
+    top: -54px;
+    max-width: 100px;
+}
+.alfa-SRT-resolution img,
+.alfa-SRT-micAndspecker img{ 
+    position: absolute;
+    top: -37px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 330px;
+}
+.alfa-SRT-coockies i,
+.alfa-SRT-javascript i,
+.alfa-SRT-browser i,
+.alfa-SRT-micStatus i,
+.alfa-SRT-resolution i,
+.alfa-SRT-micAndspecker i{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    padding: 4px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #2fda61;
+}
+.alfa-SRT-coockies i.fa-times,
+.alfa-SRT-javascript i.fa-times,
+.alfa-SRT-browser i.fa-times,
+.alfa-SRT-micStatus i.fa-times,
+.alfa-SRT-resolution i.fa-times,
+.alfa-SRT-micAndspecker i.fa-times{ 
+    padding: 4px 7px;
+    background-color: #e8342b; 
+}
+.alfa-SRT-micAndspecker .progress.alfa-progress {
+    height: 38px; 
+}
+.alfa-SRT-micAndspecker .progress.alfa-progress .progress-bar{ 
+    background-color: #00cdcd;
+}
+.alfa-SRT-card-footer{ 
+    max-width: 320px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
 /*pulse_animation*/
 @keyframes pulse_animation_orange {
     0% { box-shadow: 0 0 0 0 rgba(236, 147, 95, 0.8) }
@@ -963,10 +1100,18 @@ p.alfa-test-card-bottom-content{
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 1500px){
     /* .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1200px;
     } */
+    .alfa-SRT-coockies i, 
+    .alfa-SRT-javascript i, 
+    .alfa-SRT-browser i, 
+    .alfa-SRT-micStatus i, 
+    .alfa-SRT-resolution i,
+    .alfa-SRT-micAndspecker i{
+        font-size: 17px;
+    }
 }
 @media(min-width: 992px) and (max-width: 1199.98px){
     .alfa-your-target-card h3{
@@ -1018,6 +1163,10 @@ p.alfa-test-card-bottom-content{
     }
     .alfa-your-target-card{
         margin-top: 20px;
+    }
+    .alfa-SRT-resolution img, .alfa-SRT-micAndspecker img{
+        max-width: 260px;
+        min-width: 260px;
     }
 }
 @media (max-width: 575.98px) { 
