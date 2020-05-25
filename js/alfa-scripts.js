@@ -335,7 +335,7 @@ var Countdown = {
   $(document).ready(function() {
       var clock;
 
-      clock = $('.alfa-exam-countdown-clock').FlipClock({
+      clock = $('.alfa-exam-countdown-clock').FlipClock(36024100,{
           clockFace: 'DailyCounter',
           autoStart: false,
           callbacks: {
@@ -350,6 +350,7 @@ var Countdown = {
       clock.start();
 
   });
+  
   /*Calender*/
  
 //   $('#dailytask').datepicker({
@@ -389,7 +390,7 @@ var Countdown = {
 
   //$("#dailytask").datepicker("update", new Date('2020-05-19'), new Date('2020-05-20'), new Date('2020-05-22')) 
  
-  
+
 
   $('#selectExamDate').datepicker({});
   $('#selectExamDate').datepicker().datepicker('setDate',new Date());
@@ -408,6 +409,22 @@ var Countdown = {
         $('.alfa-today-task-card .accordion .card .card-header').css("border-radius","40px");
         $('#' + cardHeaderId).css("border-radius","0"); 
   });
+
+  //WAVE
+  var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    height: 200,
+    waveColor: '#b3b3b3',
+    progressColor: '#ec935f',
+    cursorColor: '#ccc',
+    barWidth: 4,
+    barHeight: 2, 
+    barGap: 4,  
+    barMinHeight: 1
+    });
+    
+    wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+
 
 });
 
