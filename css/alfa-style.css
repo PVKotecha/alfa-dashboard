@@ -1147,7 +1147,7 @@ p.alfa-test-card-bottom-content{
 }
 .alfa-PT-Examination-card .card-header h2{
     color: #fff;  
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0; 
@@ -1192,16 +1192,20 @@ p.alfa-test-card-bottom-content{
     font-size: 20px;
     line-height: 1.8;
 }
-.alfa-PT-E-main-para img{
+.alfa-PT-E-main-para i{
     max-width: 36px;
     position: absolute;
     right: 10px;
     bottom: 10px;
+    background-color: #11e6e6;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
 }
-.alfa-speech-test-card.alfa-PT-E-recording i{
+/* .alfa-speech-test-card.alfa-PT-E-recording i{
     padding: 30px 35px;
     font-size: 40px;
-}
+} */
 .alfa-speech-test-card.alfa-PT-E-recording .alfa-test-card-bottom-content{
     text-transform: uppercase;
     font-size: 18px;
@@ -1235,17 +1239,18 @@ p.alfa-test-card-bottom-content{
     border: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 5px 20px;
 }
 .alfa-PT-E-wave-card .card-footer .btn.btn-info{
     border-radius: 50px;
     background-color: #fff;
     color: #11e6e6;
     border: none;
-    font-size: 21px;
-    transition: .3s;
+    font-size: 17px;
+    transition: .2s;
 }
 .alfa-PT-E-wave-card .card-footer .btn.btn-info:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 .alfa-PT-E-wave-card .card-footer .btn.btn-info i{
     padding-left: 2px;
@@ -1310,7 +1315,7 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-E-btns .btn.alfa-PT-E-restart{
     background-color: #11e6e6;
     margin-right: 16px;
-    padding: 7px 28px;
+    padding: 5px 28px;
 }
 .alfa-PT-E-btns .btn.alfa-PT-E-viewscore{
     background-color: #ec935f;
@@ -1334,6 +1339,38 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-E-btn-arrow:focus,
 .alfa-PT-E-btn-arrow:active{ 
     color: #fff;
+}
+.alfa-PT-E-select{
+    display: inline-block;
+    width: 161px; 
+    background-color: #11e5e5;
+    border-radius: 50px;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+.alfa-PT-E-select .form-control{
+    display: inline-block;
+    width: 80px;
+    margin: 3px 6px 3px 0px;
+    padding: 0 10px;
+    border-radius: 50px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #11e6e6;
+    border: 0;
+    background-image: url(../img/icon-down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 59px;
+    background-size: 13px;
+    -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+} 
+.alfa-PT-E-select span{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
 }
 .alfa-PT-E-myscore{
     margin-top: 30px;
@@ -1369,47 +1406,47 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-E-myscore .card-header .nav .nav-link.active{
     background-color: #11e6e6;
 }
-.alfa-PT-E-communityscore-detail-card{
+.alfa-PT-E-score-detail-card{
     padding: 10px 25px;
     margin-top: 16px;
 }
-.alfa-PT-E-communityscore-detail-card .media .img-thumbnail{
+.alfa-PT-E-score-detail-card .media .img-thumbnail{
     max-width: 80px;
     border-radius: 50px;
     background-color: #11e6e6;
 } 
-.alfa-PT-E-communityscore-detail-card .media h5{
+.alfa-PT-E-score-detail-card .media h5{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 3px;
 } 
-.alfa-PT-E-communityscore-detail-card .media p{
+.alfa-PT-E-score-detail-card .media p{
     font-size: 13px;
     color: #b3b3b3;
 } 
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn,
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn,
-.alfa-PT-E-communityscore-detail-card .alfa-icon-btn{
+.alfa-PT-E-score-detail-card .alfa-letter-btn,
+.alfa-PT-E-score-detail-card .alfa-ai-btn,
+.alfa-PT-E-score-detail-card .alfa-icon-btn{
     transition: .3s;
 } 
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn,
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn{
+.alfa-PT-E-score-detail-card .alfa-letter-btn,
+.alfa-PT-E-score-detail-card .alfa-ai-btn{
     border-radius: 50px;
     border: 1px solid #11e6e6;
     color: #11e6e6;
     padding-left: 4px;
     font-weight: 600;
 } 
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn{
+.alfa-PT-E-score-detail-card .alfa-letter-btn{
     margin-right: 8px; 
 }
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn span{
+.alfa-PT-E-score-detail-card .alfa-letter-btn span{
     border-radius: 50px;
     background-color: #11e6e6;
     color: #fff;
     padding: 5px 10px;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn{
+.alfa-PT-E-score-detail-card .alfa-ai-btn{
     border: 1px solid #ec935f;
     background-color: #ec935f;
     color: #fff;
@@ -1419,12 +1456,12 @@ p.alfa-test-card-bottom-content{
     font-weight: 600;
     position: relative;
 } 
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn img{
+.alfa-PT-E-score-detail-card .alfa-ai-btn img{
     max-width: 80px;
     width: 34px;
     padding: 0;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn span{
+.alfa-PT-E-score-detail-card .alfa-ai-btn span{
     width: 120px;
     position: absolute;
     color: #b3b3b3;
@@ -1432,43 +1469,43 @@ p.alfa-test-card-bottom-content{
     left: 0;
     margin-top: 2px;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-icon-btn{
+.alfa-PT-E-score-detail-card .alfa-icon-btn{
     color: #b3b3b3;
     font-size: 24px; 
     padding: 6px;
 } 
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn:hover,
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn:hover,
-.alfa-PT-E-communityscore-detail-card .alfa-letter-btn:focus,
-.alfa-PT-E-communityscore-detail-card .alfa-ai-btn:focus{
+.alfa-PT-E-score-detail-card .alfa-letter-btn:hover,
+.alfa-PT-E-score-detail-card .alfa-ai-btn:hover,
+.alfa-PT-E-score-detail-card .alfa-letter-btn:focus,
+.alfa-PT-E-score-detail-card .alfa-ai-btn:focus{
     transform: scale(1.13);
 }
-.alfa-PT-E-communityscore-detail-card .alfa-icon-btn:hover,
-.alfa-PT-E-communityscore-detail-card .alfa-icon-btn:focus{
+.alfa-PT-E-score-detail-card .alfa-icon-btn:hover,
+.alfa-PT-E-score-detail-card .alfa-icon-btn:focus{
     transform: scale(1.4);
 }
-.alfa-PT-E-communityscore-comment{
+.alfa-PT-E-score-comment{
     border-top: 1px solid #e2e2e2;
     margin-top: 8px;
     padding-top: 8px;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-PT-E-communityscore-comment .media .img-thumbnail {
+.alfa-PT-E-score-detail-card .alfa-PT-E-score-comment .media .img-thumbnail {
     max-width: 64px;
     background-color: #b3b3b3;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-PT-E-communityscore-comment .media h5 span{
+.alfa-PT-E-score-detail-card .alfa-PT-E-score-comment .media h5 span{
     font-size: 13px;
     color: #b3b3b3;
     font-family: 'Lato', sans-serif; 
 }
-.alfa-PT-E-communityscore-detail-card .alfa-PT-E-communityscore-comment .media p{
+.alfa-PT-E-score-detail-card .alfa-PT-E-score-comment .media p{
     font-size: 15px;
     color: #333;
     margin-top: 5px;
     margin-bottom: 0;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-load-more-btn{
-    font-size: 20px;
+.alfa-PT-E-score-detail-card .alfa-load-more-btn{
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     color: #11e6e6;
@@ -1476,14 +1513,14 @@ p.alfa-test-card-bottom-content{
     margin-top: 20px;
     transition: .3s;
 }
-.alfa-PT-E-communityscore-detail-card .alfa-load-more-btn:hover,
-.alfa-PT-E-communityscore-detail-card .alfa-load-more-btn:focus{
+.alfa-PT-E-score-detail-card .alfa-load-more-btn:hover,
+.alfa-PT-E-score-detail-card .alfa-load-more-btn:focus{
     text-decoration: none;
     color: #0ca1a1;
 }
 .alfa-view-more-score-btn{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #11e6e6;
     color: #fff;
     border-radius: 50px;
@@ -1498,7 +1535,54 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     transform: scale(1.1);
     box-shadow: 0 0 .75rem rgba(0,0,0,.25)!important; 
+} 
+/*Community score*/
+.alfa-PT-E-score-detail-card.alfa-community{
+    padding: 6px 18px;
+    margin-top: 8px;
 }
+.alfa-PT-E-score-detail-card.alfa-community .media .img-thumbnail{
+    max-width: 70px; 
+} 
+.alfa-PT-E-score-detail-card.alfa-community .media h5{
+    font-size: 14px; 
+}
+.alfa-PT-E-score-detail-card.alfa-community .media p{
+    font-size: 11px; 
+}    
+.alfa-PT-E-score-detail-card.alfa-community .alfa-letter-btn{ 
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.alfa-PT-E-score-detail-card.alfa-community .alfa-letter-btn span{ 
+    padding: 3px 8px;
+}
+.alfa-PT-E-score-detail-card.alfa-community .alfa-ai-btn{ 
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;  
+} 
+.alfa-PT-E-score-detail-card.alfa-community .alfa-ai-btn img{
+    max-width: 70px;
+    width: 28px;
+    padding: 0;
+} 
+.alfa-PT-E-score-detail-card.alfa-community .alfa-icon-btn{ 
+    font-size: 18px; 
+    padding: 2px;
+}  
+.alfa-PT-E-score-detail-card.alfa-community .alfa-PT-E-score-comment .media .img-thumbnail {
+    max-width: 54px; 
+}
+.alfa-PT-E-score-detail-card.alfa-community .alfa-PT-E-score-comment .media h5 span{
+    font-size: 11px; 
+}
+.alfa-PT-E-score-detail-card.alfa-community .alfa-PT-E-score-comment .media p{
+    font-size: 13px; 
+}
+.alfa-PT-E-score-detail-card.alfa-community .alfa-load-more-btn{
+    font-size: 16px; 
+}  
 
 /*pulse_animation*/
 @keyframes pulse_animation_orange {
