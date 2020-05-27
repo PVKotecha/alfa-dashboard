@@ -765,6 +765,895 @@
         </div>
     </div>
     <!--Alfa body End-->
+<button id="navbarSideButton" class="btn btn-primary">CLick</button>
+    <!--Sidebar-->
+    <div class="alfa-PT-sidebar">
+        <ul class="navbar-side reveal" id="navbarSide">
+            <div class="alfa-PT-header-wrapper mt-1">
+                <div class="container">
+                    <!--HEADING-->
+                    <div class="row no-gutters alfa-PT-header">
+                        <div class="col-12">
+                            <div class="alfa-PT-header-left">
+                                <img src="img/read-aloud.svg" alt="read Aloud">
+                                <h1>Read aloud</h1>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!--HEADING end-->
+            <div class="container px-4">
+                 <!--Checkbox and Search-->
+                 <div class="row mb-3">
+                    <div class="col">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="practice" checked>
+                            <label class="custom-control-label" for="practice">Practiced</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="nonpractice">
+                            <label class="custom-control-label" for="nonpractice">Non Practiced</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group alfa-search-input-group">
+                            <input type="text" class="form-control alfa-sideber-search-input" placeholder="Question Content / Number">
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary alfa-sidebar-search-btn" type="button">
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>                        
+                </div> 
+                <!--Checkbox and Search end-->
+                <!--Tabs-->
+                <ul class="nav nav-pills alfa-sidebar-nav mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">all</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-latestquestion-tab" data-toggle="pill" href="#pills-latestquestion" role="tab" aria-controls="pills-latestquestion" aria-selected="false">latest question</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-prediction-tab" data-toggle="pill" href="#pills-prediction" role="tab" aria-controls="pills-prediction" aria-selected="false">prediction</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-highfreq-tab" data-toggle="pill" href="#pills-highfreq" role="tab" aria-controls="pills-highfreq" aria-selected="false">high frequency</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-bookmark-tab" data-toggle="pill" href="#pills-bookmark" role="tab" aria-controls="pills-bookmark" aria-selected="false">bookmark</a>
+                    </li>
+                  </ul>
+                <!--Tabs end-->
+                <p class="alfa-sidebar-found">Found 35 Questions</p>
+                <!--Tab Content-->
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar-2"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar-3"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar-4"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alfa-sidebar-main-card">
+                            <div class="row">
+                                <div class="col-lg-7 align-self-center">
+                                    <div class="align-self-center">
+                                        <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                            <div class="alfa-PT-E-RS-labels">
+                                                <span class="badge badge-info">Prediction</span>
+                                                <span class="badge badge-danger">new</span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 align-self-center text-lg-right"> 
+                                    <span>FREQUENCY</span>
+                                    <div class="circle" id="circles-sidebar"></div>
+                                    <div class="alfa-PT-E-card-btns">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-bookmark mr-3"></i>
+                                        </a> 
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-latestquestion" role="tabpanel" aria-labelledby="pills-latestquestion-tab">
+                        <div class="card">
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-2"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-3"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-4"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-prediction" role="tabpanel" aria-labelledby="pills-prediction-tab">
+                        <div class="card">
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-2"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-3"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-4"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-pane fade" id="pills-highfreq" role="tabpanel" aria-labelledby="pills-highfreq-tab">
+                        <div class="card">
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-2"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-3"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-4"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-pane fade" id="pills-bookmark" role="tabpanel" aria-labelledby="pills-bookmark-tab">
+                        <div class="card">
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-2"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-3"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar-4"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card alfa-sidebar-main-card">
+                                <div class="row">
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="align-self-center">
+                                            <h2><span class="alfa-id">#1000504</span> <span class="alfa-content">The Grand Canyon</span> 
+                                                <div class="alfa-PT-E-RS-labels">
+                                                    <span class="badge badge-info">Prediction</span>
+                                                    <span class="badge badge-danger">new</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center text-lg-right"> 
+                                        <span>FREQUENCY</span>
+                                        <div class="circle" id="circles-sidebar"></div>
+                                        <div class="alfa-PT-E-card-btns">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-bookmark mr-3"></i>
+                                            </a> 
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-star"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!--Tab Content End-->
+                <!--Pagination-->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                <!--Pagination End-->
+            </div> 
+         </ul>
+    </div>
+    <div class="alfa-overlay"></div>
+    <!--Sidebar end-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>

@@ -1,3 +1,5 @@
+@import "all.min.css";
+@import "solid.min.css";
 /*Common*/
 body{
     font-family: 'Lato', sans-serif; 
@@ -1583,6 +1585,210 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-E-score-detail-card.alfa-community .alfa-load-more-btn{
     font-size: 16px; 
 }  
+/*--
+    SIDEBAR
+--*/
+.alfa-PT-sidebar .navbar-side {
+    height: 100%;
+    max-width: 64%; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    overflow-y: auto;
+    z-index: 1031;
+    box-shadow: -10px 0 .5rem rgba(0,0,0,.075)!important;
+}
+.alfa-PT-sidebar .alfa-PT-header-wrapper .alfa-PT-header-left img{
+    max-width: 50px;
+}
+.alfa-PT-sidebar .alfa-PT-header-wrapper .alfa-PT-header-left h1{
+    font-size: 18px; 
+}
+.alfa-PT-sidebar .alfa-PT-header-wrapper{
+    margin-bottom: 20px;
+}
+.alfa-search-input-group{
+    max-width: 280px;
+    float: right;
+}
+.alfa-sideber-search-input{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: 0;
+}
+.alfa-sidebar-search-btn{
+    background-color: transparent;
+    color: #ccc;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left: 0;
+    border-color: #ccc;
+}
+.alfa-sidebar-nav.nav-pills .nav-link{
+    border-radius: 50px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    margin-right: 8px; 
+    padding: 4px 15px;
+}
+.alfa-sidebar-nav.nav-pills .nav-link.active{
+    background-color: #11e6e6;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+}
+.alfa-sidebar-found{
+    padding-left: 20px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px 0 15px 0;
+    position: relative;
+}
+.alfa-sidebar-found::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #b3b3b3;
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    border-radius: 50px;
+}
+.alfa-sidebar-main-card{
+    padding: 11px 0;
+    margin-bottom: 16px;
+}
+.alfa-sidebar-main-card h2{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+    margin-bottom: 0;
+}
+.alfa-sidebar-main-card h2 .alfa-id{
+    color: #11e6e6;
+    position: relative;
+    padding-left: 12px;
+}
+.alfa-sidebar-main-card h2 .alfa-id::after{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 4px;
+    background-color: #11e6e6;
+    bottom: 0;
+    left: 0;
+    bottom: -18px;
+    left: 1px;
+    border-bottom-left-radius: 10px;
+}
+.alfa-sidebar-main-card h2 .alfa-content{
+    padding-left: 16px;
+}
+.alfa-sidebar-main-card .alfa-PT-E-RS-labels{
+    display: inline-block;
+    margin-left: 20px;
+}
+.alfa-sidebar-main-card .alfa-PT-E-RS-labels .badge{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+.alfa-sidebar-main-card .alfa-PT-E-RS-labels .badge.badge-info{
+    background-color: #11e6e6;
+}
+.alfa-sidebar-main-card .alfa-PT-E-RS-labels .badge.badge-danger{
+    background-color: #e8342b;
+}
+.alfa-sidebar-main-card .circle{
+    display: inline-block;
+    margin-left: 12px;
+}
+.alfa-sidebar-main-card .alfa-PT-E-card-btns{
+    display: inline-block;
+    margin: 0 16px;
+    vertical-align: middle;
+}
+.alfa-sidebar-main-card .alfa-PT-E-card-btns a{
+    color: #b3b3b3;
+    font-size: 25px; 
+}
+.alfa-sidebar-main-card .alfa-PT-E-card-btns a .fa-bookmark{
+    font-size: 23px;
+}
+
+@media (min-width: 320px) {
+    .alfa-PT-sidebar .navbar-side {
+        width: 100%;
+    }
+}  
+.alfa-PT-sidebar .navbar-side-item {
+    margin-bottom: .2rem;
+    height: 3rem;
+    font-weight: 300;
+} 
+.alfa-PT-sidebar .navbar-side-item {
+    padding: 1.5rem 0 4rem 0;
+}
+@media (min-width: 320px) and (max-width: 484px) {
+    .alfa-PT-sidebar .navbar-side {
+        width: 85%;
+    }
+    .alfa-PT-sidebar .navbar-side-item {
+        padding: 1.5rem 0 4rem 0;
+    }
+    .alfa-PT-sidebar .navbar-side-item a {
+        font-size: 1.4rem;
+    }
+}
+.alfa-PT-sidebar .navbar-side-item:hover {
+      background-color: #fff;
+}  
+.alfa-PT-sidebar .navbar-side-item a {
+    display: inline-block;
+}  
+.alfa-PT-sidebar  .side-link {
+    padding-left: 1.7rem;
+    padding-right: 1.2rem;
+    color: #333;
+}
+.alfa-PT-sidebar .side-link:active,
+.alfa-PT-sidebar .side-link:hover {
+    text-decoration: none;
+    color: #333;
+}  
+.alfa-PT-sidebar .navbar-side {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 400ms ease;
+    transition: 400ms ease;
+}
+.alfa-PT-sidebar .reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 400ms ease;
+    transition: 400ms ease;
+}  
+.alfa-overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #5f5f5f;
+    opacity: .6;
+    z-index: 990;
+}
+
+
 
 /*pulse_animation*/
 @keyframes pulse_animation_orange {

@@ -186,6 +186,70 @@ $(document).ready(function() {
         styleText: true
     });
 
+    /*Side bar circle */
+    var myCircle = Circles.create({
+        id: 'circles-sidebar',
+        radius: 18,
+        value: 70,
+        maxValue: 100,
+        width: 5, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-sidebar-2',
+        radius: 18,
+        value: 70,
+        maxValue: 100,
+        width: 5, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    
+    var myCircle = Circles.create({
+        id: 'circles-sidebar-3',
+        radius: 18,
+        value: 70,
+        maxValue: 100,
+        width: 5, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    
+    var myCircle = Circles.create({
+        id: 'circles-sidebar-4',
+        radius: 18,
+        value: 70,
+        maxValue: 100,
+        width: 5, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
 /*Countdown*/
 // Create Countdown
 var Countdown = {
@@ -425,6 +489,16 @@ var Countdown = {
     
     wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
+    //SIDEBAR
+    $('#navbarSideButton').on('click', function() {
+        $('#navbarSide').toggleClass('reveal');
+        $('.alfa-overlay').show();
+      });
+    
+      $('.alfa-overlay').on('click', function(){
+        $('#navbarSide').removeClass('reveal');
+        $('.alfa-overlay').hide();
+      });
 
 });
 
