@@ -508,19 +508,20 @@ var Countdown = {
 
     //Go to top
     $('.alfa-sidebar-gotoTop').on('click', function(){
-        $('.alfa-PT-sidebar .navbar-side').animate({ scrollTop: "0" })
+        $('.alfa-PT-sidebar .navbar-side .alfa-sidebar-container').animate({ scrollTop: "0" })
     });
 
     //SIDEBAR
     $('#navbarSideButton').on('click', function() {
         $('#navbarSide').toggleClass('reveal');
-        $('.alfa-overlay').show();
+        $('#navbarSideButton img').toggleClass('rotate');
+        $('.alfa-overlay').toggle();
       });
     
-      $('.alfa-overlay').on('click', function(){
-        $('#navbarSide').removeClass('reveal');
-        $('.alfa-overlay').hide();
-      });
+    //   $('.alfa-overlay').on('click', function(){
+    //     $('#navbarSide').removeClass('reveal');
+    //     $('.alfa-overlay').hide();
+    //   });
 
 
 
