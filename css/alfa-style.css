@@ -17,7 +17,10 @@ body{
 .form-control:focus,
 .btn-primary.focus, .btn-primary:focus,
 .btn.focus, .btn:focus,
-.page-link:focus{
+.page-link:focus,
+input[type=checkbox]:focus, 
+input[type=radio]:focus,
+.custom-control-input:focus{
     box-shadow: none;
 }
 .alfa-bg-green{
@@ -1610,6 +1613,30 @@ p.alfa-test-card-bottom-content{
 }
 .alfa-PT-sidebar .alfa-PT-header-wrapper{
     margin-bottom: 20px;
+} 
+.alfa-PT-sidebar .custom-control-label{ 
+    padding-left: 8px;
+}
+.alfa-PT-sidebar .custom-control-label::before{
+    height: 20px;
+    width: 20px;
+} 
+.alfa-PT-sidebar .custom-control-input:checked~.custom-control-label::before{
+    border: 2px solid #11e5e5;
+    background: none;
+}
+.alfa-PT-sidebar .custom-control-label::after{
+    right: 0;
+}
+.alfa-PT-sidebar .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    background: none;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #11e5e5;
+    font-size: 20px;
+    left: -19px;
+    top: -3px;
 }
 .alfa-search-input-group{
     max-width: 280px;
@@ -1661,11 +1688,11 @@ p.alfa-test-card-bottom-content{
     border-radius: 50px;
 }
 .alfa-sidebar-main-card{
-    padding: 11px 0;
-    margin-bottom: 16px;
+    padding: 6px 0;
+    margin-bottom: 8px;
 }
 .alfa-sidebar-main-card h2{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif; 
     margin-bottom: 0;
 }
@@ -1682,7 +1709,7 @@ p.alfa-test-card-bottom-content{
     background-color: #11e6e6;
     bottom: 0;
     left: 0;
-    bottom: -18px;
+    bottom: -15px;
     left: 1px;
     border-bottom-left-radius: 10px;
 }
