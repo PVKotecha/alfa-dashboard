@@ -1617,6 +1617,7 @@ p.alfa-test-card-bottom-content{
     overflow-y: auto;
     height: 100%;
     padding-bottom: 80px;
+    padding: 0 40px;
 }
 .alfa-PT-sidebar .custom-control-label{ 
     padding-left: 8px;
