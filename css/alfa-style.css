@@ -16,7 +16,8 @@ body{
 }
 .form-control:focus,
 .btn-primary.focus, .btn-primary:focus,
-.btn.focus, .btn:focus{
+.btn.focus, .btn:focus,
+.page-link:focus{
     box-shadow: none;
 }
 .alfa-bg-green{
@@ -1590,7 +1591,7 @@ p.alfa-test-card-bottom-content{
 --*/
 .alfa-PT-sidebar .navbar-side {
     height: 100%;
-    max-width: 64%; 
+    width: 64%; 
     position: fixed;
     top: 0;
     right: 0;
@@ -1720,12 +1721,68 @@ p.alfa-test-card-bottom-content{
 .alfa-sidebar-main-card .alfa-PT-E-card-btns a .fa-bookmark{
     font-size: 23px;
 }
+.alfa-PT-sidebar li{ 
+    padding: 0 4px;
+}
+.alfa-PT-sidebar li a{ 
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: #b3b3b3;
+}
+.alfa-PT-sidebar li.disabled,
+.alfa-PT-sidebar li.active{
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #11e5e5;
+    color: #fff;
+}
+.alfa-PT-sidebar li.disabled{
+    padding: 5px 14px;
+    border-radius: 50px;
+    background-color: #ccc;
+    margin-right: 6px;
+    height: 36px;
+    margin-top: 3px;
+}
+.alfa-PT-sidebar .alfa-pagination li:last-child a,
+.alfa-PT-sidebar .alfa-pagination li:first-child a{
+    border-radius: 50px;
+    background: #11e6e6;
+    color: #fff;
+    padding: 8px 14px;
+}
+.alfa-sidebar-jump-page{
+    text-align: right;
+}
+.alfa-sidebar-jump-page input{
+    border-radius: 50px;
+    max-width: 80px;
+    display: inline-block;
+    font-size: 17px;
+}
+.alfa-sidebar-jump-page span{
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 17px;
+}
+.alfa-sidebar-gotoTop{ 
+    background-color: #11e5e5;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 10px;
+}
+
 
 @media (min-width: 320px) {
-    .alfa-PT-sidebar .navbar-side {
-        width: 100%;
+    /* .alfa-PT-sidebar .navbar-side {
+        max-width: 100%;
     }
-}  
+}   */
 .alfa-PT-sidebar .navbar-side-item {
     margin-bottom: .2rem;
     height: 3rem;
@@ -1736,7 +1793,7 @@ p.alfa-test-card-bottom-content{
 }
 @media (min-width: 320px) and (max-width: 484px) {
     .alfa-PT-sidebar .navbar-side {
-        width: 85%;
+        max-width: 100%;
     }
     .alfa-PT-sidebar .navbar-side-item {
         padding: 1.5rem 0 4rem 0;

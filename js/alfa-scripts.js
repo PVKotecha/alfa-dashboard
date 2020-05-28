@@ -489,6 +489,28 @@ var Countdown = {
     
     wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
+    //manage pagination
+    $('.alfa-pagination').pagination({
+        items: 20,
+        itemOnPage: 8,
+        currentPage: 1, 
+        displayedPages: 2,
+        edges: 2,
+        prevText: '<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>',
+        nextText: '<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>',
+        onInit: function () {
+            // fire first page loading
+        },
+        onPageClick: function (page, evt) {
+            // some code
+        } 
+    });
+
+    //Go to top
+    $('.alfa-sidebar-gotoTop').on('click', function(){
+        $('.alfa-PT-sidebar .navbar-side').animate({ scrollTop: "0" })
+    });
+
     //SIDEBAR
     $('#navbarSideButton').on('click', function() {
         $('#navbarSide').toggleClass('reveal');
@@ -499,6 +521,8 @@ var Countdown = {
         $('#navbarSide').removeClass('reveal');
         $('.alfa-overlay').hide();
       });
+
+
 
 });
 
