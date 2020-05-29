@@ -1865,7 +1865,7 @@ p.alfa-test-card-bottom-content{
         width: 100%;
     }
     .alfa-sidebar-container{
-        padding: 0;
+        padding: 0 5px;
     }
     .alfa-sidebar-nav.nav-pills .nav-link{
         margin-right: 4px;
@@ -1960,6 +1960,24 @@ p.alfa-test-card-bottom-content{
     .alfa-daily-task-card .datepicker td, .alfa-daily-task-card .datepicker th{
         padding: 8px 7px;
     }
+    .alfa-PT-E-btns .btn.alfa-PT-E-submit,
+    .alfa-PT-E-btns .btn.alfa-PT-E-restart,
+    .alfa-PT-E-btns .btn.alfa-PT-E-viewscore{
+        margin-right: 6px;
+    }
+    .alfa-PT-E-btns .btn.btn-dark{
+        padding: 4px 8px; 
+        margin-right: 4px;
+    }
+    .alfa-PT-E-btn-arrow{
+        padding: 2px 10px !important; 
+    }
+    .alfa-PT-E-select{
+        margin: 0 6px;
+    }
+    .alfa-PT-E-score-detail-card .alfa-icon-btn{
+        font-size: 20px;
+    }
 }
 @media(min-width: 767px) and (max-width: 992px){
     .alfa-your-target-card h3{
@@ -2021,6 +2039,9 @@ p.alfa-test-card-bottom-content{
     .alfa-PT-E-myscore .card-header .nav .nav-link{
         margin-right: 10px;
     }
+    .alfa-PT-E-btns .btn.alfa-PT-E-restart{
+        margin-right: 0;
+    }
 }
 @media (max-width: 575.98px) { 
     .alfa-today-session-card i{
@@ -2034,6 +2055,19 @@ p.alfa-test-card-bottom-content{
     .alfa-PT-E-myscore .card-header .nav{
         display: inline-block;
     }
+    .alfa-PT-E-wave-card .card-footer{
+        padding: 5px;
+    }
+    .alfa-PT-E-score-detail-card.alfa-community .alfa-icon-btn{
+        font-size: 24px;
+        display: block;
+    }
+    .alfa-PT-E-score-detail-card .alfa-letter-btn, .alfa-PT-E-score-detail-card .alfa-ai-btn{
+        margin-top: 5px;
+    }
+    .alfa-PT-E-reading-second-para .alfa-PT-E-RS-labels{
+        float: none;
+    }
  }
  @media(min-width: 376px) and (max-width: 425px){
     .flip-clock-wrapper{
@@ -2045,3 +2079,4 @@ p.alfa-test-card-bottom-content{
         margin-left: 21px;
     }
  }
+}
