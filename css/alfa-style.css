@@ -1931,19 +1931,6 @@ p.alfa-test-card-bottom-content{
     }
 }
 @media (min-width: 320px) and (max-width: 484px) {
-    .alfa-PT-sidebar .alfa-sidebar-arrow{
-        left: -30px;
-    }
-    .alfa-PT-sidebar .reveal .alfa-sidebar-arrow{
-        left: unset;
-        top: 2%;
-        right: 10px;
-        padding: 0;
-    }
-    .alfa-PT-sidebar .alfa-sidebar-arrow img,
-    .alfa-PT-sidebar .reveal .alfa-sidebar-arrow img{
-        width: 40px;
-    }
     .alfa-PT-sidebar .alfa-sidebar-nav {
         overflow-x: auto;
         -ms-flex-wrap: unset;
@@ -1987,6 +1974,19 @@ p.alfa-test-card-bottom-content{
     }
 }
 @media (max-width: 768px) {
+    .alfa-PT-sidebar .alfa-sidebar-arrow{
+        left: -30px;
+    }
+    .alfa-PT-sidebar .reveal .alfa-sidebar-arrow{
+        left: unset;
+        top: 2%;
+        right: 10px;
+        padding: 0;
+    }
+    .alfa-PT-sidebar .alfa-sidebar-arrow img,
+    .alfa-PT-sidebar .reveal .alfa-sidebar-arrow img{
+        width: 40px;
+    }
     .alfa-PT-sidebar .navbar-side{
         width: 100%;
     }
