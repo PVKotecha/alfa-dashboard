@@ -715,6 +715,14 @@ p.alfa-test-card-bottom-content{
     color: #000;
     border-radius: 50px;
 }
+.datepicker table tr td.active:active, 
+.datepicker table tr td.active:hover, 
+.datepicker table tr td.active:hover.active, 
+.datepicker table tr td.active:hover.disabled, 
+.datepicker table tr td.active:hover:active, 
+.datepicker table tr td.active:hover:hover{
+    background-color: rgba(0, 205, 205, .25);;
+}
 .alfa-daily-task-card .datepicker table tr td.today{
     background: #00cdcd;
     color: #fff;
@@ -1171,7 +1179,7 @@ p.alfa-test-card-bottom-content{
 }
 .alfa-PT-Examination-card .card-header{
     background-color: #11e6e6;
-    padding: 10px 30px;
+    padding: 10px 38px 10px 30px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -1657,7 +1665,7 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-sidebar .custom-control-label::before{
     height: 20px;
     width: 20px;
-    border-color: #b3b3b3;
+    border: 2px solid #ccc;
 } 
 .alfa-PT-sidebar .custom-control-input:checked~.custom-control-label::before{
     border: 2px solid #11e5e5;
