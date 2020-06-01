@@ -1693,6 +1693,7 @@ p.alfa-test-card-bottom-content{
     border-bottom-left-radius: 50px;
     border-right: 0;
     padding-bottom: 10px;
+    border-color: #b3b3b3;
 }
 .alfa-sidebar-search-btn{
     background-color: transparent;
