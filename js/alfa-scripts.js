@@ -422,8 +422,8 @@ var Countdown = {
 //     multidate: true,
 //   }) 
 
-  var active_dates = ["18/5/2020","19/5/2020"];
-  var active_dates_2 = ["20/5/2020"];
+  var active_dates = ["18/6/2020","19/6/2020"];
+  var active_dates_2 = ["20/6/2020"];
 
   $("#dailytask").datepicker({
     format: "dd/mm/yyyy",
