@@ -18,9 +18,7 @@ body{
 .btn-primary.focus, .btn-primary:focus,
 .btn.focus, .btn:focus,
 .page-link:focus,
-input[type=checkbox]:focus, 
-input[type=radio]:focus,
-.custom-control-input:focus{
+.custom-control-input:focus~.custom-control-label::before{
     box-shadow: none;
 }
 .alfa-bg-green{
@@ -176,11 +174,19 @@ input[type=radio]:focus,
     border-radius: 10px;
     position: relative;
 }
+.alfa-today-session-card a{
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+    z-index: 10;
+}
 .alfa-today-session-card h2{
     font-size: 28px; 
     font-weight: 500; 
     margin: 0;
     padding: 12px 22px;
+    transition: .3s;
+    z-index: 10;
 }
 .alfa-today-session-card i{
     position: absolute;
@@ -191,6 +197,10 @@ input[type=radio]:focus,
     right: 80px;
     font-size: 34px;
     top: -9px;
+    z-index: 10;
+} 
+.alfa-today-session-card a:hover i{
+    transform: scale(1.14);
 }
 /*practise progress*/
 .alfa-practise-progress-card { 
@@ -427,7 +437,7 @@ p.alfa-test-card-bottom-content{
 }
 .alfa-listen-test-card .alfa-form-control,
 .alfa-speech-test-card .alfa-form-control{
-    border-color: #000;
+    border-color: #676767;
     border-radius: 30px;
     margin-bottom: 8px;
     line-height: 3;
@@ -613,8 +623,8 @@ p.alfa-test-card-bottom-content{
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    color: #fff;
-    text-decoration: underline;
+    color: #fff; 
+    margin-bottom: 34px;
 }
 .alfa-exam-count-card i{
     position: absolute;
@@ -685,7 +695,7 @@ p.alfa-test-card-bottom-content{
     font-size: 20px;
 }
 .alfa-daily-task-card .card-body{
-    padding: 20px 0;
+    padding: 0;
 }
 .alfa-daily-task-card .datepicker-inline{
     width: 100%;
@@ -1114,6 +1124,9 @@ p.alfa-test-card-bottom-content{
 /*--
     Practice Test
 --*/
+.alfa-PT-first-para {
+    padding-left: 38px;
+}
 .alfa-PT-header-wrapper{
     margin-top: 80px;
     background-color: #fff;
@@ -1138,13 +1151,19 @@ p.alfa-test-card-bottom-content{
     margin-top: 13px;
     float: left;
 }
-.alfa-PT-header .alfa-PT-header-right a:hover{
+.alfa-PT-header .alfa-PT-header-right a{
+ 
     text-decoration: none;
 }
 .alfa-PT-header .alfa-PT-header-right a img{
+    transition: .4s;
     width: 46px;
     max-width: 40px;
     margin-top: 7px;
+}
+.alfa-PT-header .alfa-PT-header-right a:hover img{
+    text-decoration: none;
+    transform: scale(1.13);
 }
 .alfa-PT-Examination-card {
     border-radius: 10px;
@@ -1162,7 +1181,8 @@ p.alfa-test-card-bottom-content{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0; 
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;     
+    padding-left: 6px;
 }
 .alfa-PT-Examination-card .card-header h2 .alfa-PT-E-card-btns{
     float: right;
@@ -1174,8 +1194,12 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     font-size: 24px;
 }
+.alfa-PT-Examination-card .card-header h2 .alfa-PT-E-card-btns a i.lni-bookmark,
 .alfa-PT-Examination-card .card-header h2 .alfa-PT-E-card-btns a i.fa-bookmark{ 
     font-size: 22px;
+}
+.alfa-PT-E-reading-second-para{
+    padding: 0 20px;
 }
 .alfa-PT-E-reading-second-para i span{
     color: #11e6e6;
@@ -1306,14 +1330,14 @@ p.alfa-test-card-bottom-content{
     font-weight: 600;
     padding: 7px 20px;
     border: none;
-    box-shadow: 0 0 .25rem rgba(0,0,0,.5)!important; 
+    /* box-shadow: 0 0 .25rem rgba(0,0,0,.5)!important;  */
     transition: .3s;
 }
 .alfa-PT-E-btns .btn:hover,
 .alfa-PT-E-btns .btn:focus,
 .alfa-PT-E-btns .btn:active{
     transform: scale(1.13);
-    box-shadow: 0 0 .75rem rgba(0,0,0,.25)!important;
+    /* box-shadow: 0 0 .75rem rgba(0,0,0,.25)!important; */
 }
 .alfa-PT-E-btns .form-group{ 
     display: inline-block;
@@ -1326,7 +1350,7 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-E-btns .btn.alfa-PT-E-restart{
     background-color: #11e6e6;
     margin-right: 16px;
-    padding: 5px 28px;
+    padding: 7px 28px;
 }
 .alfa-PT-E-btns .btn.alfa-PT-E-viewscore{
     background-color: #ec935f;
@@ -1609,6 +1633,9 @@ p.alfa-test-card-bottom-content{
     z-index: 1031;
     /* box-shadow: -10px 0 .5rem rgba(0,0,0,.075)!important;  */
 }
+.alfa-PT-sidebar .tab-content{
+    padding-bottom: 66px;
+}
 .alfa-PT-sidebar .alfa-PT-header-wrapper .alfa-PT-header-left img{
     max-width: 50px;
 }
@@ -1630,6 +1657,7 @@ p.alfa-test-card-bottom-content{
 .alfa-PT-sidebar .custom-control-label::before{
     height: 20px;
     width: 20px;
+    border-color: #b3b3b3;
 } 
 .alfa-PT-sidebar .custom-control-input:checked~.custom-control-label::before{
     border: 2px solid #11e5e5;
@@ -1656,19 +1684,20 @@ p.alfa-test-card-bottom-content{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-right: 0;
+    padding-bottom: 10px;
 }
 .alfa-sidebar-search-btn{
     background-color: transparent;
-    color: #ccc;
+    color: #b3b3b3;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-left: 0;
-    border-color: #ccc;
+    border-color: #b3b3b3;
 }
 .alfa-sidebar-nav.nav-pills .nav-link{
     border-radius: 50px;
-    color: #ccc;
-    border: 1px solid #ccc;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
     text-transform: uppercase;
     margin-right: 8px; 
     padding: 4px 15px;
@@ -1700,6 +1729,7 @@ p.alfa-test-card-bottom-content{
 .alfa-sidebar-main-card{
     padding: 6px 0;
     margin-bottom: 8px;
+    overflow: hidden;
 }
 .alfa-sidebar-main-card h2{
     font-size: 18px;
@@ -1710,6 +1740,7 @@ p.alfa-test-card-bottom-content{
     color: #11e6e6;
     position: relative;
     padding-left: 12px;
+    vertical-align: middle;
 }
 .alfa-sidebar-main-card h2 .alfa-id::after{
     content: "";
@@ -1719,8 +1750,8 @@ p.alfa-test-card-bottom-content{
     background-color: #11e6e6;
     bottom: 0;
     left: 0;
-    bottom: -15px;
-    left: 1px;
+    bottom: -13px;
+    left: 2px;
     border-bottom-left-radius: 10px;
 }
 .alfa-sidebar-main-card h2 .alfa-content{
@@ -1730,6 +1761,7 @@ p.alfa-test-card-bottom-content{
     text-overflow: ellipsis;
     max-width: 17ch;
     display: inline-block;
+    vertical-align: middle;
 }
 .alfa-sidebar-main-card .alfa-PT-E-RS-labels{
     display: inline-block;
@@ -1759,9 +1791,15 @@ p.alfa-test-card-bottom-content{
 .alfa-sidebar-main-card .alfa-PT-E-card-btns a{
     color: #b3b3b3;
     font-size: 25px; 
+    text-decoration: none;
 }
-.alfa-sidebar-main-card .alfa-PT-E-card-btns a .fa-bookmark{
+.alfa-sidebar-main-card .alfa-PT-E-card-btns a .lni-bookmark{
     font-size: 23px;
+    color: #11e6e6;
+}
+.alfa-sidebar-main-card .alfa-PT-E-card-btns a .lni-star,
+.alfa-sidebar-main-card .alfa-PT-E-card-btns a .lni-star-filled{
+    color: #fddb63;
 }
 .alfa-PT-sidebar li{ 
     padding: 0 4px;
@@ -1793,9 +1831,9 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     padding: 8px 14px;
 }
-.alfa-sidebar-jump-page{
+/* .alfa-sidebar-jump-page{
     text-align: right;
-}
+} */
 .alfa-sidebar-jump-page input{
     border-radius: 50px;
     max-width: 80px;
@@ -1816,7 +1854,7 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     font-weight: 600;
     line-height: 1;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .alfa-sidebar-arrow{
     position: absolute; 
