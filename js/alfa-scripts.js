@@ -516,8 +516,32 @@ var Countdown = {
         $('#navbarSide').toggleClass('reveal');
         $('#navbarSideButton img').toggleClass('rotate');
         $('.alfa-overlay').toggle();
-      });
-    
+        $('body').toggleClass('o-hidden');
+        
+        if($("#navbarSide").hasClass('reveal')){
+            $("#navbarSideButton").trigger("alfa");  
+        } 
+    });
+
+    //to get event
+    $("#navbarSideButton").on('alfa', function(){
+        console.log('i am triggerrrrrrrrrrrr')
+    });
+        
+    //show sidebar content loader
+    setTimeout(function(){
+        $(".content-ph-container").addClass('alfa-hide')
+    },5500)
+
+
+    //OPEN OVERLAY LOADER    
+    triggerOverlay = function(){
+        $(".alfa-overlay-with-loading").addClass('d-block');
+        setTimeout(function(){
+            $(".alfa-overlay-with-loading").removeClass('d-block');
+        },5500)
+    }
+
     //   $('.alfa-overlay').on('click', function(){
     //     $('#navbarSide').removeClass('reveal');
     //     $('.alfa-overlay').hide();

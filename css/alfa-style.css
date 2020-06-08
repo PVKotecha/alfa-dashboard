@@ -14,6 +14,24 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 .25rem rgba(0,0,0,.075)!important;
 }
+.o-hidden{
+    overflow: hidden;
+}
+.alfa-show{
+    display: block !important;
+}
+.alfa-show-flex{
+    display: flex !important;
+}
+.alfa-hide{
+    display: none !important;
+}
+.speak_now.btn-danger-my{
+    background-color: #fff4f4;
+    border: 1px solid #e8342b;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
 .form-control:focus,
 .btn-primary.focus, .btn-primary:focus,
 .btn.focus, .btn:focus,
@@ -1583,8 +1601,9 @@ p.alfa-test-card-bottom-content{
     position: absolute;
     color: #b3b3b3;
     font-size: 10px;
-    left: 0;
     margin-top: 2px;
+    left: -2px;
+    bottom: -15px;
 }
 .alfa-PT-E-score-detail-card .alfa-icon-btn{
     color: #b3b3b3;
@@ -1733,6 +1752,13 @@ p.alfa-test-card-bottom-content{
     padding-bottom: 80px;
     padding: 0 40px;
 }
+.alfa-sidebar-container::-webkit-scrollbar-track{
+     
+    background-color: #dcdcdc;
+}
+.alfa-sidebar-container::-webkit-scrollbar-thumb{
+    background-color: #bbb;
+}
 .alfa-PT-sidebar .custom-control-label{ 
     padding-left: 8px;
 }
@@ -1768,19 +1794,19 @@ p.alfa-test-card-bottom-content{
     border-right: 0; */
     padding-bottom: 10px;
     border-color: #b3b3b3;
-    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOS42IDI5LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5LjYgMjkuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0IzQjNCMztzdHJva2Utd2lkdGg6MS41O30NCjwvc3R5bGU+DQo8cGF0aCBpZD0iSWNvbl9hd2Vzb21lLXNlYXJjaCIgY2xhc3M9InN0MCIgZD0iTTI4LjQsMjVsLTUuNS01LjVjLTAuMi0wLjItMC42LTAuNC0wLjktMC40aC0wLjljMy45LTUsMy0xMi4xLTItMTZzLTEyLjEtMy0xNiwyDQoJcy0zLDEyLjEsMiwxNmM0LjEsMy4yLDkuOSwzLjIsMTQsMFYyMmMwLDAuMywwLjEsMC43LDAuNCwwLjlsNS41LDUuNWMwLjUsMC41LDEuMywwLjUsMS44LDBjMCwwLDAsMCwwLDBsMS41LTEuNQ0KCUMyOC45LDI2LjMsMjguOSwyNS41LDI4LjQsMjV6IE0xMi4xLDE5LjFjLTMuOSwwLTctMy4xLTctN3MzLjEtNyw3LTdzNywzLjEsNyw3UzE2LDE5LjEsMTIuMSwxOS4xeiIvPg0KPC9zdmc+DQo=");
+    /* background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOS42IDI5LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5LjYgMjkuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0IzQjNCMztzdHJva2Utd2lkdGg6MS41O30NCjwvc3R5bGU+DQo8cGF0aCBpZD0iSWNvbl9hd2Vzb21lLXNlYXJjaCIgY2xhc3M9InN0MCIgZD0iTTI4LjQsMjVsLTUuNS01LjVjLTAuMi0wLjItMC42LTAuNC0wLjktMC40aC0wLjljMy45LTUsMy0xMi4xLTItMTZzLTEyLjEtMy0xNiwyDQoJcy0zLDEyLjEsMiwxNmM0LjEsMy4yLDkuOSwzLjIsMTQsMFYyMmMwLDAuMywwLjEsMC43LDAuNCwwLjlsNS41LDUuNWMwLjUsMC41LDEuMywwLjUsMS44LDBjMCwwLDAsMCwwLDBsMS41LTEuNQ0KCUMyOC45LDI2LjMsMjguOSwyNS41LDI4LjQsMjV6IE0xMi4xLDE5LjFjLTMuOSwwLTctMy4xLTctN3MzLjEtNyw3LTdzNywzLjEsNyw3UzE2LDE5LjEsMTIuMSwxOS4xeiIvPg0KPC9zdmc+DQo=");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
-    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem); */
 } 
-/* .alfa-sidebar-search-btn{
+.alfa-sidebar-search-btn{
     background-color: transparent;
     color: #b3b3b3;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-left: 0;
     border-color: #b3b3b3;
-} */
+}
 .alfa-sidebar-nav.nav-pills .nav-link{
     border-radius: 50px;
     color: #b3b3b3;
@@ -1788,6 +1814,7 @@ p.alfa-test-card-bottom-content{
     text-transform: uppercase;
     margin-right: 8px; 
     padding: 4px 15px;
+    cursor: pointer;
 }
 .alfa-sidebar-nav.nav-pills .nav-link.active{
     background-color: #11e6e6;
@@ -1849,6 +1876,7 @@ p.alfa-test-card-bottom-content{
     max-width: 17ch;
     display: inline-block;
     vertical-align: middle;
+    min-width: 177px;
 }
 .alfa-sidebar-freq-span{
     font-size: 13px;
@@ -1971,7 +1999,38 @@ p.alfa-test-card-bottom-content{
 }
 .rotate{
     transform: rotate(180deg);
+} 
+.content-ph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 100vh; 
 }
+.content-placeholder {
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+}
+
+.content-ph-loader { 
+    height: 5%;
+    margin-bottom: 8px;background: #f6f7f8; 
+    background: linear-gradient(to right, #eee 2%, #ddd 18%, #eee 33%);
+    background-size: 1300px; 
+    border-radius: 10px;
+    animation: loading 0.8s infinite; 
+}
+  
+@keyframes loading {
+    0%{ background-position: -650px 0; }
+    100%{ background-position: 650px 0; }
+}
+
+
 @media (min-width: 320px) {
     /* .alfa-PT-sidebar .navbar-side {
         max-width: 100%;
@@ -2000,6 +2059,7 @@ p.alfa-test-card-bottom-content{
     .alfa-sidebar-container{
         max-width: 95%;
         padding: 0;
+        overflow-x: hidden;
     }
     .alfa-sidebar-main-card .circle,
     .alfa-sidebar-freq-span{
@@ -2096,6 +2156,7 @@ p.alfa-test-card-bottom-content{
     }
     .alfa-sidebar-container{
         padding: 0 5px;
+        overflow-x: hidden;
     }
     .alfa-sidebar-nav.nav-pills .nav-link{
         margin-right: 4px;
@@ -2108,6 +2169,10 @@ p.alfa-test-card-bottom-content{
     }
     .alfa-PT-sidebar li {
         padding: 0 2px;
+    }
+    .alfa-PT-sidebar .alfa-sidebar-nav::-webkit-scrollbar{
+        width: 0;
+        background-color: transparent;
     }
 }
 @media (min-width: 320px) and (max-width: 484px) {
@@ -2199,7 +2264,43 @@ p.alfa-test-card-bottom-content{
     opacity: .6;
     z-index: 1030;
 }
-
+.alfa-overlay-with-loading{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.75);
+    z-index: 1031; 
+}
+.alfa-overlay-img-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.alfa-overlay-with-loading img{
+    width: 120px;
+    margin-bottom: 16px;
+}
+.alfa-overlay-with-loading p{
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 6px;
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {  
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-webkit-keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /*PRACTICE TEST ANSWER SHORT QUESTION*/
 .alfa-speech-test-card.alfa-card-player{
     padding: 22px 16px;
@@ -2308,7 +2409,6 @@ p.alfa-test-card-bottom-content{
     0% { box-shadow: 0 0 0 0 rgba(232, 53, 42, 0.6) }
     100% { box-shadow: 0 0 0 10px rgba(232, 53, 42, 0) }
 }
-
 
 
 @media (min-width: 1500px){
@@ -2467,6 +2567,9 @@ p.alfa-test-card-bottom-content{
     }
     .alfa-discribe-img img {
         max-width: 270px;
+    }
+    .alfa-sidebar-main-card h2 .alfa-content{
+        min-width: auto;
     }
  }
  @media(min-width: 376px) and (max-width: 425px){

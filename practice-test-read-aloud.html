@@ -277,10 +277,10 @@
                             <!-- wave controller-->
                             <div class="row alfa-PT-E-btns">
                                 <div class="col-lg-8 col-sm-6 mb-3 mb-lg-0 text-center text-lg-left alfa-col-setting-left">
-                                    <button class="btn btn-primary alfa-PT-E-submit">submitted</button>
-                                    <button class="btn btn-primary alfa-PT-E-restart">Re-start</button>
-                                    <button class="btn btn-primary alfa-PT-E-viewscore">view score</button>
-                                    <button class="btn btn-primary alfa-PT-E-dictionary">dictionary</button>
+                                    <button class="btn btn-primary alfa-PT-E-submit" onclick="triggerOverlay()">submitted</button>
+                                    <button class="btn btn-primary alfa-PT-E-restart" onclick="triggerOverlay()">Re-start</button>
+                                    <button class="btn btn-primary alfa-PT-E-viewscore" onclick="triggerOverlay()">view score</button>
+                                    <button class="btn btn-primary alfa-PT-E-dictionary" onclick="triggerOverlay()">dictionary</button>
                                 </div>
                                 <div class="col-lg-4 col-sm-6 text-center text-md-right alfa-col-setting-right">
                                     <button class="btn btn-dark">
@@ -814,11 +814,11 @@
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="input-group alfa-search-input-group">
                             <input type="text" class="form-control alfa-sideber-search-input" placeholder="Question Content / Number">
-                            <!-- <div class="input-group-append">
+                            <div class="input-group-append">
                               <button class="btn btn-secondary alfa-sidebar-search-btn" type="button">
                                 <i class="fa fa-search"></i>
                               </button>
-                            </div> -->
+                            </div>
                         </div>
                     </div>                        
                 </div> 
@@ -846,6 +846,20 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                         <p class="alfa-sidebar-found">Found 35 Questions</p>
+                        <div class="content-ph-container">
+                            <div class="content-placeholder">
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                                <div class="content-ph-loader"></div>
+                            </div>
+                        </div>
                         <div class="card alfa-sidebar-main-card">
                             <div class="row">
                                 <div class="col-10 col-md-8 col-lg-7 align-self-center">
@@ -860,7 +874,7 @@
                                 </div>
                                 <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right"> 
                                     <span class="alfa-sidebar-freq-span">FREQUENCY</span>
-                                    <div class="circle" id="circles-sidebar"></div>
+                                    <div class="circle circles13"  id="circles-sidebar"></div>
                                     <div class="alfa-PT-E-card-btns">
                                         <a href="javascript:void(0);">
                                             <i class="lni lni-bookmark mr-3"></i>
@@ -2085,7 +2099,6 @@
                                 </div>
                             </div>
                             <!--Pagination End-->
-                        
                     </div>
                     <div class="tab-pane fade" id="pills-bookmark" role="tabpanel" aria-labelledby="pills-bookmark-tab">
                         <p class="alfa-sidebar-found">Found 31 Questions</p>
@@ -2315,7 +2328,6 @@
                                 </div>
                             </div>
                             <!--Pagination End-->
-                        
                     </div> 
                 </div>
                 <!--Tab Content End-->
@@ -2323,6 +2335,12 @@
          </ul>
     </div>
     <div class="alfa-overlay"></div>
+    <div class="alfa-overlay-with-loading">
+        <div class="alfa-overlay-img-wrapper">
+            <img src="img/alfa.svg" alt="alfa logo">
+            <p>Loading...</p>
+        </div>
+    </div>
     <!--Sidebar end-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
