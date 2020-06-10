@@ -27,10 +27,8 @@ body{
     display: none !important;
 }
 .speak_now.btn-danger-my{
-    background-color: #fff4f4;
-    border: 1px solid #e8342b;
-    padding: 2px 8px;
-    border-radius: 5px;
+    background-color: #ff8b85; 
+    padding: 2px 0; 
 }
 .form-control:focus,
 .btn-primary.focus, .btn-primary:focus,
@@ -2292,6 +2290,12 @@ p.alfa-test-card-bottom-content{
     -webkit-animation: blink 1s linear infinite;
     -moz-animation: blink 1s linear infinite;
     animation: blink 1s linear infinite;
+}
+.alfa-spinner-loader .spinner-grow{
+    color: #11e6e6;
+    margin-right: 6px;
+    height: 1rem;
+    width: 1rem;
 }
 @keyframes blink {  
     0% { opacity: 0; }
