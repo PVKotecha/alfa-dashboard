@@ -2352,6 +2352,45 @@
         </div>
     </div>
     <!--Sidebar end-->
+<button class="btn btn-primary" data-toggle="modal" data-target="#loginAttemptModal">Open Modal</button>
+     <!--Modal Login Attempt-->
+  <div class="modal alfa-score-target-modal alfa-login-attempt-modal fade show" id="loginAttemptModal" tabindex="-1" role="dialog"
+  aria-labelledby="loginAttemptModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content"> 
+      <div class="modal-body pb-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col">
+                <img src="img/Icon-awesome-user-circle.svg" class="alfa-user-img" alt="user dd icon">
+                <h3>login attempt detected!</h3>
+                <p>Did you try to Login from another device!</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-block mb-3 mb-lg-0" data-dismiss="modal">what to do !</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-danger btn-block">Cancel</button>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">ok</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal Login Attempt End-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.min.js"></script>

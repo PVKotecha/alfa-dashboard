@@ -1015,7 +1015,8 @@ p.alfa-test-card-bottom-content{
     display: block;
 }
 .alfa-score-target-modal .modal-footer .btn-secondary,
-.alfa-score-target-modal .modal-footer .btn-primary{
+.alfa-score-target-modal .modal-footer .btn-primary,
+.alfa-score-target-modal .modal-footer .btn-danger{
     border-radius: 50px;
     text-transform: uppercase;
     border: 0;
@@ -1026,11 +1027,18 @@ p.alfa-test-card-bottom-content{
 .alfa-score-target-modal .modal-footer .btn-secondary:hover{
     background-color: #333;
 }
+.alfa-score-target-modal .modal-footer .btn-danger{
+    background-color: #e8352a;
+}
 .alfa-score-target-modal .modal-footer .btn-primary{
     background-color: #00cdcd;
 }
 .alfa-score-target-modal .modal-footer .btn-primary:hover{
     background-color: #185d92;
+}
+
+.alfa-score-target-modal .modal-footer .btn-danger:hover{
+    background-color: #a31811;
 }
 .alfa-selectExamDate .datepicker-inline {
     width: 100%;
@@ -1052,7 +1060,6 @@ p.alfa-test-card-bottom-content{
     background-image: none;
     background-color: #00cdcd;
 }
-
 /*--
     SYSTEM REQUIREMENT TEST (SRT) PAGE
 --*/
@@ -2362,6 +2369,82 @@ p.alfa-test-card-bottom-content{
 .alfa-discribe-img img{
     max-width: 340px;
 }
+/*MODAL - LOGIN ATTEMPT*/
+.alfa-login-attempt-modal .alfa-user-img{
+    min-width: 90px;
+    margin: 30px 0 10px;
+}
+.alfa-login-attempt-modal h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.alfa-login-attempt-modal p{
+    font-size: 16px;
+    color: #b3b3b3;
+}
+.alfa-login-attempt-modal .modal-footer{
+    border: 0;
+}
+
+.alfa-login-attempt-modal .close{
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    background: #e8352a;
+    opacity: 1;
+    padding: 3px 9px 5px 9px;
+    border-radius: 50px;
+    color: #fff;
+    transition: .3s;
+} 
+.alfa-login-attempt-modal .close:hover{
+    transform: scale(.9);
+    opacity: 1 !important;
+}
+
+/*----
+    WRITING TEST
+-----*/
+.alfa-PT-header-wrapper.alfa-writing{
+    border-bottom-color: #67b8fc;
+}
+.alfa-PT-header-wrapper.alfa-writing .alfa-PT-header .alfa-PT-header-left h1{
+    color: #67b8fc;
+}
+.alfa-writing .alfa-PT-E-btns .btn{
+    font-size: 14px;
+} 
+.alfa-writing .alfa-PT-E-btns .btn.alfa-PT-E-btn-arrow{
+    font-size: 18px;
+}
+.alfa-writing .alfa-PT-E-btns .alfa-PT-E-submit,
+.alfa-writing .alfa-PT-E-btns .alfa-PT-E-restart,
+.alfa-writing .alfa-PT-E-btns .alfa-PT-E-viewscore {
+    margin-right: 8px;
+}
+.alfa-writing .alfa-PT-E-btns .alfa-PT-E-restart{
+    background-color: #00cdcd;
+}
+.alfa-writing .alfa-PT-E-btns .alfa-PT-E-restart.alfa-PT-E-answer{
+    background-color: #11e6e6;
+}
+.alfa-writing .alfa-PT-Examination-card .card-footer{ 
+    padding: 10px 16px;
+    text-align: right;
+    background-color: #11e6e6;
+    border: 0; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.alfa-total-word-cnt{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif; 
+    margin: 0;
+}
+
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;

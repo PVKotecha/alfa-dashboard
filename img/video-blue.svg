@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78.684" height="78.684" viewBox="0 0 78.684 78.684">
+  <g id="video_icon" data-name="video icon" transform="translate(-1533 -143)">
+    <circle id="Ellipse_140" data-name="Ellipse 140" cx="39.342" cy="39.342" r="39.342" transform="translate(1533 143)" fill="#67b8fc"/>
+    <circle id="Ellipse_143" data-name="Ellipse 143" cx="36.342" cy="36.342" r="36.342" transform="translate(1536 146)" fill="#fff"/>
+    <circle id="Ellipse_144" data-name="Ellipse 144" cx="33.342" cy="33.342" r="33.342" transform="translate(1539 149)" fill="#67b8fc"/>
+    <g id="Icon_ionic-ios-videocam" data-name="Icon ionic-ios-videocam" transform="translate(1551 170)">
+      <path id="Path_314" data-name="Path 314" d="M34.292,10.8a1.648,1.648,0,0,0-.9.26l-8.343,5.266a.825.825,0,0,0-.386.694v7.331a.825.825,0,0,0,.386.694l8.343,5.266a1.734,1.734,0,0,0,.9.26H36.3a.821.821,0,0,0,.83-.82V11.62a.827.827,0,0,0-.83-.82Z" transform="translate(6.084 -8.331)" fill="#fff"/>
+      <path id="Path_315" data-name="Path 315" d="M25.544,33.693H7.217A4.983,4.983,0,0,1,2.25,28.735V13.958A4.975,4.975,0,0,1,7.208,9H25.534a4.975,4.975,0,0,1,4.958,4.958V28.725A4.962,4.962,0,0,1,25.544,33.693Z" transform="translate(-2.25 -9)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
