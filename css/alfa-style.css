@@ -2552,12 +2552,16 @@ p.alfa-test-card-bottom-content{
     font-family: 'Lato', sans-serif;
     color: #00cdcd;
 }
+.alfa-aiscore-modal .card.enabling-skill .alfa-progress{
+    max-width: 85%;
+    height: 14px;
+}
 .alfa-aiscore-modal .card.enabling-skill .card-body p{
     margin: 0;
-    font-size: 10px;
+    font-size: 13px;
     text-align: right;
     position: absolute;
-    top: -14px;
+    top: -4px;
     right: 20px;
 } 
 .alfa-aiscore-modal .card.enabling-skill .card-body p .alfa-progress-100{
@@ -2625,6 +2629,103 @@ p.alfa-test-card-bottom-content{
 .alfa-aiscore-modal .alfa-faq-card-main .accordion .card .card-header button{
     padding: 0;
     font-size: 21px;
+}
+
+/*DICTONARY MODAL*/
+.alfa-login-attempt-modal.dictionary .modal-dialog.modal-lg{
+    max-width: 860px;
+}
+.alfa-login-attempt-modal.dictionary p{
+    color: #000;
+}
+.alfa-login-attempt-modal.dictionary h2{
+    font-size: 24px;
+}
+.alfa-login-attempt-modal.dictionary .card-header{
+    padding: 3px;
+}
+.alfa-login-attempt-modal.dictionary .card-header h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+}
+.alfa-login-attempt-modal.dictionary h2 a i{
+    padding: 8px;
+    font-size: 21px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #333;
+    border-radius: 50px;
+    color: #11e6e6;
+    transition: .3s;
+}
+.alfa-login-attempt-modal.dictionary h2 a i:hover{
+    transform: scale(.90);
+}
+.alfa-dictionaryModal-btn-wrapper{
+    text-align: right;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-known,
+.alfa-dictionaryModal-btn-wrapper .btn-unknown,
+.alfa-dictionaryModal-btn-wrapper .btn-remove{
+    border: 1px solid #2fda61;
+    color: #2fda61;
+    border-radius: 50px;
+    padding: 1px 8px 2px 3px;
+    transition: .3s;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-known i,
+.alfa-dictionaryModal-btn-wrapper .btn-unknown i,
+.alfa-dictionaryModal-btn-wrapper .btn-remove i{
+    padding: 4px;
+    border: 1px solid #2fda61;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-unknown{
+    border-color: #e8342b;
+    color: #e8342b;
+    margin: 0 7px;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-unknown i{
+    border-color: #e8342b;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-remove{
+    border-color: #aaa;
+    color: #aaa;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-remove i{
+    border-color: #aaa;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-known:hover,
+.alfa-dictionaryModal-btn-wrapper .btn-known:focus,
+.alfa-dictionaryModal-btn-wrapper .btn-known:active{
+    background-color: rgba(47, 218, 97, .21);
+}
+.alfa-dictionaryModal-btn-wrapper .btn-known.active{
+    background-color: #2fda61;
+    color: #fff;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-unknown:hover,
+.alfa-dictionaryModal-btn-wrapper .btn-unknown:focus,
+.alfa-dictionaryModal-btn-wrapper .btn-unknown:active{
+    background-color: rgba(232, 52, 43, 0.21);
+}
+.alfa-dictionaryModal-btn-wrapper .btn-unknown.active{
+    background-color: #e8342b;
+    color: #fff;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-remove:hover,
+.alfa-dictionaryModal-btn-wrapper .btn-remove:focus,
+.alfa-dictionaryModal-btn-wrapper .btn-remove:active{
+    background-color: rgba(170, 170, 170, .21)
+}
+.alfa-dictionaryModal-btn-wrapper .btn-remove.active{
+    background-color: #333;
+    color: #fff;
+}
+.alfa-dictionaryModal-btn-wrapper .btn-remove.active i{
+    border-color: #333;
 }
 /*Css Loader*/
 .lds-ripple {
