@@ -250,6 +250,39 @@ $(document).ready(function() {
         styleText: true
     });
 
+    //AI SCORE mODAL Cirlces
+    var myCircle = Circles.create({
+        id: 'circles-reading-score-modal',
+        radius: 36,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
+    var myCircle = Circles.create({
+        id: 'circles-speaking-score-modal',
+        radius: 36,
+        value: 70,
+        maxValue: 100,
+        width: 9, 
+        colors: ['rgba(236, 147, 95, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+
 /*Countdown*/
 // Create Countdown
 var Countdown = {
@@ -476,18 +509,33 @@ var Countdown = {
 
   //WAVE
   var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    height: 200,
-    waveColor: '#b3b3b3',
-    progressColor: '#ec935f',
-    cursorColor: '#ccc',
-    barWidth: 4,
-    barHeight: 2, 
-    barGap: 4,  
-    barMinHeight: 1
+        container: '#waveform',
+        height: 200,
+        waveColor: '#b3b3b3',
+        progressColor: '#ec935f',
+        cursorColor: '#ccc',
+        barWidth: 4,
+        barHeight: 2, 
+        barGap: 4,  
+        barMinHeight: 1
     });
     
     wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+
+    
+  var wavesurfer1 = WaveSurfer.create({
+        container: '#waveform1',
+        height: 100,
+        waveColor: '#b3b3b3',
+        progressColor: '#ec935f',
+        cursorColor: '#ccc',
+        barWidth: 4,
+        barHeight: 2, 
+        barGap: 4,  
+        barMinHeight: 1
+    });
+    
+    wavesurfer1.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
     //manage pagination
     $('.alfa-pagination').pagination({
