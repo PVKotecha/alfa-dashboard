@@ -2614,9 +2614,18 @@ p.alfa-test-card-bottom-content{
 .alfa-annotation p{
     margin-bottom: 6px;
     text-align: center;
+} 
+.alfa-aiscore-modal .alfa-faq-card-main .alfa-PTEwriting-accordion{
+    margin-bottom: 0;
+    border: 1px solid rgba(0,0,0,.125);
 }
-
-
+.alfa-aiscore-modal .alfa-faq-card-main .alfa-PTEwriting-accordion .card-header{
+    background-color: #11e6e6;
+}
+.alfa-aiscore-modal .alfa-faq-card-main .accordion .card .card-header button{
+    padding: 0;
+    font-size: 21px;
+}
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;
