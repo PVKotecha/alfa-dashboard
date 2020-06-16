@@ -2532,7 +2532,6 @@
     <!--Modal Login Attempt End-->
 
     <button class="btn btn-warning" data-toggle="modal" data-target="#aiScoreModal">Open AI Score</button>
-
     <!--AI SCORE MODAL-->
     <div class="modal alfa-score-target-modal alfa-aiscore-modal fade" id="aiScoreModal" tabindex="-1" role="dialog"
         aria-labelledby="aiScoreModalLabel" aria-hidden="true">
@@ -2718,7 +2717,7 @@
     <!--AI SCORE MODAL end-->
 
     <button class="btn btn-danger" data-toggle="modal" data-target="#dictionaryModal">Dictionary Modal</button>
-    <!--Modal Login Attempt-->
+    <!--Modal Dictionary-->
     <div class="modal alfa-score-target-modal alfa-login-attempt-modal dictionary fade show" id="dictionaryModal" tabindex="-1"
         role="dialog" aria-labelledby="dictionaryModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -2791,7 +2790,83 @@
             </div>
         </div>
     </div>
+    <!--Modal Dictionary End-->
+
+    <button class="btn btn-danger" data-toggle="modal" data-target="#dictionary2Modal">Dictionary Modal 2</button>
+    <!--Modal Dictionary-->
+    <div class="modal alfa-score-target-modal alfa-login-attempt-modal dictionary fade show" id="dictionary2Modal" tabindex="-1"
+        role="dialog" aria-labelledby="dictionary2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-5">
+                                 <h2>
+                                     What
+                                     <a href="javascript:void(0)">
+                                         <i class="fa fa-volume-up"></i>
+                                     </a>
+                                 </h2>
+                            </div>
+                            <div class="col-7 alfa-dictionaryModal-btn-wrapper">
+                                 <div class="btn btn-known">
+                                     <i class="lni lni-checkmark"></i>
+                                     Known
+                                 </div>
+                                 <div class="btn btn-unknown">
+                                     <i class="lni lni-close"></i>
+                                     Unknown
+                                 </div>
+                                 <div class="btn btn-remove">
+                                     <i class="lni lni-trash"></i>
+                                     Remove
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="col text-center py-2">
+                                 <button class="btn click-to-view">Click to view word definition</button>
+                             </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
     <!--Modal Login Attempt End-->
+
+
+    <button class="btn btn-info" data-toggle="modal" data-target="#commentModal">Comment</button>
+
+    <!--Comment Dictionary MODAL-->
+    <div class="modal alfa-score-target-modal comment fade" id="commentModal" tabindex="-1" role="dialog"
+        aria-labelledby="commentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Comment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"> 
+                        <div class="row">
+                            <div class="col text-center">
+                                <textarea class="form-control" rows="10" placeholder="Comment Here..."></textarea>
+                                <button class="btn comment-send">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Comment Dictionary MODAL end-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.min.js"></script>

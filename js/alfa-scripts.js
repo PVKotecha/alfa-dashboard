@@ -507,35 +507,26 @@ var Countdown = {
         $('#' + cardHeaderId).css("border-radius","0"); 
   });
 
-  //WAVE
-  var wavesurfer = WaveSurfer.create({
-        container: '#waveform',
-        height: 200,
-        waveColor: '#b3b3b3',
-        progressColor: '#ec935f',
-        cursorColor: '#ccc',
-        barWidth: 4,
-        barHeight: 2, 
-        barGap: 4,  
-        barMinHeight: 1
+    //Go to top
+    $('.alfa-sidebar-gotoTop').on('click', function(){
+        $('.alfa-PT-sidebar .navbar-side .alfa-sidebar-container').animate({ scrollTop: "0" })
     });
     
-    wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+    $('.dictionary-gotoTop').on('click', function(){
+        $('body').animate({ scrollTop: "0" })
+    });
 
-    
-  var wavesurfer1 = WaveSurfer.create({
-        container: '#waveform1',
-        height: 100,
-        waveColor: '#b3b3b3',
-        progressColor: '#ec935f',
-        cursorColor: '#ccc',
-        barWidth: 4,
-        barHeight: 2, 
-        barGap: 4,  
-        barMinHeight: 1
+    //SIDEBAR
+    $('#navbarSideButton').on('click', function() {
+        $('#navbarSide').toggleClass('reveal');
+        $('#navbarSideButton img').toggleClass('rotate');
+        $('.alfa-overlay').toggle();
+        $('body').toggleClass('o-hidden');
+        
+        if($("#navbarSide").hasClass('reveal')){
+            $("#navbarSideButton").trigger("alfa");  
+        } 
     });
-    
-    wavesurfer1.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
     //manage pagination
     $('.alfa-pagination').pagination({
@@ -553,23 +544,7 @@ var Countdown = {
             // some code
         } 
     });
-
-    //Go to top
-    $('.alfa-sidebar-gotoTop').on('click', function(){
-        $('.alfa-PT-sidebar .navbar-side .alfa-sidebar-container').animate({ scrollTop: "0" })
-    });
-
-    //SIDEBAR
-    $('#navbarSideButton').on('click', function() {
-        $('#navbarSide').toggleClass('reveal');
-        $('#navbarSideButton img').toggleClass('rotate');
-        $('.alfa-overlay').toggle();
-        $('body').toggleClass('o-hidden');
-        
-        if($("#navbarSide").hasClass('reveal')){
-            $("#navbarSideButton").trigger("alfa");  
-        } 
-    });
+ 
 
     //to get event
     $("#navbarSideButton").on('alfa', function(){
@@ -595,7 +570,35 @@ var Countdown = {
     //     $('.alfa-overlay').hide();
     //   });
 
+ //WAVE
+ var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    height: 200,
+    waveColor: '#b3b3b3',
+    progressColor: '#ec935f',
+    cursorColor: '#ccc',
+    barWidth: 4,
+    barHeight: 2, 
+    barGap: 4,  
+    barMinHeight: 1
+});
 
+wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+
+
+var wavesurfer1 = WaveSurfer.create({
+    container: '#waveform1',
+    height: 100,
+    waveColor: '#b3b3b3',
+    progressColor: '#ec935f',
+    cursorColor: '#ccc',
+    barWidth: 4,
+    barHeight: 2, 
+    barGap: 4,  
+    barMinHeight: 1
+});
+
+wavesurfer1.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
 });
 

@@ -34,7 +34,10 @@ body{
 .btn-primary.focus, .btn-primary:focus,
 .btn.focus, .btn:focus,
 .page-link:focus,
-.custom-control-input:focus~.custom-control-label::before{
+.custom-control-input:focus~.custom-control-label::before,
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-secondary.dropdown-toggle:focus{
     box-shadow: none;
 }
 .alfa-bg-green{
@@ -2513,7 +2516,6 @@ p.alfa-test-card-bottom-content{
     font-family: 'Lato', sans-serif; 
     margin: 0;
 }
-
 /*AI SCORE MODAL*/
 .alfa-aiscore-modal .modal-dialog.modal-lg{
     max-width: 1200px;
@@ -2546,6 +2548,7 @@ p.alfa-test-card-bottom-content{
 .alfa-aiscore-modal .card.target-score{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+    max-width: 150px;
 }
 .alfa-aiscore-modal .card.target-score .card-body h2{
     font-size: 74px;
@@ -2727,6 +2730,109 @@ p.alfa-test-card-bottom-content{
 .alfa-dictionaryModal-btn-wrapper .btn-remove.active i{
     border-color: #333;
 }
+.click-to-view{
+    padding: 4px;
+    border: 1px solid #00cdcd;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #00cdcd;
+    text-transform: capitalize;
+    margin: 100px 0;
+    padding: 5px 25px;
+    transition: .3s;
+    font-weight: 500;
+}
+.click-to-view:hover{
+    background-color: #00cdcd;
+    color: #fff;
+}
+.comment-send{
+    border-radius: 50px;
+    background-color: #00cdcd;
+    color: #fff;
+    padding: 4px 25px;
+    margin-top: 12px;
+}
+.comment-send:hover{
+    background-color: #007777;
+    color: #fff;
+}
+.alfa-score-target-modal.comment .modal-header{
+    padding: 3px;
+}
+.alfa-score-target-modal.comment .modal-header .modal-title{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+}
+/*----
+    DICTIONARY PAGE
+-----*/
+.alfa-PT-header-wrapper.dictionary{
+    border-bottom: none;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; 
+}
+.alfa-PT-header-wrapper.dictionary .alfa-PT-header .alfa-PT-header-left h1{
+    color: #e8342b;
+}
+.alfa-PT-header-wrapper.dictionary .alfa-sidebar-nav.nav-pills .nav-link{
+    min-width: 110px;
+}
+.alfa-body.dictionary .btn.btn-secondary.rounded-dd {
+    background-color: transparent;
+    border-radius: 50px;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    text-transform: uppercase;
+    margin-right: 8px;
+    padding: 4px 15px; 
+}
+.alfa-body.dictionary .dropdown-toggle::after{
+    content: "\f107";
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    vertical-align: middle;
+    line-height: 0;
+}
+.alfa-body.dictionary .alfa-sidebar-gotoTop{
+    display: inline-block;
+}
+.alfa-body.dictionary .alfa-sidebar-main-card{
+    cursor: initial;
+    margin-bottom: 14px;
+}
+.alfa-body.dictionary.alfa-PT-sidebar .tab-content{
+    padding-bottom: 0;
+}
+.alfa-body.dictionary .alfa-sidebar-main-card h2 .alfa-id{
+    padding-left: 22px;
+    font-weight: 600;
+}
+.alfa-body.dictionary .alfa-sidebar-main-card h2 .alfa-id::after{
+    width: 50px;
+}
+.alfa-body.dictionary .alfa-sidebar-main-card h2 .alfa-content{
+    min-width: 80px;
+    padding-left: 35px;
+}
+.alfa-sidebar-main-card .alfa-PT-E-RS-labels .badge{
+    font-size: 12px;
+}
+.alfa-body.dictionary .alfa-PT-E-card-btns i{
+    transition: .3s;
+}
+.alfa-body.dictionary .alfa-PT-E-card-btns i.fa-volume-up{
+    color: #01dada;
+}
+.alfa-body.dictionary .alfa-PT-E-card-btns i.lni-trash{
+    color: #e8342b;
+}
+.alfa-body.dictionary .alfa-PT-E-card-btns i:hover{
+    transform: scale(.90);
+}
+
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;
