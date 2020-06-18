@@ -254,8 +254,8 @@ $(document).ready(function() {
     var myCircle = Circles.create({
         id: 'circles-reading-score-modal',
         radius: 36,
-        value: 70,
-        maxValue: 100,
+        value: 18,
+        maxValue: 32,
         width: 9, 
         colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
         duration: 400,
@@ -608,7 +608,28 @@ var Countdown = {
         });
       }
     });
-
+    $('.alfa-blank-dropzone').sortable({
+        group: 'alfa-blank-dropzone',
+        pullPlaceholder: false,
+        // set $item relative to cursor position
+        onDragStart: function ($item, container, _super) {
+          var offset = $item.offset(),
+              pointer = container.rootGroup.pointer;
+      
+          adjustment = {
+            left: pointer.left - offset.left,
+            top: pointer.top - offset.top
+          };
+      
+          _super($item, container);
+        },
+        onDrag: function ($item, position) {
+          $item.css({
+            left: position.left - adjustment.left,
+            top: position.top - adjustment.top
+          });
+        }
+      });
 
  //WAVE
  var wavesurfer = WaveSurfer.create({
