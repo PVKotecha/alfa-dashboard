@@ -3162,6 +3162,10 @@ body.dragging * {
     padding: 5px 25px;
     font-weight: 600;
     font-size: 16px;
+}
+.alfa-fib-rw-select p span.answer.wrong{
+    color: #e8342b;
+    border-bottom: 2px solid #e8342b; 
 }   
 .alfa-blank-dropzone-setting{
     border-bottom: 2px solid #000000;
@@ -3226,6 +3230,48 @@ body.dragging * {
     padding: 13px 25px;
     border-bottom: 2px solid #2fda61;
     font-weight: 600;
+}
+/*--
+    SPEAKING PAGES
+--*/
+.alfa-PT-header-wrapper.alfa-speaking{
+    border-bottom-color: #185d92;
+}
+.alfa-PT-header-wrapper.alfa-speaking .alfa-PT-header .alfa-PT-header-left h1{
+    color: #185d92;
+}
+.alfa-body.alfa-speaking .alfa-speech-test-card.alfa-PT-E-recording.alfa-card-player i.fa-play{
+    background-color: #185d92;
+    padding: 11px 14px; 
+    animation: pulse_animation_blue 1.3s infinite;    
+    font-size: 24px;
+}
+.alfa-body.alfa-speaking .alfa-PT-Examination-card .card-header h2,
+.alfa-body.alfa-reading .alfa-PT-Examination-card .card-header h2{
+    text-transform: unset;
+}
+.alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input{
+    border: none;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    height: 30px;
+}
+.alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input:focus{
+    outline: none;
+}
+.alfa-body.alfa-speaking .alfa-fib-rw-select .answer.wrong,
+.alfa-body.alfa-speaking .alfa-fib-rw-select .answer.right{ 
+    padding-bottom: 4px;
+}
+.alfa-body.alfa-speaking .alfa-fib-rw-select .answer.wrong,
+.alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input.wrong{
+    color: #e8342b;
+    border-bottom-color: #e8342b;
+}
+.alfa-body.alfa-speaking .alfa-fib-rw-select .answer.right,
+.alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input.right{
+    color: #2fda61;
+    border-bottom-color: #2fda61;
 }
 /*Css Loader*/
 .lds-ripple {
