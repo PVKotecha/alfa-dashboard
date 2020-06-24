@@ -3176,10 +3176,15 @@ body.dragging * {
     padding: 14px 1px;
     display: inline-block;
     list-style: none;
+    /* background-color: transparent;
+    border: 2px solid #11e6e6;
+    color: #11e6e6; */
 }
 .alfa-blank-dropzone .answer{
     font-size: 15px;
-    cursor: move;
+    cursor: move; 
+    box-shadow: 0 0 .25rem rgba(0,0,0,.45)!important;
+    margin-bottom: 8px;
 }
 .alfa-blank-dropzone.alfa-blank-dropzone-setting .answer{ 
     color: #11e6e6;
