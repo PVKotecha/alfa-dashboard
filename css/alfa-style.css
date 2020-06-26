@@ -3451,12 +3451,25 @@ body.dragging * {
     max-width: unset;
     font-size: 19px;
 }
+.alfa-body.template.dictionary .alfa-sidebar-main-card .alfa-PT-E-card-btns a{
+    background-color: #11e5e5;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    transition: .3s;
+}
+.alfa-body.template.dictionary .alfa-sidebar-main-card .alfa-PT-E-card-btns a:hover{
+    transform: scale(.9);
+}
 .alfa-body.template.dictionary .alfa-PT-E-card-btns i {
-    font-size: 28px;
+    font-size: 15px;
 } 
 /*
     Grammar
 */
+.alfa-PT-header-wrapper.alfa-reading.grammar{
+    border-color: #5fb1fb;
+}
 .alfa-PT-header-wrapper.alfa-reading.template.grammar .alfa-PT-header .alfa-PT-header-left h1{
     color: #5fb1fb;
 }
