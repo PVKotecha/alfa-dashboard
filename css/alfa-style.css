@@ -3457,6 +3457,7 @@ body.dragging * {
     font-size: 15px;
     border: none;
     transition: .3s;
+    text-transform: uppercase;
 }
 .alfa-body.template.dictionary .alfa-sidebar-main-card .alfa-PT-E-card-btns a:hover{
     transform: scale(.9);
