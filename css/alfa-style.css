@@ -3433,6 +3433,27 @@ body.dragging * {
     text-transform: unset;
     background: unset;
 }
+/*--
+    Template page
+--*/
+.alfa-body.alfa-PT-sidebar.template .card.alfa-sidebar-main-card{
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.alfa-body.alfa-PT-sidebar.template .card.alfa-sidebar-main-card:hover{
+    border-color: #2fda61;
+}
+.alfa-template-list-img{
+    max-width: 50px;
+}
+.alfa-body.template.dictionary .alfa-sidebar-main-card h2 .alfa-content{
+    padding-left: 15px;
+    max-width: unset;
+    font-size: 19px;
+}
+.alfa-body.template.dictionary .alfa-PT-E-card-btns i {
+    font-size: 28px;
+} 
 
 /*Css Loader*/
 .lds-ripple {
