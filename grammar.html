@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <!--LineIcons-->
+    <link rel="stylesheet" href="css/LineIcons.css">
+
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/alfa.svg" alt="logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mt-4 mt-lg-0 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Practice</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                            <div class="container d-block">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/speaking.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-speaking-menu-title">Speaking</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-test-read-aloud.html">Read Aloud</a>
+                                        <a class="dropdown-item" href="practice-test-repeat-sentence.html">Repeat
+                                            Sentence</a>
+                                        <a class="dropdown-item" href="practice-test-discribe-img.html">Describe
+                                            Image</a>
+                                        <a class="dropdown-item" href="practice-test-re-tell-lecture.html">Re-Tell
+                                            Lecture</a>
+                                        <a class="dropdown-item" href="practice-test-answer-short-que.html">Answer Short
+                                            Question</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/writing.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-writing-menu-title">writing</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerized
+                                            Written Text </a>
+                                        <a class="dropdown-item" href="practice-summerize-write-essay.html">Write
+                                            Essay</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/reading.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-reading-menu-title">reading</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-multi-choice-multi-ans.html">Multiple
+                                            Choice, Single Answer</a>
+                                        <a class="dropdown-item" href="practice-multi-choice-single-ans.html">Multiple
+                                            Choice, Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-reorder-para.html">Re-Order
+                                            Paragraph</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks.html">Reading: Fill
+                                            in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-rw.html">Reading
+                                            &amp; Writing: Fill in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Test</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/listening.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-listening-menu-title">listening</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-spoken-test.html">Summerize
+                                            Spoken Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-multi-ans-spoken.html">Multiple Choice, Multiple
+                                            Answer</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-spoken.html">Reading:
+                                            Fill in the Blanks</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-correct-summary.html">Highlight Correct Summery</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-single-ans-spoken.html">Multiple Choice,
+                                            Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-select-missing-word.html">Select Missing
+                                            Words</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-incorrect-words.html">Highlight Correct Words</a>
+                                        <a class="dropdown-item" href="practice-write-from-dictation.html">Write From
+                                            Ditection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Predictions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mock Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Strategy Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Announcement</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/Icon-awesome-user-circle.svg" alt="user dd icon">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right alfa-user-dd" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item media" href="#">
+                                <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
+                                <div class="media-body align-self-center">
+                                    <small>John Doe<br>
+                                        johndoe@gmail.com</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-star-of-david align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Upgrade to VIP
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-user-circle align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Profile Center
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-sign-out-alt align-self-center "></i>
+                                <div class="media-body align-self-center">
+                                    Logout
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Nav End-->
+    <!--Main Header-->
+    <div class="alfa-PT-header-wrapper alfa-reading template grammar">
+        <div class="container">
+            <div class="row no-gutters alfa-PT-header">
+                <div class="col-7">
+                    <div class="alfa-PT-header-left">
+                        <img src="img/grammar.svg" alt="Grammar">
+                        <h1>Grammar</h1>
+                    </div>
+                </div>
+                <div class="col-5 align-self-center text-right alfa-PT-header-right">
+                    <a href="javascript:void(0);">
+                        <img src="img/info-blue.svg" alt="info">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Header End-->
+    <!--Alfa body-->
+    <div class="alfa-body alfa-PT-sidebar dictionary template grammar pt-0 mt-2">
+        <div class="container">
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
+                repudiandae dolorem cupiditate? Soluta harum cumque porro eius, iusto</p>
+            <div class="card alfa-sidebar-main-card">
+                <div class="row">
+                    <div class="col-10 col-md-8 col-lg-7 align-self-center">
+                        <div class="align-self-center">
+                            <h2> 
+                                <img src="img/grammar.svg" alt="grammar" class="alfa-template-list-img"> 
+                                <span class="alfa-content">Grammar Rule 1</span> 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right">
+                        <div class="alfa-PT-E-card-btns">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-chevron-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card alfa-sidebar-main-card">
+                <div class="row">
+                    <div class="col-10 col-md-8 col-lg-7 align-self-center">
+                        <div class="align-self-center">
+                            <h2> 
+                                <img src="img/grammar.svg" alt="grammar" class="alfa-template-list-img"> 
+                                <span class="alfa-content">Grammar Rule 2</span> 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right">
+                        <div class="alfa-PT-E-card-btns">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-chevron-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card alfa-sidebar-main-card">
+                <div class="row">
+                    <div class="col-10 col-md-8 col-lg-7 align-self-center">
+                        <div class="align-self-center">
+                            <h2> 
+                                <img src="img/grammar.svg" alt="grammar" class="alfa-template-list-img"> 
+                                <span class="alfa-content">Grammar Rule 3</span> 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right">
+                        <div class="alfa-PT-E-card-btns">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-chevron-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card alfa-sidebar-main-card">
+                <div class="row">
+                    <div class="col-10 col-md-8 col-lg-7 align-self-center">
+                        <div class="align-self-center">
+                            <h2> 
+                                <img src="img/grammar.svg" alt="grammar" class="alfa-template-list-img"> 
+                                <span class="alfa-content">Grammar Rule 4</span> 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right">
+                        <div class="alfa-PT-E-card-btns">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-chevron-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card alfa-sidebar-main-card">
+                <div class="row">
+                    <div class="col-10 col-md-8 col-lg-7 align-self-center">
+                        <div class="align-self-center">
+                            <h2> 
+                                <img src="img/grammar.svg" alt="grammar" class="alfa-template-list-img"> 
+                                <span class="alfa-content">Grammar Rule 5</span> 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-4 col-lg-5 align-self-center text-md-right text-lg-right">
+                        <div class="alfa-PT-E-card-btns">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-chevron-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Alfa body End-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/circles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/wavesurfer.min.js"></script>
+    <script src="js/jquery.simplePagination.js"></script>
+    <script src="js/alfa-scripts.js"></script>
+
+</body>
+
+</html>

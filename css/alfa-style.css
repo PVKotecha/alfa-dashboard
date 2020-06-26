@@ -3454,6 +3454,15 @@ body.dragging * {
 .alfa-body.template.dictionary .alfa-PT-E-card-btns i {
     font-size: 28px;
 } 
+/*
+    Grammar
+*/
+.alfa-PT-header-wrapper.alfa-reading.template.grammar .alfa-PT-header .alfa-PT-header-left h1{
+    color: #5fb1fb;
+}
+.alfa-body.alfa-PT-sidebar.dictionary.template.grammar .card.alfa-sidebar-main-card:hover{
+    border-color: #5fb1fb;
+}
 
 /*Css Loader*/
 .lds-ripple {
