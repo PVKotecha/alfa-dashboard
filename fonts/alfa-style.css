@@ -2426,13 +2426,7 @@ p.alfa-test-card-bottom-content{
      -webkit-appearance: none;
      appearance: none;
 }
-.plyr__controls .plyr__controls__item select{
-    font-size: 16px;
-    height: 29px;
-    background-position: 30px;
-    background-size: 11px;
-    min-width: 47px;
-}
+
 .alfa-ASQ-select select:focus,
 .plyr__controls .plyr__controls__item select:focus{ 
     outline: none;
@@ -3621,87 +3615,6 @@ body.dragging * {
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback .submit-btn:hover{
     background-color: #0ca1a1;
 }
-/*
-    EXAM PREDICTION
-*/
-.alfa-PT-header-wrapper.exam-prediction{
-    border: none;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-}
-.alfa-PT-header-wrapper.exam-prediction .alfa-PT-header .alfa-PT-header-left h1{
-    color: #11e5e5;
-} 
-.alfa-body.alfa-PT-sidebar.dictionary.template.exam-prediction .card.alfa-sidebar-main-card:hover{
-    border-color: #11e5e5;
-} 
-.alfa-body.template.dictionary.exam-prediction .alfa-sidebar-main-card .alfa-PT-E-card-btns a{
-    background-color: #11e6e6;
-}
-.alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id{
-    padding-left: 0;
-    padding-right: 16px;
-    text-align: center;
-    line-height: 1;
-    display: inline-block;
-    max-width: 100px;
-}
-.alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id .date{
-    font-size: 14px;
-}   
-.alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id .date .score{
-    color: #000; 
-}    
-.alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id::after{
-    width: 106px;
-    left: -14px;
-    bottom: -12px;
-} 
-.alfa-PT-header-wrapper.exam-prediction.announcement .alfa-PT-header .alfa-PT-header-left h1{
-    color: #5fb1fb;
-}
-.alfa-body.alfa-PT-sidebar.dictionary.template.exam-prediction.announcement .card.alfa-sidebar-main-card:hover{
-    border-color: #5fb1fb;
-} 
-.alfa-body.dictionary.exam-prediction.announcement .alfa-sidebar-main-card h2 .alfa-id{
-    padding-left: 8px;
-    margin-top: 10px;
-}
-.alfa-body.dictionary.exam-prediction.announcement .alfa-sidebar-main-card h2 .date{
-    position: relative;
-}
-.alfa-body.dictionary.exam-prediction.announcement .alfa-sidebar-main-card h2 .date small{
-    position: absolute;
-    bottom: -19px;
-    left: 0; 
-    color: #898989;
-}
-.alfa-body.dictionary.exam-prediction.announcement .alfa-sidebar-main-card h2 .alfa-id img{
-    width: 40px;
-}   
-.alfa-body.dictionary.exam-prediction.announcement .alfa-sidebar-main-card h2 .alfa-id::after{
-    width: 9px;
-    left: -16px;
-    bottom: -24px;
-    height: 80px;
-    background-color: #5fb1fb;
-} 
-.alfa-body.template.dictionary.exam-prediction.announcement .alfa-sidebar-main-card .alfa-PT-E-card-btns a{
-    background: none;
-    color: #000;
-} 
-.alfa-body.template.dictionary.exam-prediction.announcement .alfa-sidebar-main-card .alfa-PT-E-card-btns a i{
-    font-size: 19px;
-    margin-top: 15px;
-}
-.alfa-body.template.dictionary.exam-prediction.announcement .alfa-body.template.dictionary .alfa-PT-E-card-btns i{
-    font-size: 26px;
-    font-weight: 600;
-}
-.alfa-body.alfa-PT-sidebar.template.exam-prediction.announcement .card.alfa-sidebar-main-card {
-    padding: 3px 16px 22px 16px;
-}
-
-
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;
@@ -3930,8 +3843,7 @@ body.dragging * {
         margin: 0 auto;
     }
     .alfa-PT-E-recording.alfa-card-player .plyr__progress input[type=range] {
-        width: 230px !important;
-        margin: 20px 0;
+        width: 20px;
     }
     .alfa-ASQ-select select, .plyr__controls .plyr__controls__item select{
         margin: 0 !important;
