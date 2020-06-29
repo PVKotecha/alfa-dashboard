@@ -3839,7 +3839,13 @@ body.dragging * {
     font-weight: 600;
     text-transform: capitalize;
 }
-
+.alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement .modal-announce-img{
+    display: inline-block;
+    max-width: 54px;
+}
+.alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2{
+    color: #5fb1fb;
+}
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;
