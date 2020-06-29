@@ -3842,9 +3842,21 @@ body.dragging * {
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement .modal-announce-img{
     display: inline-block;
     max-width: 54px;
+    margin-right: 10px;
 }
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2{
     color: #5fb1fb;
+}
+.alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2 span{
+    position: relative;
+}
+.alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2 small{
+    position: absolute;
+    color: #b3b3b3;
+    bottom: -20px;
+    left: 0;
+    font-size: 14px;
+    font-family: "Lato";
 }
 /*Css Loader*/
 .lds-ripple {
