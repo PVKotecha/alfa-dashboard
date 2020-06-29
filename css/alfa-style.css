@@ -3656,6 +3656,7 @@ body.dragging * {
     left: -14px;
     bottom: -12px;
 } 
+/*Announcement*/
 .alfa-PT-header-wrapper.exam-prediction.announcement .alfa-PT-header .alfa-PT-header-left h1{
     color: #5fb1fb;
 }
@@ -3700,7 +3701,144 @@ body.dragging * {
 .alfa-body.alfa-PT-sidebar.template.exam-prediction.announcement .card.alfa-sidebar-main-card {
     padding: 3px 16px 22px 16px;
 }
-
+/*Report Exam Category*/
+.alfa-body .report-exam-category .card-body .btn-group-toggle .btn-secondary{
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 16px 32px;
+    margin: 38px 22px;
+    border-radius: 10px;
+    background-color: #aaa;
+    border: 0;
+    transition: .3s;
+    box-shadow: 0 0 .25rem rgba(0,0,0,.35)!important;
+}
+.alfa-body .report-exam-category .card-body .btn-group-toggle .btn-secondary:hover{
+    transform: scale(1.09);
+}
+.alfa-body .report-exam-category .card-body .btn-group-toggle .btn-secondary.active{
+    background-color: #01dada;
+}
+.alfa-body .report-exam-details .card-body form label{
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.alfa-body .report-exam-details .alfa-score-analysis-modal{
+    max-width: 145px;
+}
+.alfa-score-analysis-modal .card .card-header.overall{
+    background-color: #e8342b;
+} 
+.alfa-score-analysis-modal .card .card-body.overall{
+    padding: 5px;
+}
+.alfa-score-analysis-modal .card .card-body.overall input::placeholder{
+    color: #ccc;
+    font-weight: 300;
+}
+.alfa-score-analysis-modal .card .card-body.overall input{
+    border: none;
+    text-align: center;
+    font-size: 34px;
+    padding: 0;
+    line-height: 0;
+    color: #e8342b;
+    font-weight: 600;
+}
+.alfa-score-analysis-modal .card .card-body.overall.reading input,
+.alfa-score-analysis-modal .card .card-body.fluency input,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .reading,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .fluency{
+    color: #2fda61;
+}
+.alfa-score-analysis-modal .card .card-body.overall.writing input,
+.alfa-score-analysis-modal .card .card-body.pronoun input,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .writing,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .pronoun{
+    color: #5fb1fb;
+}
+.alfa-score-analysis-modal .card .card-body.overall.listening input,
+.alfa-score-analysis-modal .card .card-body.spelling input,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .listening,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .spelling{
+    color: #185d92;
+}
+.alfa-score-analysis-modal .card .card-body.overall.speaking input,
+.alfa-score-analysis-modal .card .card-body.vocab input,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .speaking,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .vocab{
+    color: #ec935f;
+} 
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .overall,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .grammar{
+    color: #e8342b;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .discourse{
+    color: #00cdcd;
+}
+.alfa-score-analysis-modal .card .card-header.overall.grammar{
+    background-color: rgba(232, 52, 43, 0.8);
+} 
+.alfa-score-analysis-modal .card .card-header.fluency{
+    background-color: rgba(47, 218, 97, .8);
+} 
+.alfa-score-analysis-modal .card .card-header.pronoun{
+    background-color: rgba(103, 184, 252, .8);
+} 
+.alfa-score-analysis-modal .card .card-header.spelling{
+    background-color: rgba(24, 93, 146, .8);
+} 
+.alfa-score-analysis-modal .card.speaking .card-header.vocab{
+    background-color: rgba(236, 147, 95, .8);
+} 
+.alfa-score-analysis-modal .card.speaking .card-header.discourse{
+    background-color: rgba(1, 218, 218, 0.8);
+} 
+.alfa-body .report-exam-details .submit-btn{
+    background-color: #00cdcd;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    max-width: 350px;
+    border-radius: 50px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.alfa-body .report-exam-details .submit-btn:hover{
+    background-color: #04a3a3;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list{
+    margin-bottom: 12px;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .card-body .row .col-1{
+    border-right: 2px solid #666;
+    min-width: 105px;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .card-body .row .col-11{
+    max-width: 89.666667%;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper{
+    text-align: center;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper img{
+    max-width: 36px;
+}
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .overall,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .reading,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .writing,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .listening,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .speaking,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .grammar,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .fluency,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .pronoun,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .spelling,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .vocab,
+.alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .img-wrapper .discourse{
+    margin-bottom: 0;
+    margin-top: 8px; 
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
 /*Css Loader*/
 .lds-ripple {
