@@ -3843,9 +3843,11 @@ body.dragging * {
     display: inline-block;
     max-width: 54px;
     margin-right: 10px;
+    margin-top: 15px;
 }
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2{
     color: #5fb1fb;
+    margin-top: -15px;
 }
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2 span{
     position: relative;
