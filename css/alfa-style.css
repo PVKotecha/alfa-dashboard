@@ -2425,7 +2425,7 @@ p.alfa-test-card-bottom-content{
     -moz-appearance: none;
      -webkit-appearance: none;
      appearance: none;
-}
+} 
 .plyr__controls .plyr__controls__item select{
     font-size: 16px;
     height: 29px;
@@ -3859,6 +3859,184 @@ body.dragging * {
     left: 0;
     font-size: 14px;
     font-family: "Lato";
+}
+.alfa-body.alfa-PT-sidebar.alfa-faq-card-main .upload-score-report .card-body{
+    text-align: center;
+}
+.alfa-body.alfa-PT-sidebar.alfa-faq-card-main .upload-score-report .card-body .btn.btn-secondary{
+    margin: 0 8px;
+    background-color: #11e6e6;
+    color: #fff;
+    border-radius: 50px;
+    min-width: 160px;
+    border: none;
+}
+.alfa-body.alfa-PT-sidebar.alfa-faq-card-main .upload-score-report .card-body .btn.btn-secondary.active{
+    background-color: #14c8c8;
+}
+/*
+    Profile
+*/
+.alfa-body.alfa-PT-sidebar.profile .profile-form{
+    margin: 26px auto 0;    
+    max-width: 520px;
+    text-align: center;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper img{
+    max-width: 120px;
+    border-radius: 50%;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper i{
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    color: #fff;
+    background-color: #11e6e6;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper i:hover{
+    transform: scale(.9);
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-text{
+    background-color: #11e5e5;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+    padding-left: 16px;
+    padding-right: 15px;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .form-control,
+.alfa-body.alfa-PT-sidebar.profile .profile-form .custom-select{
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-append .btn.btn-outline-secondary{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: none;
+    color: #11e5e5; 
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-append .btn.btn-outline-secondary:hover{
+    background-color: transparent;
+    color: #14c8c8;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-text.eye{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    background-color: transparent;
+    color: #11e5e5;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .form-control.eye{
+    border-radius: 0;
+    border-right: 0;
+}
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-append .btn.btn-outline-secondary:hover,
+.alfa-body.alfa-PT-sidebar.profile .profile-form .input-group-text.eye:hover{
+    background-color: transparent;
+    color: #14c8c8;
+    cursor: pointer;
+}
+/*
+    strategy-video
+*/
+.strategy-video .rounded-dd{
+    background-color: #11e5e5;
+    color: #fff !important;
+    border-radius: 50px;
+    color: #b3b3b3;
+    border: 0;
+    text-transform: uppercase;
+    margin-right: 8px;
+    padding: 6px 16px;
+    margin-top: 8px;
+}
+.strategy-video .rounded-dd:after{
+    content: "\f107";
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    vertical-align: middle;
+    line-height: 0;
+}
+.alfa-body.strategy-video .video-card{
+    border: 0;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+.alfa-body.strategy-video .card.alfa-PT-Examination-card .card-header h2{
+    font-size: 15px;
+}
+.alfa-body.strategy-video .video-card .card-body{
+    box-shadow: 0 0 .25rem rgba(0,0,0,.25)!important;
+    border-radius: 8px;
+    max-height: 164px;
+    overflow: hidden;
+}
+.alfa-body.strategy-video .video-card .img-fluid{
+    max-width: 215px;
+    min-width: 215px;
+}
+.alfa-body.strategy-video .video-card .card-footer{
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.alfa-body.strategy-video .video-card .card-footer h4{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.alfa-body.strategy-video .video-card .card-footer span{
+    font-size: 12px;
+} 
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link{
+    background-color: #b3b3b3;
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link.general.active{
+    background-color: #14c8c8;
+}
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link.speaking.active{
+    background-color: #ec935f;
+}
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link.writing.active{
+    background-color: #5fb1fb;
+}
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link.reading.active{
+    background-color: #2fda61;
+}
+.alfa-body.strategy-video .sidebar .card-body .nav-pills .nav-link.listening.active{
+    background-color: #185d92;
+}
+.alfa-body.strategy-video .tab-content .btn.btn-link{
+    color: #11e6e6;
+    padding-left: 0;
+}
+.alfa-body.strategy-video .tab-content .btn.btn-link i{
+    vertical-align: middle;
+    margin-left: 3px;
 }
 /*Css Loader*/
 .lds-ripple {
