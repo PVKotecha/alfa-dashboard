@@ -577,7 +577,7 @@ var Countdown = {
  //WAVE
  var wavesurfer = WaveSurfer.create({
     container: '#waveform',
-    height: 200,
+    height: 110,
     waveColor: '#b3b3b3',
     progressColor: '#ec935f',
     cursorColor: '#ccc',
