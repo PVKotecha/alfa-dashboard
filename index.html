@@ -1403,7 +1403,14 @@
   <script src="js/flipclock.min.js"></script>
   <script src="js/alfa-scripts.js"></script>
 
-   
+   <script>  
+$('.accordion').on('shown.bs.collapse', function(e) {
+  var $card = $(this).closest('.card');
+  $('html,body').animate({
+    scrollTop: $card.offset().top
+  }, 500);
+});
+   </script>
 </body>
 
 </html>

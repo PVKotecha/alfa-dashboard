@@ -14,6 +14,9 @@ p::first-letter,
 span::first-letter{
     text-transform: capitalize;
 }
+/* .tooltip-inner {
+    text-align:left;
+  } */
 .bg-cyan{
     background-color: #00cdcd;
 }
@@ -44,8 +47,10 @@ span::first-letter{
 .custom-control-input:focus~.custom-control-label::before,
 .btn-secondary:not(:disabled):not(.disabled).active:focus, 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, 
-.show>.btn-secondary.dropdown-toggle:focus,
-.custom-select:focus{
+.show>.btn-secondary.dropdown-toggle:focus, 
+.fc-button-primary:not(:disabled):active:focus, .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc-button-primary:focus,
+.custom-select:focus{   
     box-shadow: none;
 }
 .alfa-bg-green{
@@ -286,6 +291,7 @@ span::first-letter{
     padding: 12px 22px;
     transition: .3s;
     z-index: 10;
+    text-transform: capitalize;
 }
 .alfa-today-session-card i{
     position: absolute;
@@ -522,10 +528,26 @@ span::first-letter{
 }
 .alfa-speech-test-card i{
     background-color: #ec935f;
-    padding: 15px 20px;
+    padding: 23px 29px;
     animation: pulse_animation_orange 1.3s infinite;
 } 
-
+.alfa-speech-test-card .question,
+.alfa-listen-test-card .question{
+    position: absolute;
+    right: 8px;
+    top: 2px;
+}
+.alfa-speech-test-card .question i,
+.alfa-listen-test-card .question i{
+    animation: none;
+    padding: 0;
+    color: #ec935f;
+    background-color: transparent;
+    font-size: 21px;
+}
+.alfa-listen-test-card .question i{
+    color: #185d92;
+}
 .alfa-speech-test-card i.fa-play{
     padding: 11px 14px;
 }
@@ -536,6 +558,7 @@ span::first-letter{
 } 
 p.alfa-test-card-bottom-content{
     margin-top: 20px;
+    text-align: center;
 }
 .alfa-listen-test-card a.alfa-test-card-controller,
 .alfa-speech-test-card a.alfa-test-card-controller{
@@ -595,6 +618,22 @@ p.alfa-test-card-bottom-content{
     text-transform: uppercase;
     margin-top: 16px;
     font-weight: 600;
+    color: #333;
+}
+.alfa-score-feedback-card a.question,
+.alfa-vocab-bank-card a.question,
+.alfa-compatibility-card a.question{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: #185d92;
+}
+.alfa-vocab-bank-card a.question{
+    color: #e8342b;
+}
+.alfa-compatibility-card a.question{
+    color: #ec935f;
+    right: 20px;
 }
 .alfa-compatibility-indicator{
     position: absolute;
@@ -721,6 +760,18 @@ p.alfa-test-card-bottom-content{
     top: -14px;
     right: 20px;
 }
+.alfa-your-target-card a.question{
+    position: absolute;
+    color: #fff;
+    top: -18px;
+    right: 42px;
+}
+.alfa-your-target-card a.question i{
+    position: unset;
+    color: #fff;
+    top: unset;
+    right: unset;
+}
 /*Exam Countdown*/
 .alfa-exam-count-card{
     background-color: #00cdcd;
@@ -743,6 +794,18 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     top: -14px;
     right: 20px;
+}
+.alfa-exam-count-card a.question{
+    position: absolute;
+    color: #fff;
+    top: -18px;
+    right: 42px;
+}
+.alfa-exam-count-card a.question i{
+    position: unset;
+    color: #fff;
+    top: unset;
+    right: unset;
 }
 .flip-clock-wrapper{ 
     margin-top: 60px;
@@ -806,6 +869,13 @@ p.alfa-test-card-bottom-content{
     padding: 2px 0;
     font-size: 20px;
 }
+.alfa-daily-task-card .card-header a{
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #fff;
+}
 .alfa-daily-task-card .card-body{
     padding: 0;
 }
@@ -864,6 +934,13 @@ p.alfa-test-card-bottom-content{
     border-top-left-radius: 10px;
     padding: 2px 0;
     font-size: 20px;
+}
+.alfa-today-task-card .card-header a{
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #fff;
 }
 .alfa-today-task-card .card-body{
     padding:20px 8px;
@@ -963,6 +1040,13 @@ p.alfa-test-card-bottom-content{
     padding: 2px 0;
     font-size: 20px;
 }
+.alfa-weekly-achievement-card .card-header a{
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #00cdcd;
+}
 .alfa-weekly-achievement-card .card-header{
     background-color: #fff;
     color: #00cdcd;
@@ -977,6 +1061,7 @@ p.alfa-test-card-bottom-content{
     color: #fff;
     margin-bottom: 0;
     margin-top: 10px;
+    text-align: center;
 }
 .alfa-weekly-achievement-card .card-body i{
     font-size: 42px;
@@ -1398,6 +1483,9 @@ p.alfa-test-card-bottom-content{
 }
     .alfa-PT-E-recording.alfa-card-player .plyr__progress input[type=range]{
     width: 700px !important;
+}
+.alfa-speech-test-card.alfa-PT-E-recording i{
+    padding: 15px 20px;
 }
 .alfa-speech-test-card.alfa-PT-E-recording .progress.alfa-progress
 /* .alfa-PT-E-recording.alfa-card-player input[type=range]::-webkit-slider-runnable-track*/{ 
@@ -2499,6 +2587,7 @@ p.alfa-test-card-bottom-content{
 .alfa-login-attempt-modal p{
     font-size: 16px;
     color: #b3b3b3;
+    text-align: center;
 }
 .alfa-login-attempt-modal .modal-footer{
     border: 0;
@@ -3117,7 +3206,7 @@ body.dragging * {
     font-size: 16px;
     font-weight: 600;
     /* color: #fff; */
-    line-height: 2;
+    line-height: 1.9;
     /* background: #5c9cd8; */
     border-radius: 0;
     cursor: pointer;
@@ -3370,13 +3459,14 @@ body.dragging * {
     border-bottom: 2px solid #000;
     text-align: center;
     height: 30px;
+    font-size: 17px;
 }
 .alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input:focus{
     outline: none;
 }
 .alfa-body.alfa-speaking .alfa-fib-rw-select .answer.wrong,
 .alfa-body.alfa-speaking .alfa-fib-rw-select .answer.right{ 
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 .alfa-body.alfa-speaking .alfa-fib-rw-select .answer.wrong,
 .alfa-body.alfa-speaking .alfa-fib-rw-select .alfa-input.wrong{
@@ -3696,7 +3786,7 @@ body.dragging * {
 .alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id::after{
     width: 106px;
     left: -14px;
-    bottom: -12px;
+    bottom: -16px;
 } 
 /*Announcement*/
 .alfa-PT-header-wrapper.exam-prediction.announcement .alfa-PT-header .alfa-PT-header-left h1{
@@ -3891,6 +3981,7 @@ body.dragging * {
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2{
     color: #5fb1fb;
     margin-top: -15px;
+    font-size: 14px;
 }
 .alfa-score-target-modal.alfa-login-attempt-modal.dictionary.faq-feedback.announcement h2 span{
     position: relative;
@@ -3931,7 +4022,10 @@ body.dragging * {
 }
 .alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper img{
     max-width: 120px;
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 50%;
+    background-size: cover;
 }
 .alfa-body.alfa-PT-sidebar.profile .profile-form .img-wrapper i{
     position: absolute;
@@ -4087,6 +4181,7 @@ body.dragging * {
     text-align: center;
     max-height: unset;
     min-height: 351px;
+    padding: 25px;
 }
 .alfa-body.strategy-video .video-card.contact-card .card-body .img-fluid{
     max-width: 55px;
@@ -4143,6 +4238,41 @@ body.dragging * {
     background-color: #11e6e6;
     border: none;
 }
+
+/*Error Pages*/
+.alfa-err h1{
+    font-weight: 600; 
+    font-family: 'Lato', sans-serif;
+    font-size: 36px; 
+}
+.alfa-err-btn-container{
+    text-align: center;
+    margin-top: 28px;
+}
+.alfa-err-btn-container .homepage{
+    border-radius: 0;
+    background-color: #11e5e5;
+    color: #fff;
+    margin-right: 24px;
+    transition: .4s;
+    font-weight: 600;
+}
+.alfa-err-btn-container .contact{
+    border-radius: 0;
+    border: 1px solid #11e5e5;
+    color: #11e5e5;
+    transition: .4s;
+    font-weight: 600;
+}
+.alfa-err-btn-container .homepage:hover{
+    background-color: #14c8c8;
+}
+.alfa-err-btn-container .contact:hover{
+    background-color: #11e5e5;
+    color: #fff;
+}
+
+
 /*Css Loader*/
 .lds-ripple {
     display: inline-block;
@@ -4267,6 +4397,10 @@ body.dragging * {
         min-width: 355px;
         max-width: 355px;
     }
+    .alfa-discribe-img img{
+        max-width: 410px;
+        min-width: 410px;
+    }
 } 
 @media(max-width: 768px){
     .navbar-nav .nav-item{
@@ -4333,6 +4467,19 @@ body.dragging * {
     }
     .alfa-score-analysis-modal .card{
         margin-bottom: 12px;
+    }
+    .alfa-discribe-img img{
+        max-width: unset;
+        min-width: unset;
+        width: 100% !important;
+    }
+    .alfa-reorder-para .source, .alfa-reorder-para .target{
+        max-width: unset;
+    }
+    .alfa-body.dictionary.exam-prediction .alfa-sidebar-main-card h2 .alfa-id::after {
+        width: 5px;
+        left: -16px;
+        bottom: -12px;
     }
 }
 @media (min-width: 575.98px) and (max-width: 601px){
@@ -4416,7 +4563,8 @@ body.dragging * {
         background-position: 43px;
         width: 65px;
     }
-    .alfa-aiscore-modal .card.speaking{
+    .alfa-aiscore-modal .card.speaking,
+    .alfa-aiscore-modal .card.reading{
         margin-top: 14px;
     }
     .alfa-dictionaryModal-btn-wrapper .btn-unknown{
@@ -4434,6 +4582,7 @@ body.dragging * {
     }
     .alfa-reorder-para .reorder-arrow{
         height: 8px;
+        display: none;
     }
     .alfa-reorder-para .reorder-arrow img{
         transform: rotate(90deg);
@@ -4461,8 +4610,8 @@ body.dragging * {
     }
     .alfa-body.dictionary .alfa-sidebar-main-card h2 .alfa-id::after {
         width: 50px;
-        height: 5px;
-        top: 45px;
+        height: 75px;
+        top: -20px;
     }
     .alfa-body.dictionary .alfa-sidebar-main-card h2 .alfa-content {
         padding-left: 20px;
@@ -4549,6 +4698,18 @@ body.dragging * {
     .alfa-body .card.alfa-PT-Examination-card.report-exam-details.list .card-body .row .col-1{
         align-self: center;
         border: 0;
+    }
+    .plyr__controls .plyr__controls__item.plyr__volume {
+        padding-right: 5px;
+        max-width: 200px;
+        margin: 10px auto 0;
+    }
+    .alfa-aiscore-modal .card.enabling-skill .alfa-progress{
+        max-width: 80%;
+    }
+    .alfa-body.strategy-video .video-card .img-fluid {
+        max-width: unset;
+        min-width: unset;
     }
  }
  @media(min-width: 376px) and (max-width: 425px){

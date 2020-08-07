@@ -19,7 +19,7 @@ $(document).ready(function() {
             return value + '% <small> <br> Completed</small>';
         },
         colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
-        duration: 400,
+        duration: 5400,
         wrpClass: 'circles-wrp',
         textClass: 'circles-text',
         valueStrokeClass: 'circles-valueStroke',
