@@ -3352,6 +3352,23 @@
         }
         .w-ugly-word{
             color: #e8342b;
+        } 
+        .tooltip-inner{
+            background-color: #fff;
+            color: #000; 
+            box-shadow: 0 0 8px #000;
+        }
+        .bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+            border-bottom-color: #fff !important;
+        }
+        .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+            border-top-color: #fff !important;
+        }
+        .bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+            border-left-color: #fff !important;
+        }
+        .bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+            border-right-color: #fff !important;
         }
     </style>
 
@@ -3517,12 +3534,12 @@
                                     </div>
                                     <div class="card-body">
                                         <p class="mb-0 para">Lorem ipsum dolor sit, amet <span
-                                                class="w-good-word">consectetur</span> adipisicing elit. Inventore officia quo
-                                            accusamus deserunt voluptate, <span class="w-bad-word">magni reiciendis</span>
+                                                class="writingModalTooltip w-good-word" data-toggle="tooltip" data-placement="top">consectetur</span> adipisicing elit. Inventore officia quo
+                                            accusamus deserunt voluptate, <span class="writingModalTooltip w-bad-word" data-toggle="tooltip" data-placement="top">magni reiciendis</span>
                                             facilis nemo, perspiciatis necessitatibus error dolores id beatae ipsum rem
                                             laudantium magnam odit tenetur!.
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span
-                                                class="w-ugly-word">Inventore officia quo </span> accusamus deserunt voluptate,
+                                                class="writingModalTooltip w-ugly-word" data-toggle="tooltip" data-placement="top">Inventore officia quo </span> accusamus deserunt voluptate,
                                             magni reiciendis facilis nemo, perspiciatis necessitatibus error dolores id
                                             beatae ipsum rem laudantium magnam odit tenetur!</p>
                                     </div>
@@ -3591,7 +3608,17 @@
     <script src="js/wavesurfer.min.js"></script>
     <script src="js/jquery.simplePagination.js"></script>
     <script src="js/alfa-scripts.js"></script>
-
+    <script>
+        $('.w-good-word').tooltip({
+            title: "Modal Good Word Tooltip"
+        })
+        $('.w-bad-word').tooltip({
+            title: "Modal Bad Word Tooltip"
+        })
+        $('.w-ugly-word').tooltip({
+            title: "Modal Ugly Word Tooltip"
+        })
+    </script>
 </body>
 
 </html>

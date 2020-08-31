@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <!--LineIcons-->
+    <link rel="stylesheet" href="css/LineIcons.css">
+
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/alfa.svg" alt="logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mt-4 mt-lg-0 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Practice</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                            <div class="container d-block">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/speaking.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-speaking-menu-title">Speaking</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-test-read-aloud.html">Read Aloud</a>
+                                        <a class="dropdown-item" href="practice-test-repeat-sentence.html">Repeat
+                                            Sentence</a>
+                                        <a class="dropdown-item" href="practice-test-discribe-img.html">Describe
+                                            Image</a>
+                                        <a class="dropdown-item" href="practice-test-re-tell-lecture.html">Re-Tell
+                                            Lecture</a>
+                                        <a class="dropdown-item" href="practice-test-answer-short-que.html">Answer Short
+                                            Question</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/writing.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-writing-menu-title">writing</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerized
+                                            Written Text </a>
+                                        <a class="dropdown-item" href="practice-summerize-write-essay.html">Write
+                                            Essay</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/reading.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-reading-menu-title">reading</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-multi-choice-multi-ans.html">Multiple
+                                            Choice, Single Answer</a>
+                                        <a class="dropdown-item" href="practice-multi-choice-single-ans.html">Multiple
+                                            Choice, Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-reorder-para.html">Re-Order
+                                            Paragraph</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks.html">Reading: Fill
+                                            in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-rw.html">Reading
+                                            &amp; Writing: Fill in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Test</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/listening.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-listening-menu-title">listening</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-spoken-test.html">Summerize
+                                            Spoken Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-multi-ans-spoken.html">Multiple Choice, Multiple
+                                            Answer</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-spoken.html">Reading:
+                                            Fill in the Blanks</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-correct-summary.html">Highlight Correct Summery</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-single-ans-spoken.html">Multiple Choice,
+                                            Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-select-missing-word.html">Select Missing
+                                            Words</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-incorrect-words.html">Highlight Correct Words</a>
+                                        <a class="dropdown-item" href="practice-write-from-dictation.html">Write From
+                                            Ditection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="latest-pte-exam-predicon-download.html">Predictions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mock Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="strategy-video.html">Strategy Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback-and-faq.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcement.html">Announcement</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/Icon-awesome-user-circle.svg" alt="user dd icon">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right alfa-user-dd" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item media" href="#">
+                                <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
+                                <div class="media-body align-self-center">
+                                    <small>John Doe<br>
+                                        johndoe@gmail.com</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-star-of-david align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Upgrade to VIP
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="profile.html">
+                                <i class="fa fa-user-circle align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Profile Center
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-sign-out-alt align-self-center "></i>
+                                <div class="media-body align-self-center">
+                                    Logout
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Nav End-->
+    <style>
+        .alfa-bg-writing{
+            background-color: #5fb1fb;
+        }
+        .alfa-PT-header-wrapper.dictionary.marking{
+
+        }
+        .alfa-PT-header-wrapper.dictionary.marking .alfa-PT-header .alfa-PT-header-left h1{
+            color: #f8c155;
+        } 
+        .alfa-body.marking table{
+            background-color: rgb(233, 233, 233);
+            padding: 8px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .alfa-body.marking table tr{
+            color: #fff;
+        }
+        .alfa-body.marking table thead tr th{
+            background-color: #fff;
+            color: #000;
+        }
+        .alfa-body.marking table thead tr th, 
+        .alfa-body.marking table tbody tr td{ 
+            vertical-align: middle;
+            border-radius: 12px;
+            border: 2px solid rgb(233, 233, 233);
+            padding: 2px 8px;
+            text-align: center;
+        }
+        .alfa-body.marking table thead tr th.bg-white, 
+        .alfa-body.marking table tbody tr td.bg-white{
+            color: #000;
+        }
+        .alfa-bg-blue.opct1{ background-color: rgba(3, 171, 171,.95) !important; color: #000 !important; }
+        .alfa-bg-blue.opct2{ background-color: rgba(3, 171, 171,.9) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct3{ background-color: rgba(3, 171, 171,.85) !important; color: #000 !important; }
+        .alfa-bg-blue.opct4{ background-color: rgba(3, 171, 171,.8) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct5{ background-color: rgba(3, 171, 171,.75) !important; color: #000 !important; }
+        .alfa-bg-blue.opct6{ background-color: rgba(3, 171, 171,.7) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct6{ background-color: rgba(3, 171, 171,.65) !important; color: #000 !important; }
+        .alfa-bg-blue.opct7{ background-color: rgba(3, 171, 171,.6) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct8{ background-color: rgba(3, 171, 171,.55) !important; color: #000 !important; }
+        .alfa-bg-blue.opct9{ background-color: rgba(3, 171, 171,.5) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct10{ background-color: rgba(3, 171, 171,.45) !important; color: #000 !important; }
+        .alfa-bg-blue.opct11{ background-color: rgba(3, 171, 171,.4) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct12{ background-color: rgba(3, 171, 171,.35) !important; color: #000 !important; }
+        .alfa-bg-blue.opct13{ background-color: rgba(3, 171, 171,.3) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct14{ background-color: rgba(3, 171, 171,.25) !important; color: #000 !important; }
+        .alfa-bg-blue.opct15{ background-color: rgba(3, 171, 171,.2) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct16{ background-color: rgba(3, 171, 171,.15) !important; color: #000 !important; }
+        .alfa-bg-blue.opct17{ background-color: rgba(3, 171, 171,.1) !important;  color: #000 !important;}
+        .alfa-bg-blue.opct18{ background-color: rgba(3, 171, 171,.05) !important; color: #000 !important; }
+        .alfa-bg-blue.opct19{ background-color: rgba(3, 171, 171,0) !important;  color: #000 !important; }
+        .bg-primary.opct1 {background-color: rgba(0, 123, 255, .95)!important; color: #000 !important;}
+        .bg-primary.opct2 {background-color: rgba(0, 123, 255, .9)!important; color: #000 !important;}
+        .bg-primary.opct3 {background-color: rgba(0, 123, 255, .85)!important; color: #000 !important;}
+        .bg-primary.opct4 {background-color: rgba(0, 123, 255, .8)!important; color: #000 !important;}
+        .bg-primary.opct5 {background-color: rgba(0, 123, 255, .75)!important; color: #000 !important;}
+        .bg-primary.opct6 {background-color: rgba(0, 123, 255, .7)!important; color: #000 !important;}
+        .bg-primary.opct7 {background-color: rgba(0, 123, 255, .65)!important; color: #000 !important;}
+        .bg-primary.opct8 {background-color: rgba(0, 123, 255, .6)!important; color: #000 !important;}
+        .bg-primary.opct9 {background-color: rgba(0, 123, 255, .55)!important; color: #000 !important;}
+        .bg-primary.opct10 {background-color: rgba(0, 123, 255, .5)!important; color: #000 !important;}
+        .bg-primary.opct11 {background-color: rgba(0, 123, 255, .45)!important; color: #000 !important;}
+        .bg-primary.opct12 {background-color: rgba(0, 123, 255, .4)!important; color: #000 !important;}
+        .bg-primary.opct13 {background-color: rgba(0, 123, 255, .35)!important; color: #000 !important;}
+        .bg-primary.opct14 {background-color: rgba(0, 123, 255, .3)!important; color: #000 !important;}
+        .bg-primary.opct15 {background-color: rgba(0, 123, 255, .25)!important; color: #000 !important;}
+        .bg-primary.opct16 {background-color: rgba(0, 123, 255, .2)!important; color: #000 !important;}
+        .bg-primary.opct17 {background-color: rgba(0, 123, 255, .15)!important; color: #000 !important;}
+        .bg-primary.opct18 {background-color: rgba(0, 123, 255, .1)!important; color: #000 !important;}
+        .bg-primary.opct19 {background-color: rgba(0, 123, 255, .05)!important; color: #000 !important;}
+        .bg-primary.opct20 {background-color: rgba(0, 123, 255, 0)!important; color: #000 !important;}
+    </style>
+    <!--Main Header-->
+    <div class="alfa-PT-header-wrapper dictionary marking">
+        <div class="container">
+            <div class="row no-gutters alfa-PT-header">
+                <div class="col-md-7">
+                    <div class="alfa-PT-header-left">
+                        <img src="img/marking.svg" alt="marking">
+                        <h1>Marking</h1>
+                    </div>
+                </div> 
+                <div class="col-md-5 align-self-center text-right"> </div> 
+            </div>
+        </div>
+    </div> 
+    <!--Main Header End-->
+    <!--Alfa body-->
+    <div class="alfa-body alfa-PT-sidebar marking pt-0 mt-2">
+        <div class="container"> 
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">Sequence</th>
+                        <th scope="col" style="width: 260px">General Exam Sequence of Questions**</th>
+                        <th scope="col">Module</th>
+                        <th scope="col" style="width: 300px">Weightage-wise Sequence of Questions</th>
+                        <th scope="col">Total Marks</th>
+                        <th scope="col">Average questions</th>
+                        <th scope="col">Listening</th>
+                        <th scope="col">Speaking</th>
+                        <th scope="col">Reading</th>
+                        <th scope="col">Writing</th>
+                        <th scope="col">Weighted Average</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <!--Speaking-->
+                      <tr>
+                        <td class="alfa-bg-orange" rowspan="5">Speaking</td>
+                        <td class="bg-white">1</td>
+                        <td class="alfa-bg-orange">Read Aloud</td>
+                        <td class="alfa-bg-orange">S</td>
+                        <td class="alfa-bg-orange">Repeat Sentence</td>
+                        <td class="alfa-bg-blue opct1">50</td>
+                        <td class="bg-white">10</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct1">13.9%</td> 
+                      </tr>  
+                      <tr> 
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-orange">Repeat sentence</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Write from Dictation</td>
+                        <td class="alfa-bg-blue opct1">47</td>
+                        <td class="bg-white">3</td>
+                        <td class="alfa-bg-blue-dark">-</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct1">13.9%</td> 
+                      </tr>  
+                      <tr> 
+                        <td class="bg-white">3</td>
+                        <td class="alfa-bg-orange">Describe Image</td>
+                        <td class="alfa-bg-green">R</td>
+                        <td class="alfa-bg-green">Reading & Writing FIB (Drop down)</td>
+                        <td class="alfa-bg-blue opct2">45</td>
+                        <td class="bg-white">6</td>
+                        <td class="alfa-bg-blue-dark">-</td>
+                        <td class="alfa-bg-orange">-</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct2">13.9%</td> 
+                      </tr>  
+                      <tr> 
+                        <td class="bg-white">4</td>
+                        <td class="alfa-bg-orange">Re-Tell Lecture</td>
+                        <td class="alfa-bg-orange">S</td>
+                        <td class="alfa-bg-orange">Read Aloud</td>
+                        <td class="alfa-bg-blue opct3">44</td>
+                        <td class="bg-white">5</td>
+                        <td class="alfa-bg-blue-dark">-</td>
+                        <td class="alfa-bg-orange">22</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct3">13.9%</td> 
+                      </tr>  
+                      <tr> 
+                        <td class="bg-white">5</td>
+                        <td class="alfa-bg-orange">Answer Short Question</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Repeat Sentence</td>
+                        <td class="alfa-bg-blue opct4">50</td>
+                        <td class="bg-white">10</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct4">13.9%</td> 
+                      </tr>  
+                      <!--Writing-->
+                      <tr> 
+                        <td class="alfa-bg-writing" rowspan="2">Writing</td>
+                        <td class="bg-white">6</td>
+                        <td class="alfa-bg-writing">Summerize Written Test</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Discribe Image</td>
+                        <td class="alfa-bg-blue opct5">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct5">13.9%</td> 
+                      </tr>  
+                      <tr> 
+                        <td class="bg-white">7</td>
+                        <td class="alfa-bg-writing">Essay</td>
+                        <td class="alfa-bg-orange">S</td>
+                        <td class="alfa-bg-orange">Re-Tell Lecture</td>
+                        <td class="alfa-bg-blue opct6">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct6">13.9%</td> 
+                      </tr>  
+                      <!--Reading-->
+                      <tr> 
+                        <td class="alfa-bg-green" rowspan="5">Reading</td>
+                        <td class="bg-white">8</td>
+                        <td class="alfa-bg-green">MCQ - Single</td>
+                        <td class="alfa-bg-writing">W</td>
+                        <td class="alfa-bg-writing">Summerize Written Text</td>
+                        <td class="alfa-bg-blue opct7">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct7">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">9</td>
+                        <td class="alfa-bg-green">MCQ - Multiple</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Highlight Incorrect Word</td>
+                        <td class="alfa-bg-blue opct8">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct8">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">10</td>
+                        <td class="alfa-bg-green">Re-order Paragraph</td>
+                        <td class="alfa-bg-green">L</td>
+                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
+                        <td class="alfa-bg-blue opct9">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct9">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">11</td>
+                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">FIB</td>
+                        <td class="alfa-bg-blue opct10">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct10">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">12</td>
+                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
+                        <td class="alfa-bg-writing">W</td>
+                        <td class="alfa-bg-writing">Essay</td>
+                        <td class="alfa-bg-blue opct11">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct11">13.9%</td> 
+                      </tr>
+                      <!--Listening-->
+                      <tr> 
+                        <td class="alfa-bg-blue-dark" rowspan="8">Listening</td>
+                        <td class="bg-white">13</td>
+                        <td class="alfa-bg-blue-dark">Summerize Spoken Test</td>
+                        <td class="alfa-bg-orange">S</td>
+                        <td class="alfa-bg-orange">Answer Short Question</td>
+                        <td class="alfa-bg-blue opct12">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct12">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">14</td>
+                        <td class="alfa-bg-blue-dark">MCQ - Multiple</td>
+                        <td class="alfa-bg-green">R</td>
+                        <td class="alfa-bg-green">Re-order Paragraph/td>
+                        <td class="alfa-bg-blue opct13">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct13">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">15</td>
+                        <td class="alfa-bg-blue-dark">FIB</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Highlight Correct Summary</td>
+                        <td class="alfa-bg-blue opct14">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct14">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">16</td>
+                        <td class="alfa-bg-blue-dark">Highlight Correct Summary</td>
+                        <td class="alfa-bg-green">R</td>
+                        <td class="alfa-bg-green">MCQ - Multiple</td>
+                        <td class="alfa-bg-blue opct15">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct15">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">17</td>
+                        <td class="alfa-bg-blue-dark">MCQ - Single</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">MCQ - Multiple</td>
+                        <td class="alfa-bg-blue opct16">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct16">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">18</td>
+                        <td class="alfa-bg-blue-dark">Select Incorrect Word</td>
+                        <td class="alfa-bg-green">R</td>
+                        <td class="alfa-bg-green">MCQ - Single</td>
+                        <td class="alfa-bg-blue opct17">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct17">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">19</td>
+                        <td class="alfa-bg-blue-dark">Highlight Incorrect Word</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">MCQ - Single</td>
+                        <td class="alfa-bg-blue opct18">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct18">13.9%</td> 
+                      </tr>
+                      <tr> 
+                        <td class="bg-white">20</td>
+                        <td class="alfa-bg-blue-dark">Write from Dictation</td>
+                        <td class="alfa-bg-blue-dark">L</td>
+                        <td class="alfa-bg-blue-dark">Select Incorrect</td>
+                        <td class="alfa-bg-blue opct19">25</td>
+                        <td class="bg-white">2</td>
+                        <td class="alfa-bg-blue-dark">20</td>
+                        <td class="alfa-bg-orange">30</td>
+                        <td class="alfa-bg-green">-</td>
+                        <td class="alfa-bg-writing">-</td>
+                        <td class="bg-primary opct19">13.9%</td> 
+                      </tr>
+                      <tr>
+                          <td colspan="5"></td>
+                          <td class="bg-white">360</td> 
+                          <td></td>
+                          <td colspan="4" class="bg-white">90 in each module *</td> 
+                          <td class="bg-white">100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <!--Alfa body End-->  
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/circles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/wavesurfer.min.js"></script>
+    <script src="js/jquery.simplePagination.js"></script>
+    <script src="js/alfa-scripts.js"></script>
+
+</body>
+
+</html>
