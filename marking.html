@@ -202,8 +202,24 @@
     </nav>
     <!--Nav End-->
     <style>
+        .alfa-bg-red,
+        .alfa-bg-orange{
+            color: #fff !important;
+        }
         .alfa-bg-writing{
-            background-color: #5fb1fb;
+            background-color: #5fb1fb !important; color: #fff !important;
+        }
+        .alfa-bg-violet{
+            background-color: #47295e !important; color: #fff !important;
+        }
+        .alfa-bg-violet-light{
+            background-color: #800020 !important; color: #fff !important;
+        }
+        .alfa-bg-darkest-blue{
+            background-color: #193d5a !important; color: #fff !important;
+        }
+        .alfa-bg-blue-dark{
+            color: #fff !important;
         }
         .alfa-PT-header-wrapper.dictionary.marking{
 
@@ -212,10 +228,11 @@
             color: #f8c155;
         } 
         .alfa-body.marking table{
-            background-color: rgb(233, 233, 233);
+            /* background-color: rgb(233, 233, 233); */
             padding: 8px;
             font-size: 13px;
             font-weight: 600;
+            width: 100%;
         }
         .alfa-body.marking table tr{
             color: #fff;
@@ -227,9 +244,9 @@
         .alfa-body.marking table thead tr th, 
         .alfa-body.marking table tbody tr td{ 
             vertical-align: middle;
-            border-radius: 12px;
-            border: 2px solid rgb(233, 233, 233);
-            padding: 2px 8px;
+            border-radius: 19px;
+            border: 6px solid #fff;
+            padding: 4px 18px;
             text-align: center;
         }
         .alfa-body.marking table thead tr th.bg-white, 
@@ -256,35 +273,36 @@
         .alfa-bg-blue.opct17{ background-color: rgba(3, 171, 171,.1) !important;  color: #000 !important;}
         .alfa-bg-blue.opct18{ background-color: rgba(3, 171, 171,.05) !important; color: #000 !important; }
         .alfa-bg-blue.opct19{ background-color: rgba(3, 171, 171,0) !important;  color: #000 !important; }
-        .bg-primary.opct1 {background-color: rgba(0, 123, 255, .95)!important; color: #000 !important;}
-        .bg-primary.opct2 {background-color: rgba(0, 123, 255, .9)!important; color: #000 !important;}
-        .bg-primary.opct3 {background-color: rgba(0, 123, 255, .85)!important; color: #000 !important;}
-        .bg-primary.opct4 {background-color: rgba(0, 123, 255, .8)!important; color: #000 !important;}
-        .bg-primary.opct5 {background-color: rgba(0, 123, 255, .75)!important; color: #000 !important;}
-        .bg-primary.opct6 {background-color: rgba(0, 123, 255, .7)!important; color: #000 !important;}
-        .bg-primary.opct7 {background-color: rgba(0, 123, 255, .65)!important; color: #000 !important;}
-        .bg-primary.opct8 {background-color: rgba(0, 123, 255, .6)!important; color: #000 !important;}
-        .bg-primary.opct9 {background-color: rgba(0, 123, 255, .55)!important; color: #000 !important;}
-        .bg-primary.opct10 {background-color: rgba(0, 123, 255, .5)!important; color: #000 !important;}
-        .bg-primary.opct11 {background-color: rgba(0, 123, 255, .45)!important; color: #000 !important;}
-        .bg-primary.opct12 {background-color: rgba(0, 123, 255, .4)!important; color: #000 !important;}
-        .bg-primary.opct13 {background-color: rgba(0, 123, 255, .35)!important; color: #000 !important;}
-        .bg-primary.opct14 {background-color: rgba(0, 123, 255, .3)!important; color: #000 !important;}
-        .bg-primary.opct15 {background-color: rgba(0, 123, 255, .25)!important; color: #000 !important;}
-        .bg-primary.opct16 {background-color: rgba(0, 123, 255, .2)!important; color: #000 !important;}
-        .bg-primary.opct17 {background-color: rgba(0, 123, 255, .15)!important; color: #000 !important;}
-        .bg-primary.opct18 {background-color: rgba(0, 123, 255, .1)!important; color: #000 !important;}
-        .bg-primary.opct19 {background-color: rgba(0, 123, 255, .05)!important; color: #000 !important;}
-        .bg-primary.opct20 {background-color: rgba(0, 123, 255, 0)!important; color: #000 !important;}
+        .alfa-bg-red-dark{background-color: #c62b23 !important; color: #fff !important;}
+        .bg-primary.opct1 {background-color: rgba(10, 0, 3, .95)!important; color: #fff !important;}
+        .bg-primary.opct2 {background-color: rgba(10, 0, 3, .9)!important; color: #fff !important;}
+        .bg-primary.opct3 {background-color: rgba(10, 0, 3, .85)!important; color: #fff !important;}
+        .bg-primary.opct4 {background-color: rgba(10, 0, 3, .8)!important; color: #fff !important;}
+        .bg-primary.opct5 {background-color: rgba(10, 0, 3, .75)!important; color: #fff !important;}
+        .bg-primary.opct6 {background-color: rgba(128, 0, 32, .85)!important; color: #fff !important;}
+        .bg-primary.opct7 {background-color: rgba(128, 0, 32, .8)!important; color: #fff !important;}
+        .bg-primary.opct8 {background-color: rgba(128, 0, 32, .75)!important; color: #fff !important;}
+        .bg-primary.opct9 {background-color: rgba(128, 0, 32, .7)!important; color: #fff !important;}
+        .bg-primary.opct10 {background-color: rgba(128, 0, 32, .65)!important; color: #fff !important;}
+        .bg-primary.opct11 {background-color: rgba(128, 0, 32, .6)!important; color: #fff !important;}
+        .bg-primary.opct12 {background-color: rgba(128, 0, 32, .55)!important; color: #fff !important;}
+        .bg-primary.opct13 {background-color: rgba(128, 0, 32, .5)!important; color: #fff !important;}
+        .bg-primary.opct14 {background-color: rgba(128, 0, 32, .45)!important; color: #fff !important;}
+        .bg-primary.opct15 {background-color: rgba(128, 0, 32, .4)!important; color: #000 !important;}
+        .bg-primary.opct16 {background-color: rgba(128, 0, 32, .35)!important; color: #000 !important;}
+        .bg-primary.opct17 {background-color: rgba(128, 0, 32, .3)!important; color: #000 !important;}
+        .bg-primary.opct18 {background-color: rgba(128, 0, 32, .25)!important; color: #000 !important;}
+        .bg-primary.opct19 {background-color: rgba(128, 0, 32, .2)!important; color: #000 !important;}
+        .bg-primary.opct20 {background-color: rgba(128, 0, 32, .15)!important; color: #000 !important;}
     </style>
     <!--Main Header-->
     <div class="alfa-PT-header-wrapper dictionary marking">
         <div class="container">
             <div class="row no-gutters alfa-PT-header">
-                <div class="col-md-7">
+                <div class="col-md-12">
                     <div class="alfa-PT-header-left">
                         <img src="img/marking.svg" alt="marking">
-                        <h1>Marking</h1>
+                        <h1>Marking Breakdown: Person's test of english - academic (pte - a)</h1>
                     </div>
                 </div> 
                 <div class="col-md-5 align-self-center text-right"> </div> 
@@ -295,303 +313,260 @@
     <!--Alfa body-->
     <div class="alfa-body alfa-PT-sidebar marking pt-0 mt-2">
         <div class="container"> 
-            <div class="table-responsive">
-                <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                        <th scope="col">Module</th>
-                        <th scope="col">Sequence</th>
-                        <th scope="col" style="width: 260px">General Exam Sequence of Questions**</th>
-                        <th scope="col">Module</th>
-                        <th scope="col" style="width: 300px">Weightage-wise Sequence of Questions</th>
-                        <th scope="col">Total Marks</th>
-                        <th scope="col">Average questions</th>
-                        <th scope="col">Listening</th>
-                        <th scope="col">Speaking</th>
-                        <th scope="col">Reading</th>
-                        <th scope="col">Writing</th>
-                        <th scope="col">Weighted Average</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <!--Speaking-->
-                      <tr>
-                        <td class="alfa-bg-orange" rowspan="5">Speaking</td>
-                        <td class="bg-white">1</td>
-                        <td class="alfa-bg-orange">Read Aloud</td>
-                        <td class="alfa-bg-orange">S</td>
-                        <td class="alfa-bg-orange">Repeat Sentence</td>
-                        <td class="alfa-bg-blue opct1">50</td>
-                        <td class="bg-white">10</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct1">13.9%</td> 
-                      </tr>  
-                      <tr> 
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-orange">Repeat sentence</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Write from Dictation</td>
-                        <td class="alfa-bg-blue opct1">47</td>
-                        <td class="bg-white">3</td>
-                        <td class="alfa-bg-blue-dark">-</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct1">13.9%</td> 
-                      </tr>  
-                      <tr> 
-                        <td class="bg-white">3</td>
-                        <td class="alfa-bg-orange">Describe Image</td>
-                        <td class="alfa-bg-green">R</td>
-                        <td class="alfa-bg-green">Reading & Writing FIB (Drop down)</td>
-                        <td class="alfa-bg-blue opct2">45</td>
-                        <td class="bg-white">6</td>
-                        <td class="alfa-bg-blue-dark">-</td>
-                        <td class="alfa-bg-orange">-</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct2">13.9%</td> 
-                      </tr>  
-                      <tr> 
-                        <td class="bg-white">4</td>
-                        <td class="alfa-bg-orange">Re-Tell Lecture</td>
-                        <td class="alfa-bg-orange">S</td>
-                        <td class="alfa-bg-orange">Read Aloud</td>
-                        <td class="alfa-bg-blue opct3">44</td>
-                        <td class="bg-white">5</td>
-                        <td class="alfa-bg-blue-dark">-</td>
-                        <td class="alfa-bg-orange">22</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct3">13.9%</td> 
-                      </tr>  
-                      <tr> 
-                        <td class="bg-white">5</td>
-                        <td class="alfa-bg-orange">Answer Short Question</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Repeat Sentence</td>
-                        <td class="alfa-bg-blue opct4">50</td>
-                        <td class="bg-white">10</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct4">13.9%</td> 
-                      </tr>  
-                      <!--Writing-->
-                      <tr> 
-                        <td class="alfa-bg-writing" rowspan="2">Writing</td>
-                        <td class="bg-white">6</td>
-                        <td class="alfa-bg-writing">Summerize Written Test</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Discribe Image</td>
-                        <td class="alfa-bg-blue opct5">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct5">13.9%</td> 
-                      </tr>  
-                      <tr> 
-                        <td class="bg-white">7</td>
-                        <td class="alfa-bg-writing">Essay</td>
-                        <td class="alfa-bg-orange">S</td>
-                        <td class="alfa-bg-orange">Re-Tell Lecture</td>
-                        <td class="alfa-bg-blue opct6">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct6">13.9%</td> 
-                      </tr>  
-                      <!--Reading-->
-                      <tr> 
-                        <td class="alfa-bg-green" rowspan="5">Reading</td>
-                        <td class="bg-white">8</td>
-                        <td class="alfa-bg-green">MCQ - Single</td>
-                        <td class="alfa-bg-writing">W</td>
-                        <td class="alfa-bg-writing">Summerize Written Text</td>
-                        <td class="alfa-bg-blue opct7">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct7">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">9</td>
-                        <td class="alfa-bg-green">MCQ - Multiple</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Highlight Incorrect Word</td>
-                        <td class="alfa-bg-blue opct8">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct8">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">10</td>
-                        <td class="alfa-bg-green">Re-order Paragraph</td>
-                        <td class="alfa-bg-green">L</td>
-                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
-                        <td class="alfa-bg-blue opct9">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct9">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">11</td>
-                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">FIB</td>
-                        <td class="alfa-bg-blue opct10">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct10">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">12</td>
-                        <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
-                        <td class="alfa-bg-writing">W</td>
-                        <td class="alfa-bg-writing">Essay</td>
-                        <td class="alfa-bg-blue opct11">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct11">13.9%</td> 
-                      </tr>
-                      <!--Listening-->
-                      <tr> 
-                        <td class="alfa-bg-blue-dark" rowspan="8">Listening</td>
-                        <td class="bg-white">13</td>
-                        <td class="alfa-bg-blue-dark">Summerize Spoken Test</td>
-                        <td class="alfa-bg-orange">S</td>
-                        <td class="alfa-bg-orange">Answer Short Question</td>
-                        <td class="alfa-bg-blue opct12">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct12">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">14</td>
-                        <td class="alfa-bg-blue-dark">MCQ - Multiple</td>
-                        <td class="alfa-bg-green">R</td>
-                        <td class="alfa-bg-green">Re-order Paragraph/td>
-                        <td class="alfa-bg-blue opct13">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct13">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">15</td>
-                        <td class="alfa-bg-blue-dark">FIB</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Highlight Correct Summary</td>
-                        <td class="alfa-bg-blue opct14">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct14">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">16</td>
-                        <td class="alfa-bg-blue-dark">Highlight Correct Summary</td>
-                        <td class="alfa-bg-green">R</td>
-                        <td class="alfa-bg-green">MCQ - Multiple</td>
-                        <td class="alfa-bg-blue opct15">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct15">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">17</td>
-                        <td class="alfa-bg-blue-dark">MCQ - Single</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">MCQ - Multiple</td>
-                        <td class="alfa-bg-blue opct16">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct16">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">18</td>
-                        <td class="alfa-bg-blue-dark">Select Incorrect Word</td>
-                        <td class="alfa-bg-green">R</td>
-                        <td class="alfa-bg-green">MCQ - Single</td>
-                        <td class="alfa-bg-blue opct17">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct17">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">19</td>
-                        <td class="alfa-bg-blue-dark">Highlight Incorrect Word</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">MCQ - Single</td>
-                        <td class="alfa-bg-blue opct18">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct18">13.9%</td> 
-                      </tr>
-                      <tr> 
-                        <td class="bg-white">20</td>
-                        <td class="alfa-bg-blue-dark">Write from Dictation</td>
-                        <td class="alfa-bg-blue-dark">L</td>
-                        <td class="alfa-bg-blue-dark">Select Incorrect</td>
-                        <td class="alfa-bg-blue opct19">25</td>
-                        <td class="bg-white">2</td>
-                        <td class="alfa-bg-blue-dark">20</td>
-                        <td class="alfa-bg-orange">30</td>
-                        <td class="alfa-bg-green">-</td>
-                        <td class="alfa-bg-writing">-</td>
-                        <td class="bg-primary opct19">13.9%</td> 
-                      </tr>
-                      <tr>
-                          <td colspan="5"></td>
-                          <td class="bg-white">360</td> 
-                          <td></td>
-                          <td colspan="4" class="bg-white">90 in each module *</td> 
-                          <td class="bg-white">100%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
+           <div class="card">
+               <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr> 
+                            <th scope="col" class="alfa-bg-violet">Module</th>
+                            <th scope="col" class="alfa-bg-darkest-blue" style="width: 300px">Weightage-wise Sequence of Questions</th>
+                            <th scope="col" class="alfa-bg-blue opct6">Total Marks</th>
+                            <th scope="col" class="alfa-bg-red">Average questions</th>
+                            <th scope="col" class="alfa-bg-blue-dark">Listening</th>
+                            <th scope="col" class="alfa-bg-orange">Speaking</th>
+                            <th scope="col" class="alfa-bg-blue-dark">Reading</th>
+                            <th scope="col" class="alfa-bg-writing">Writing</th>
+                            <th scope="col" class="alfa-bg-violet-light">Weighted Average</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <!--Speaking-->
+                          <tr> 
+                            <td class="alfa-bg-orange">Speaking</td>
+                            <td class="alfa-bg-orange">Repeat Sentence</td>
+                            <td class="alfa-bg-blue opct1">50</td>
+                            <td class="alfa-bg-red-dark">10</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct1">13.9%</td> 
+                          </tr>  
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Write from Dictation</td>
+                            <td class="alfa-bg-blue opct1">47</td>
+                            <td class="alfa-bg-red-dark">3</td>
+                            <td class="alfa-bg-blue-dark">-</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct1">13.9%</td> 
+                          </tr>  
+                          <tr>  
+                            <td class="alfa-bg-green">Reading</td>
+                            <td class="alfa-bg-green">Reading & Writing FIB (Drop down)</td>
+                            <td class="alfa-bg-blue opct2">45</td>
+                            <td class="alfa-bg-red-dark">6</td>
+                            <td class="alfa-bg-blue-dark">-</td>
+                            <td class="alfa-bg-orange">-</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct2">13.9%</td> 
+                          </tr>  
+                          <tr>  
+                            <td class="alfa-bg-orange">Speaking</td>
+                            <td class="alfa-bg-orange">Read Aloud</td>
+                            <td class="alfa-bg-blue opct3">44</td>
+                            <td class="alfa-bg-red-dark">5</td>
+                            <td class="alfa-bg-blue-dark">-</td>
+                            <td class="alfa-bg-orange">22</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct3">13.9%</td> 
+                          </tr>  
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Repeat Sentence</td>
+                            <td class="alfa-bg-blue opct4">50</td>
+                            <td class="alfa-bg-red-dark">10</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct4">13.9%</td> 
+                          </tr>  
+                          <!--Writing-->
+                          <tr>   
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Discribe Image</td>
+                            <td class="alfa-bg-blue opct5">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct5">13.9%</td> 
+                          </tr>  
+                          <tr>  
+                            <td class="alfa-bg-orange">Speaking</td>
+                            <td class="alfa-bg-orange">Re-Tell Lecture</td>
+                            <td class="alfa-bg-blue opct6">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct6">13.9%</td> 
+                          </tr>  
+                          <!--Reading-->
+                          <tr>  
+                            <td class="alfa-bg-writing">Writing</td>
+                            <td class="alfa-bg-writing">Summerize Written Text</td>
+                            <td class="alfa-bg-blue opct7">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct7">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Highlight Incorrect Word</td>
+                            <td class="alfa-bg-blue opct8">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct8">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-green">Reading</td>
+                            <td class="alfa-bg-green">FIB (Drag &amp; Drop)</td>
+                            <td class="alfa-bg-blue opct9">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct9">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">FIB</td>
+                            <td class="alfa-bg-blue opct10">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct10">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-writing">Writing</td>
+                            <td class="alfa-bg-writing">Essay</td>
+                            <td class="alfa-bg-blue opct11">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct11">13.9%</td> 
+                          </tr>
+                          <!--Listening-->
+                          <tr>  
+                            <td class="alfa-bg-orange">Speaking</td>
+                            <td class="alfa-bg-orange">Answer Short Question</td>
+                            <td class="alfa-bg-blue opct12">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct12">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-green">Reading</td>
+                            <td class="alfa-bg-green">Re-order Paragraph/td>
+                            <td class="alfa-bg-blue opct13">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct13">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Highlight Correct Summary</td>
+                            <td class="alfa-bg-blue opct14">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct14">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-green">Reading</td>
+                            <td class="alfa-bg-green">MCQ - Multiple</td>
+                            <td class="alfa-bg-blue opct15">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct15">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">MCQ - Multiple</td>
+                            <td class="alfa-bg-blue opct16">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct16">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-green">Reading</td>
+                            <td class="alfa-bg-green">MCQ - Single</td>
+                            <td class="alfa-bg-blue opct17">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct17">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">MCQ - Single</td>
+                            <td class="alfa-bg-blue opct18">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct18">13.9%</td> 
+                          </tr>
+                          <tr>  
+                            <td class="alfa-bg-blue-dark">Listening</td>
+                            <td class="alfa-bg-blue-dark">Select Incorrect</td>
+                            <td class="alfa-bg-blue opct19">25</td>
+                            <td class="alfa-bg-red-dark">2</td>
+                            <td class="alfa-bg-blue-dark">20</td>
+                            <td class="alfa-bg-orange">30</td>
+                            <td class="alfa-bg-green">-</td>
+                            <td class="alfa-bg-writing">-</td>
+                            <td class="bg-primary opct19">13.9%</td> 
+                          </tr>
+                          <tr>
+                              <td colspan="2"></td>
+                              <td  class="alfa-bg-blue opct8">360</td> 
+                              <td></td>
+                              <td colspan="4" class="alfa-bg-blue opct1">90 in each module *</td> 
+                              <td class="alfa-bg-violet-light">100%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+               </div>
+           </div>
         </div>
     </div>
     <!--Alfa body End-->  
