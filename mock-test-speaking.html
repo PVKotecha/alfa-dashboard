@@ -222,7 +222,7 @@
                 <div class="progress-bar" role="progressbar" style="max-width: 25%;" aria-valuenow="25"
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <div class="card alfa-PT-Examination-card alfa-writing">
+            <div class="card alfa-PT-Examination-card alfa-writing"  id="first">
                 <div class="card-body px-2 px-lg-3">
                     <div class="row">
                         <div class="col-lg-12">
@@ -249,7 +249,7 @@
                                     Your browser does not support the audio tag.
                                 </audio>
                                 <div class="text-right">
-                                    <button class="btn btn-outline-secondary">Skip</button>
+                                    <button class="btn btn-outline-secondary" onclick="skipIntro()">Skip</button>
                                 </div>
                             </div>
                         </div>
@@ -258,7 +258,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="card alfa-PT-Examination-card alfa-writing d-none">
+            <div class="card alfa-PT-Examination-card alfa-writing d-none"  id="second">
                 <div class="card-body px-2 px-lg-3">
                     <div class="row">
                         <div class="col-lg-12">
@@ -289,15 +289,14 @@
                         <div class="col-lg-12">
                             <div>
                                 <button class="btn btn-outline-secondary float-left">Save &amp; Exit</i></button>
-                                <button class="btn btn-info float-right">Next <i
+                                <button class="btn btn-info float-right" onclick="openThird()">Next <i
                                         class="fa fa-angle-right ml-2"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card alfa-PT-Examination-card alfa-writing d-none">
+            </div> 
+            <div class="card alfa-PT-Examination-card alfa-writing d-none"  id="third">
                 <div class="card-body px-2 px-lg-3">
                     <div class="row">
                         <div class="col-lg-12">
@@ -310,7 +309,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="text-center mt-3 mb-4">
-                                <img src="img/annoucement-outline.svg" alt="image" class="mock-test-img">
+                                <img src="https://www.got-it.ai/solutions/excel-chat/wp-content/uploads/2019/05/Figure-1.-Final-result-Bar-and-Line-Graph.png" alt="image" class="mock-test-img">
                             </div>
                         </div>
                         <div class="col-lg-6 align-self-center">
@@ -332,14 +331,13 @@
                         </div>
                         <div class="col-lg-12">
                             <button class="btn btn-outline-secondary float-left">Save &amp; Exit</i></button>
-                            <button class="btn btn-info float-right">Next <i
+                            <button class="btn btn-info float-right"  onclick="openFourth()">Next <i
                                     class="fa fa-angle-right ml-2"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card alfa-PT-Examination-card alfa-writing d-none">
+            </div> 
+            <div class="card alfa-PT-Examination-card alfa-writing d-none"  id="fourth">
                 <div class="card-body px-2 px-lg-3">
                     <div class="row">
                         <div class="col-lg-12">
@@ -391,12 +389,32 @@
                         </div>
                         <div class="col-lg-12">
                             <button class="btn btn-outline-secondary float-left">Save &amp; Exit</i></button>
-                            <button class="btn btn-info float-right">Next <i
+                            <button class="btn btn-info float-right" onclick="openFifth()">Next <i
                                     class="fa fa-angle-right ml-2"></i></button>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <div class="card alfa-PT-Examination-card alfa-writing d-none" id="fifth">
+                <div class="card-body px-2 px-lg-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-center"><b>Optional Break
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <div class="text-center mt-3 mb-4">
+                                <img src="https://www.ikea.com/in/en/images/products/tjalla-wall-clock__0633571_PE695905_S5.JPG?f=s" alt="image" class="mock-test-img">
+                                <p class="text-center mt-3">Remaining Time: <b>00:12:15</b> </p>
+                            </div>  
+                            <button class="btn btn-info">Skip Break  </button>                        
+                        </div> 
+                    </div> 
+                </div>
+            </div>  
         </div>
     </div>
     <!--Alfa body End-->
@@ -456,6 +474,24 @@
             } else if (elem.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
             }
+        }
+
+        function skipIntro(){
+            $('#first').addClass('d-none');
+            $('#second').removeClass('d-none');
+        }
+
+        function openThird(){
+            $('#second').addClass('d-none');
+            $('#third').removeClass('d-none');
+        }
+        function openFourth(){
+            $('#third').addClass('d-none');
+            $('#fourth').removeClass('d-none');
+        }
+        function openFifth(){
+            $('#fourth').addClass('d-none');
+            $('#fifth').removeClass('d-none');
         }
     </script>
 </body>
