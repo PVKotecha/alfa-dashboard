@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <!--LineIcons-->
+    <link rel="stylesheet" href="css/LineIcons.css">
+
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        .alfa-SRT-micAndspecker img.body {
+            position: relative; 
+            margin-top: 54px; 
+            max-width: 555px;
+        }
+        .alfa-PT-header-wrapper.dictionary .alfa-PT-header .alfa-PT-header-left h1 {
+            color: #fff;
+            margin: 5px 0;
+        }
+
+        .alfa-PT-header-wrapper.dictionary .alfa-PT-header .alfa-PT-header-left i {
+            float: left;
+            font-size: 20px;
+            padding: 8px 25px 5px 5px;
+            color: #fff;
+        }
+
+        .alfa-mock-test-header-links {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .alfa-mock-test-header-links .contact {
+            color: #fff;
+            color: #fff;
+            vertical-align: middle;
+            line-height: 2.2;
+            margin-right: 25px;
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+
+        .alfa-mock-test-header-links .contact:hover {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .alfa-body.mock-test h2 {
+            color: #123456;
+            font-size: 26px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        .alfa-body.mock-test .card {
+            margin-bottom: 16px;
+        }
+
+        .alfa-body.mock-test .card .card-header {
+            padding: 0;
+        }
+
+        .alfa-body.mock-test .card .card-header h3 {
+            font-size: 19px;
+            line-height: 34px;
+            padding: 0 0 0 8px;
+            margin-bottom: 0;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .alfa-body.mock-test .card .card-body {
+            background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.8) 100%), -webkit-linear-gradient(270deg, #eee 0, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .alfa-body.mock-test .card:hover .card-body {
+            background-image: none;
+        }
+
+        .alfa-body.mock-test .card .card-body p {
+            color: #636363;
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: #00cdcd;
+            transition: .3s;
+        }
+
+        footer a:hover {
+            color: #05aaaa;
+        }
+
+        footer i {
+            background-color: #fff;
+            padding: 8px 8px 8px 9px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        footer .copyright {
+            color: #fff;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav-->
+        <!--Nav-->
+        <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/alfa.svg" alt="logo" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <p class="lead mb-0 text-uppercase">The Conception of Excellence</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Nav End-->
+    
+        <!--Main Header-->
+        <div class="alfa-PT-header-wrapper dictionary alfa-bg-blue">
+            <div class="container">
+                <div class="row no-gutters alfa-PT-header">
+                    <div class="col-md-12">
+                        <div class="alfa-PT-header-left">
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                            </a>
+                            <div>
+                                <ul class="alfa-mock-test-header-links">
+                                    <li>
+                                        <a href="#" class="contact">Contact</a>
+                                    </li>
+                                    <li>
+                                        <button class="btn btn-info">Logout</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main Header End-->
+    <!--Nav End-->
+    <!--Alfa body-->
+    <div class="alfa-body pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 px-lg-0">
+                    <div class="alfa-system-req-test-wrapper">
+                        <h1>System Requirement Test</h1>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="alfa-SRT-coockies">     
+                                    <img src="img/cookies.svg" alt="coockies">
+                                    <h2>Coockies</h2>
+                                    <p>Cookies is enabled</p>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="alfa-SRT-javascript">     
+                                    <img src="img/javascript.svg" alt="javascript">
+                                    <h2>Java Script</h2>
+                                    <p>Java Script is enabled</p>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="alfa-SRT-browser">     
+                                    <img src="img/browser.svg" alt="browser">
+                                    <h2>Best Browser For</h2>
+                                    <h3>Google Chrome</h3>
+                                    <p>You are using google chrome</p>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="alfa-SRT-micStatus">     
+                                    <img src="img/microphone.svg" alt="microphone">
+                                    <h2>Microphone status</h2>
+                                    <p>Microphone is disable</p>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-sm-6">
+                                <div class="alfa-SRT-resolution">     
+                                    <img src="img/resolution.svg" alt="resolution">
+                                    <h2>best resolution</h2>
+                                    <h3>1366 * 768 and above</h3>
+                                    <p>your resolution is 1536*864</p>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="alfa-SRT-micAndspecker">     
+                                    <img src="img/microspeaker.svg" alt="Microphone and speaker">
+                                    <h2>test your Microphone and speaker</h2>
+                                    <p>time: 20 sec</p>
+                                    <div class="alfa-SRT-card-footer">
+                                        <div class="progress alfa-progress">
+                                            <div class="progress-bar" role="progressbar" style="max-width: 11%" aria-valuenow="11"
+                                              aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div> 
+                                        <button class="btn btn-primary btn-block alfa-show-word-btn alfa-bg-blue">Record</button>
+                                    </div>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="alfa-SRT-micAndspecker">     
+                                    <img src="img/microspeaker.svg" alt="Microphone and speaker">
+                                    
+                                    <h2>Check your Keyboard</h2>
+                                   
+                                    <div class="alfa-SRT-card-footer">
+                                       <img src="img/keyboard1.png" class="body" alt="keyboard">
+                                    </div>
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Alfa body End-->
+
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="d-flex p-0  mb-0 list-unstyled">
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-facebook-filled"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-telegram-original"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright">
+                        <small class="mr-4">Copyright © 2020 AlfaPTE</small>
+                        <small class="mr-2"><a href="#">Policy</a></small>
+                        <small><a href="#">Terms</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script> 
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/circles.min.js"></script>
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/alfa-scripts.js"></script>
+
+</body>
+
+</html>
