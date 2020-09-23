@@ -161,6 +161,9 @@ p.alfa-test-card-bottom-content {
             color: #333;
         }
 
+        .alfa-body.mock-test{
+            min-height: 100vh;
+        }
         .alfa-body.mock-test h2 {
             color: #123456;
             font-size: 26px;
@@ -340,7 +343,8 @@ p.alfa-test-card-bottom-content {
                         <i class="lni lni-timer mr-2"></i> 0.00 / 0.50
                     </li>
                     <li class="mt-2">
-                        <a href="#" onclick="fullscreen()"><i class="lni lni-full-screen mr-2"></i></a>
+                        <a href="#" onclick="fullscreen()" id="expandScreen"><i class="fa fa-expand-arrows-alt mr-2"></i></a>
+                        <a href="#" onclick="closeFullscreen()" id="collaspedScreen" style="display: none;"><i class="fa fa-compress-arrows-alt mr-2"></i></a>
                     </li>
                 </ul>
             </h2>
@@ -685,6 +689,9 @@ p.alfa-test-card-bottom-content {
     <script>
         var elem = document.documentElement;
         function fullscreen() {
+            $('#expandScreen').hide();
+            $('#collaspedScreen').show();
+            
             if (elem.requestFullscreen) {
                 elem.requestFullscreen();
             } else if (elem.mozRequestFullScreen) { /* Firefox */
@@ -696,6 +703,20 @@ p.alfa-test-card-bottom-content {
             }
         }
 
+        function closeFullscreen() {
+            $('#expandScreen').show();
+            $('#collaspedScreen').hide();
+
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
         function skipIntro(){
             $('#first').addClass('d-none');
             $('#second').removeClass('d-none');
