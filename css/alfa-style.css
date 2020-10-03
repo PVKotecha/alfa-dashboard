@@ -4326,6 +4326,230 @@ body.dragging * {
 }
 
 
+
+.alfa-panel-login {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .container-login100 {
+    width: 100%;  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  
+  .wrap-login100 {
+    width: 520px;
+    min-height: 100vh;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    padding: 50px;
+  }
+  
+  /*------------------------------------------------------------------
+  [ Login100 more ]*/
+  .login100-more {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: calc(100% - 520px);
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+  }
+  
+  .login100-more::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #676767;
+    background: -webkit-linear-gradient(bottom, #01cdce, #000);
+    background: -o-linear-gradient(bottom, #01cdce, #000);
+    background: -moz-linear-gradient(bottom, #01cdce, #000);
+    background: linear-gradient(bottom, #01cdce, #000);
+    opacity: 0.8;
+  }  
+  .login100-more .inner{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .login100-more .title{
+      color: #fff;
+      text-align: center;
+  }   
+  .login100-more .content{
+    color: #fff;
+    text-align: center;
+  }
+.alpha-login-modal .form-group .form-control{  
+    background: transparent;
+    font-weight: 500;
+    margin-bottom: .75em;
+}
+.alpha-login-modal .form-group .form-control {
+    border: none;
+    border-color: #00cdcd !important;
+    border-bottom: 2px solid;
+    border-radius: 0; 
+    padding: 10px 20px;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+.alpha-login-modal .form-group .form-control~.focus-border {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 23px;
+    width: 0%;
+    height: 3px;
+    transform: translateX(-50%);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.alpha-login-modal .form-group .form-control:focus~.focus-border {
+    width: 100%;
+}
+.alpha-login-modal .form-group .form-control~.focus-border{
+    background: #F2CE5F; 
+    z-index: 12;
+}
+.alpha-login-modal .form-group .form-control::placeholder{
+    color: #00cdcd;
+}
+.alpha-login-modal .btn-primary{
+    padding: 12px;
+}
+.alpha-login-modal .btn-primary:hover{
+    background-color: #85837e;
+}
+.alfa-login-popup-forgot-pass {
+    text-align: center;
+    margin-bottom: 14px;
+}
+.alfa-login-popup-forgot-pass a {
+    color: #00cdcd;
+    font-size: 14px;
+}
+.alpha-login-modal .btn-login{
+    border-radius: 50px;
+    background-color: #00cdcd;
+    color: #fff;
+    transition: .3s;
+    border: none;
+}
+.alpha-login-modal .btn-login:hover{ 
+    background-color: #009e9e; 
+}
+.alpha-login-modal-logo{
+    text-align: center;
+}
+.alpha-login-modal .logo.img-fluid{
+    max-width: 120px;
+    margin: 0 0 40px;
+}
+.alfa-login-password-trigger {
+    position: absolute;
+    right: 26px;
+    top: 10px;
+    color: #00cdcd;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+.alpha-login-modal .bootstrap-select>.dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: #00cdcd;
+    padding: 10px;
+    height: 38px;
+    padding-bottom: 2px;
+}
+.alpha-login-modal .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    color: #00cdcd;
+}
+.alpha-login-modal.countrypicker .inline-flag {
+    margin-top: 5px;
+}
+.alpha-login-modal.bootstrap-select .dropdown-menu, 
+.alpha-login-modal.bootstrap-select .dropdown-menu li {
+    background-color: #10a3a3;
+}
+.alpha-login-modal .bs-searchbox .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #00cdcd;
+    color: #00cdcd;
+}
+.alpha-login-modal.bootstrap-select .dropdown-menu, 
+.alpha-login-modal.bootstrap-select .dropdown-menu li {
+    background-color: #10a3a3;
+}
+.alpha-login-modal.bootstrap-select .dropdown-menu li {
+    background-color: #10a3a3;
+}
+.alpha-login-modal.bootstrap-select .dropdown-menu li a {
+    color: #00cdcd;
+}
+.alpha-login-modal.countrypicker .inline-flag {
+    margin-top: 5px;
+}
+.alpha-login-modal .alfa-signup-phone-group{
+    width: 71%;
+}
+.alpha-login-modal button{
+    border-bottom: 2px solid #00cdcd !important;
+    border-radius: inherit;
+    height: 46px; 
+}
+.alpha-login-modal .btn-login{
+    border-bottom: 2px solid #00cdcd !important;
+    border-radius: 50px;
+    height: 46px; 
+}
+.alpha-login-modal .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100px;
+}
+.alpha-login-modal .city .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 100%;
+}
+.alpha-login-modal .f16 .flag{
+    vertical-align: middle;
+}
+.alpha-modal-btn-divider {
+    color: #00cdcd;
+    margin-bottom: 24px;
+}
+.btn-facebook {
+    background-color: #3b5998;
+    border-radius: 50px !important;
+    padding: 4px 38px;
+    color: #fff;
+    transition: .4s;
+    min-width: 100%;
+}
+.btn-google {
+    background-color: #db4a39;
+        border-radius: 50px !important;
+    padding: 4px 38px;
+    color: #fff;
+    transition: .4s;
+    min-width: 100%;
+}
 @media (min-width: 1500px){
     /* .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1200px;
@@ -4711,6 +4935,10 @@ body.dragging * {
         max-width: unset;
         min-width: unset;
     }
+    .wrap-login100 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
  }
  @media(min-width: 376px) and (max-width: 425px){
     .flip-clock-wrapper{
