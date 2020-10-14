@@ -4385,8 +4385,9 @@ body.dragging * {
     opacity: 0.8;
   }  
   .login100-more .inner{
-    max-width: 500px;
+    max-width: 650px;
     margin: 0 auto;
+    text-align: center;
   }
   .login100-more .title{
       color: #fff;
