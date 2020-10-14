@@ -4552,6 +4552,7 @@ body.dragging * {
 }
 .btn-facebook:hover{
     background-color: #1e3058;
+    color: #fff;
 }
 .btn-google {
     background-color: #db4a39;
@@ -4565,6 +4566,7 @@ body.dragging * {
 }
 .btn-google:hover{
     background-color: #b42919;
+    color: #fff;
 }
 @media (min-width: 1500px){
     /* .container, .container-lg, .container-md, .container-sm, .container-xl {
