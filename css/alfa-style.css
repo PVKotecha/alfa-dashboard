@@ -4368,6 +4368,8 @@ body.dragging * {
     z-index: 1;
     padding: 50px;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
   
   .login100-more::before {
