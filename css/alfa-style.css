@@ -4353,7 +4353,7 @@ body.dragging * {
     background: #fff;
     border-radius: 2px;
     position: relative;
-    padding: 30px 50px 50px 50px;
+    padding: 10px 50px 50px 50px;
     overflow-y: auto;
   }
   
@@ -4412,14 +4412,14 @@ body.dragging * {
     border-bottom: 2px solid;
     border-radius: 0; 
     padding: 10px 20px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     color: #333;
 }
 .alpha-login-modal.alfa-panel-login .form-group .form-control~.focus-border {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 23px;
+    bottom: 16px;
     width: 0%;
     height: 3px;
     transform: translateX(-50%);
