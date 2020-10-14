@@ -4347,11 +4347,12 @@ body.dragging * {
   
   .wrap-login100 {
     width: 520px;
-    min-height: 100vh;
+    max-height: 100vh;
     background: #fff;
     border-radius: 2px;
     position: relative;
-    padding: 50px;
+    padding: 30px 50px 50px 50px;
+    overflow-y: auto;
   }
   
   /*------------------------------------------------------------------
@@ -4364,6 +4365,7 @@ body.dragging * {
     position: relative;
     z-index: 1;
     padding: 50px;
+    min-height: 100vh;
   }
   
   .login100-more::before {
@@ -4394,12 +4396,12 @@ body.dragging * {
     color: #fff;
     text-align: center;
   }
-.alpha-login-modal .form-group .form-control{  
+.alpha-login-modal.alfa-panel-login .form-group .form-control{  
     background: transparent;
     font-weight: 500;
     margin-bottom: .75em;
 }
-.alpha-login-modal .form-group .form-control {
+.alpha-login-modal.alfa-panel-login .form-group .form-control {
     border: none;
     border-color: #00cdcd !important;
     border-bottom: 2px solid;
@@ -4408,7 +4410,7 @@ body.dragging * {
     margin-bottom: 1.5em;
     color: #333;
 }
-.alpha-login-modal .form-group .form-control~.focus-border {
+.alpha-login-modal.alfa-panel-login .form-group .form-control~.focus-border {
     content: '';
     position: absolute;
     left: 50%;
@@ -4420,20 +4422,20 @@ body.dragging * {
     -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.alpha-login-modal .form-group .form-control:focus~.focus-border {
+.alpha-login-modal.alfa-panel-login .form-group .form-control:focus~.focus-border {
     width: 100%;
 }
-.alpha-login-modal .form-group .form-control~.focus-border{
+.alpha-login-modal.alfa-panel-login .form-group .form-control~.focus-border{
     background: #F2CE5F; 
     z-index: 12;
 }
-.alpha-login-modal .form-group .form-control::placeholder{
+.alpha-login-modal.alfa-panel-login .form-group .form-control::placeholder{
     color: #00cdcd;
 }
-.alpha-login-modal .btn-primary{
+.alpha-login-modal.alfa-panel-login .btn-primary{
     padding: 12px;
 }
-.alpha-login-modal .btn-primary:hover{
+.alpha-login-modal.alfa-panel-login .btn-primary:hover{
     background-color: #85837e;
 }
 .alfa-login-popup-forgot-pass {
@@ -4459,7 +4461,7 @@ body.dragging * {
 }
 .alpha-login-modal .logo.img-fluid{
     max-width: 120px;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
 }
 .alfa-login-password-trigger {
     position: absolute;
@@ -4512,9 +4514,13 @@ body.dragging * {
     width: 71%;
 }
 .alpha-login-modal button{
-    border-bottom: 2px solid #00cdcd !important;
+    border-bottom: 2px solid #00cdcd;
     border-radius: inherit;
     height: 46px; 
+}
+.alpha-login-modal .bootstrap-select.alfa-signup-phone-dd button,
+.alpha-login-modal .alfa-signup-phone-code-dd button{
+    border-bottom: 2px solid #00cdcd !important;
 }
 .alpha-login-modal .btn-login{
     border-bottom: 2px solid #00cdcd !important;
@@ -4541,6 +4547,7 @@ body.dragging * {
     color: #fff;
     transition: .4s;
     min-width: 100%;
+    border-bottom: none !important;
 }
 .btn-google {
     background-color: #db4a39;
@@ -4549,6 +4556,7 @@ body.dragging * {
     color: #fff;
     transition: .4s;
     min-width: 100%;
+    border-bottom: none !important;
 }
 @media (min-width: 1500px){
     /* .container, .container-lg, .container-md, .container-sm, .container-xl {
