@@ -4342,6 +4342,8 @@ body.dragging * {
     flex-wrap: wrap;
     align-items: stretch;
     flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 100vh;
   }
   
   
