@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+  <defs>
+    <filter id="Ellipse_146" x="0" y="0" width="118" height="118" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1717" data-name="Group 1717" transform="translate(-1094 -1032)">
+    <g transform="matrix(1, 0, 0, 1, 1094, 1032)" filter="url(#Ellipse_146)">
+      <circle id="Ellipse_146-2" data-name="Ellipse 146" cx="50" cy="50" r="50" transform="translate(9 9)" fill="#00cdcd"/>
+    </g>
+    <g id="read" transform="translate(1125 1065)">
+      <path id="Path_505" data-name="Path 505" d="M16.04,23.007v1.425l-3.4,6.8a1.573,1.573,0,0,0,1.407,2.278H16.04v7.047a2.651,2.651,0,0,0,2.649,2.649h7.855v6.464a.808.808,0,0,0,.808.808h9.7a.808.808,0,0,0,.808-.808V40.309L42.466,35.7a.808.808,0,0,0,.237-.571V23.007h.808a.808.808,0,0,0,.808-.808V2.808A.808.808,0,0,0,43.511,2H22.5a4.045,4.045,0,0,0-4.04,4.04,4,4,0,0,0,.829,2.424h-.021a4.045,4.045,0,0,0-4.04,4.04,4,4,0,0,0,.829,2.424H16.04a4.04,4.04,0,0,0,0,8.08ZM41.087,34.792,36.476,39.4a.808.808,0,0,0-.237.571v8.888H28.16V42.4a.808.808,0,0,0-.808-.808H18.688a1.033,1.033,0,0,1-1.033-1.033V32.7a.808.808,0,0,0-.808-.808l-2.762.061,3.49-6.971a.808.808,0,0,0,.081-.361V23.007H33.007v4.04a.808.808,0,0,0,1.379.571l1.853-1.853,1.853,1.853a.808.808,0,0,0,1.379-.571v-4.04h1.616Zm-6.464-9.7V19.775h3.232V25.1L36.81,24.052a.808.808,0,0,0-1.142,0Zm8.08-3.705H39.471V19.775H42.7Zm0-3.232H31.391v1.616h1.616v1.616h-9.7a2.424,2.424,0,0,1,0-4.848H42.7Zm0-6.464H33.815v1.616H42.7v1.616H25.4A2.278,2.278,0,0,1,23.312,12.5,2.278,2.278,0,0,1,25.4,10.08H42.7ZM28.188,3.616H42.7V5.232H37.047V6.848H42.7V8.464H28.188c-.891,0-1.644-1.11-1.644-2.424S27.3,3.616,28.188,3.616Zm-5.684,0H25.6a4.726,4.726,0,0,0,0,4.848H22.5a2.424,2.424,0,0,1,0-4.848ZM19.272,10.08h3.184a4.244,4.244,0,0,0,0,4.848H19.272a2.424,2.424,0,0,1,0-4.848ZM16.04,16.544H20.1a3.959,3.959,0,0,0,0,4.848H16.04a2.424,2.424,0,0,1,0-4.848Z" fill="#fff"/>
+      <rect id="Rectangle_1217" data-name="Rectangle 1217" width="2" height="2" transform="translate(30.159 11.239)" fill="#fff"/>
+      <rect id="Rectangle_1218" data-name="Rectangle 1218" width="1" height="2" transform="translate(34.159 5.239)" fill="#fff"/>
+      <rect id="Rectangle_1219" data-name="Rectangle 1219" width="2" height="2" transform="translate(28.16 18.239)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

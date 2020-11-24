@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+  <defs>
+    <filter id="Ellipse_87" x="0" y="0" width="118" height="118" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1723" data-name="Group 1723" transform="translate(-1099 -1345)">
+    <g transform="matrix(1, 0, 0, 1, 1099, 1345)" filter="url(#Ellipse_87)">
+      <circle id="Ellipse_87-2" data-name="Ellipse 87" cx="50" cy="50" r="50" transform="translate(9 9)" fill="#ec935f"/>
+    </g>
+    <g id="analytics" transform="translate(1134 1379.997)">
+      <g id="Group_1561" data-name="Group 1561" transform="translate(0 0.003)">
+        <g id="Group_1560" data-name="Group 1560" transform="translate(0 0)">
+          <path id="Path_414" data-name="Path 414" d="M175.609,170.669h-3.955a.989.989,0,0,0-.989.989v11.864a.989.989,0,0,0,.989.989h3.955a.989.989,0,0,0,.989-.989V171.658A.989.989,0,0,0,175.609,170.669Z" transform="translate(-154.848 -154.851)" fill="#fff"/>
+          <path id="Path_415" data-name="Path 415" d="M90.276,234.669H86.322a.989.989,0,0,0-.989.989v5.932a.989.989,0,0,0,.989.989h3.955a.989.989,0,0,0,.989-.989v-5.932A.989.989,0,0,0,90.276,234.669Z" transform="translate(-77.424 -212.919)" fill="#fff"/>
+          <path id="Path_416" data-name="Path 416" d="M260.942,106.669h-3.955a.989.989,0,0,0-.989.989v17.8a.989.989,0,0,0,.989.989h3.955a.989.989,0,0,0,.989-.989v-17.8A.989.989,0,0,0,260.942,106.669Z" transform="translate(-232.272 -96.783)" fill="#fff"/>
+          <path id="Path_417" data-name="Path 417" d="M46.875,44.082l-11.8-11.8a19.805,19.805,0,1,0-2.8,2.8l11.8,11.8a1.977,1.977,0,1,0,2.8-2.8Zm-27.1-8.488A15.818,15.818,0,1,1,35.591,19.776,15.837,15.837,0,0,1,19.773,35.594Z" transform="translate(0 -0.003)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+  <defs>
+    <filter id="Ellipse_146" x="0" y="0" width="118" height="118" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1527" data-name="Group 1527" transform="translate(-184 -139)">
+    <g transform="matrix(1, 0, 0, 1, 184, 139)" filter="url(#Ellipse_146)">
+      <circle id="Ellipse_146-2" data-name="Ellipse 146" cx="50" cy="50" r="50" transform="translate(9 9)" fill="#00cdcd"/>
+    </g>
+    <g id="_18-eye" data-name="18-eye" transform="translate(208 163)">
+      <g id="Glyph">
+        <path id="Path_405" data-name="Path 405" d="M35,0A35,35,0,1,0,70,35,35,35,0,0,0,35,0ZM48.085,41.043a26.425,26.425,0,0,0,3.925-4.425,2.917,2.917,0,0,0,0-3.236,26.4,26.4,0,0,0-3.925-4.426L58.829,18.213a29.068,29.068,0,0,1,0,33.574ZM55,13.8,43.278,25.514a16.8,16.8,0,0,0-16.556,0L15,13.8A29.088,29.088,0,0,1,55,13.8ZM40.833,35A5.833,5.833,0,1,1,35,29.167,5.833,5.833,0,0,1,40.833,35ZM11.171,18.212,21.915,28.957a26.387,26.387,0,0,0-3.925,4.426,2.917,2.917,0,0,0,0,3.236,26.409,26.409,0,0,0,3.925,4.425L11.171,51.788a29.069,29.069,0,0,1,0-33.575ZM15,56.2l11.72-11.718a16.8,16.8,0,0,0,16.556,0L55,56.2a29.088,29.088,0,0,1-39.992,0Z" fill="#fff"/>
+        <ellipse id="Ellipse_147" data-name="Ellipse 147" cx="2.194" cy="3.29" rx="2.194" ry="3.29" transform="translate(32.806 11.502)" fill="#fff"/>
+        <circle id="Ellipse_148" data-name="Ellipse 148" cx="2.194" cy="2.194" r="2.194" transform="translate(56.569 32.806)" fill="#fff"/>
+        <ellipse id="Ellipse_149" data-name="Ellipse 149" cx="2.194" cy="3.29" rx="2.194" ry="3.29" transform="translate(32.806 51.917)" fill="#fff"/>
+        <circle id="Ellipse_150" data-name="Ellipse 150" cx="2.194" cy="2.194" r="2.194" transform="translate(9.043 32.806)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,761 @@
+/*section-payment*/
+.alfa-section-payment-title-start-text{
+    font-size: 30px;
+color: #000000;
+font-weight: 600;
+font-family: "Lato";
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 10px;
+}
+.alfa-section-payment.btn-group{
+    display: inline-block ;
+}
+
+.alfa-section-payment .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #00cdcd
+}
+.alfa-section-payment .nav-pills .nav-link{
+    color: #00cdcd;
+    font-size: 20px;
+}
+
+.alfa-section-payment .alfa-Payemnt-card{
+    margin: 10px ;
+}
+
+.alfa-section-payment .alfa-section-payment-pay-button{
+    font-size: 20px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    border-radius: 10px;
+    filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.16));
+    background-color:  #00cdcd;
+    padding: 0px 30px 0px 30px;
+    border: transparent;
+    margin: 26px 0 25px 0;
+    
+}
+.alfa-section-payment-pay-button:hover{
+    background-color:#159494;
+}
+.alfa-section-payment .form-control{
+   margin-top: 20px;
+}
+.alfa-section-payment .Select-mock-test{
+    text-align: left;
+    margin-bottom: 5px;
+    
+}
+.alfa-section-payment .Selected{
+    text-align: right;
+    color: red;
+    float: right;
+   
+
+}
+
+.alfa-section-payment .row-section-payment{
+    background-color: #00cdcd ;
+    
+}
+
+.alfa-section-payment-title{
+    padding: 10px 0 10px 0;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+.alfa-section-payment .features-card-svg{
+    max-width: 80px;
+    margin: 5px auto;
+}
+.alfa-section-payment .features-card-body{
+    padding: 0px;
+}
+
+.alfa-section-payment .features-card-title{
+    margin-top: 10px;
+    font-size: 22px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Raleway";
+    text-align: center;
+    
+    
+}
+.alfa-section-payment .features-card-text{
+    margin-top: 15px;
+    color: #2e2e2e;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 14px;
+    
+}
+.alfa-section-payment .features-card{
+    filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.3));
+    min-height: 300px;
+    
+}
+.alfa-payment-plans .fa.fa-check-circle{
+ position: absolute;
+ right: 0 ;
+ top: 0;
+ color: blue;
+}
+
+
+.alfa-payment-plans .btn.btn-secondary{
+    margin: 0 16px 24px;
+    padding: 16px 64px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: 'Lato';
+    border-width: 2px;
+    position: relative;
+    
+}
+.alfa-payment-plans .btn.btn-secondary h3,
+.alfa-payment-plans .btn.btn-secondary p{
+    color: #333; 
+    font-family: 'Lato';
+    font-weight: 700;
+}
+.alfa-payment-plans .btn.btn-secondary.green p{
+    color:#2fda61;
+}
+.alfa-payment-plans .btn.btn-secondary.active h3,
+.alfa-payment-plans .btn.btn-secondary.active p{
+    color: #fff
+}
+.alfa-payment-plans .btn.btn-secondary .alfa-button-payment{
+    border-radius: 50px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.alfa-payment-plans.btn-group>.btn-group:not(:last-child)>.btn, 
+.alfa-payment-plans.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 6px;
+}
+
+.alfa-payment-plans .btn.btn-secondary.green{
+    border-color: #2fda61;
+}
+.alfa-payment-plans .btn.btn-secondary.green .alfa-button-payment{
+    background-color: #2fda61;
+    border: none;
+}
+.alfa-payment-plans .btn.btn-secondary.green.active,
+.alfa-payment-plans .btn.btn-secondary.green.focus,
+.alfa-payment-plans .btn.btn-secondary.green:active {
+    background-color: #2fda61;
+}
+.alfa-payment-plans .btn.btn-secondary.green.active .alfa-button-payment,
+.alfa-payment-plans .btn.btn-secondary.green.focus .alfa-button-payment,
+.alfa-payment-plans .btn.btn-secondary.green:active .alfa-button-payment{
+    background-color: #fff;
+    color: #2fda61;
+    border: none;
+}
+.alfa-payment-plans .btn.btn-secondary.blue{
+    border-color: #185d92;
+}
+.alfa-payment-plans .btn.btn-secondary.blue .alfa-button-payment{
+    background-color: #185d92;
+    border: none;
+}
+.alfa-payment-plans .btn.btn-secondary.blue.active,
+.alfa-payment-plans .btn.btn-secondary.blue.focus,
+.alfa-payment-plans .btn.btn-secondary.blue:active {
+    background-color: #185d92;
+    color:white;
+} 
+.alfa-payment-plans .btn.btn-secondary.blue.active .alfa-button-payment,
+.alfa-payment-plans .btn.btn-secondary.blue.focus .alfa-button-payment,
+.alfa-payment-plans .btn.btn-secondary.blue:active .alfa-button-payment{
+    background-color: #fff;
+    color: #185d92;;
+    border: none;
+}
+/*subscription complete */
+.alfa-section-payment .form-control{
+    margin-top: 20px;
+ }
+ .alfa-section-payment .Select-mock-test{
+     text-align: left;
+     margin-bottom: 5px;
+ }
+ .alfa-section-payment .Selected{
+     text-align: right;
+     color: red;
+     float: right;
+ }
+
+.alfa-mock-plans .btn.btn-secondary{
+    margin: 0 16px 24px;
+    padding: 16px 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: 'Lato';
+    border-width: 2px;
+    text-align: center;
+}
+
+.alfa-mock-plans.btn-group>.btn-group:not(:last-child)>.btn, 
+.alfa-mock-plans.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 6px;
+}
+.alfa-mock-plans .btn.btn-secondary h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.alfa-mock-plans .btn.btn-secondary p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    font-size: 30px;
+    
+}
+.alfa-mock-plans .btn.btn-secondary .alfa-button-payment{
+    border-radius: 50px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.alfa-mock-plans .btn.btn-secondary.green p{
+    color:#2fda61;
+}
+.alfa-mock-plans .btn.btn-secondary.green{
+    border-color: #2fda61;
+}
+.alfa-mock-plans .btn.btn-secondary.green .alfa-button-payment{
+    background-color: #2fda61;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.green.active,
+.alfa-mock-plans .btn.btn-secondary.green.focus,
+.alfa-mock-plans .btn.btn-secondary.green:active {
+    background-color: #2fda61;
+}
+.alfa-mock-plans .btn.btn-secondary.green.active .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.green.focus .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.green:active .alfa-button-payment{
+    background-color: #fff;
+    color: #2fda61;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.blue{
+    border-color: #185d92;
+}
+.alfa-mock-plans .btn.btn-secondary.blue .alfa-button-payment{
+    background-color: #185d92;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.blue p{
+    color:#185d92;
+}
+.alfa-mock-plans .btn.btn-secondary.blue.active,
+.alfa-mock-plans .btn.btn-secondary.blue.focus,
+.alfa-mock-plans .btn.btn-secondary.blue:active {
+    background-color: #185d92;
+    color:white;
+} 
+.alfa-mock-plans .btn.btn-secondary.blue.active .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.blue.focus .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.blue:active .alfa-button-payment{
+    background-color: #fff;
+    color: #185d92;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.red{
+    border-color:#e8342b;
+}
+.alfa-mock-plans .btn.btn-secondary.red .alfa-button-payment{
+    background-color: #e8342b;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.red p{
+    color:#e8342b;
+}
+.alfa-mock-plans .btn.btn-secondary.red.active,
+.alfa-mock-plans .btn.btn-secondary.red.focus,
+.alfa-mock-plans .btn.btn-secondary.red:active {
+    background-color: #e8342b;
+    color:white;
+} 
+.alfa-mock-plans .btn.btn-secondary.red.active .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.red.focus .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.red:active .alfa-button-payment{
+    background-color: #fff;
+    color: #e8342b;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.brown{
+    border-color:#ec935f;
+    margin-top: 10px;
+}
+.alfa-mock-plans .btn.btn-secondary.brown .alfa-button-payment{
+    background-color:#ec935f;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.brown h3{
+    font-size: 40px;
+    color:#ec935f;
+    font-weight: 700;
+    font-family: "Lato";
+    margin-bottom: 10px;
+}
+.alfa-mock-plans .btn.btn-secondary.brown p{
+    color:#ec935f;
+}
+.alfa-mock-plans .btn.btn-secondary.brown.active,
+.alfa-mock-plans .btn.btn-secondary.brown.focus,
+.alfa-mock-plans .btn.btn-secondary.brown:active {
+    background-color: #ec935f;
+    color:white;
+} 
+.alfa-mock-plans .btn.btn-secondary.brown.active .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.brown.focus .alfa-button-payment,
+.alfa-mock-plans .btn.btn-secondary.brown:active .alfa-button-payment{
+    background-color: #fff;
+    color:#ec935f;
+    border: none;
+}
+.alfa-mock-plans .btn.btn-secondary.active h3,
+.alfa-mock-plans .btn.btn-secondary.active p{
+    color: #fff
+}
+
+/*mock test*/
+/*training */
+ 
+.alfa-training-nav.nav-item{
+    font-size: 25px;
+}
+.alfa-training-live-plans .btn.btn-secondary{
+    margin: 0 16px 24px;
+    padding: 16px 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: 'Lato';
+    border-width: 2px;
+    text-align: center;
+}
+.alfa-training-live-plans.btn-group>.btn-group:not(:last-child)>.btn, 
+.alfa-training-live-plans.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 6px;
+}
+.alfa-training-live-plans .btn.btn-secondary h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.alfa-training-live-plans .btn.btn-secondary p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    font-size: 30px;
+    
+}
+.alfa-training-live-plans .btn.btn-secondary h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.alfa-training-live-plans .btn.btn-secondary p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    font-size: 30px;
+    
+}
+.alfa-training-live-plans .btn.btn-secondary .alfa-button-payment{
+    border-radius: 50px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.alfa-training-live-plans .btn.btn-secondary.green p{
+    color:#2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green{
+    border-color: #2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green .alfa-button-payment{
+    background-color: #2fda61;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.green.active,
+.alfa-training-live-plans .btn.btn-secondary.green.focus,
+.alfa-training-live-plans .btn.btn-secondary.green:active {
+    background-color: #2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green.active .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.green.focus .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.green:active .alfa-button-payment{
+    background-color: #fff;
+    color: #2fda61;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue{
+    border-color: #185d92;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue .alfa-button-payment{
+    background-color: #185d92;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue p{
+    color:#185d92;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue.active,
+.alfa-training-live-plans .btn.btn-secondary.blue.focus,
+.alfa-training-live-plans .btn.btn-secondary.blue:active {
+    background-color: #185d92;
+    color:white;
+} 
+.alfa-training-live-plans .btn.btn-secondary.blue.active .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.blue.focus .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.blue:active .alfa-button-payment{
+    background-color: #fff;
+    color: #185d92;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.active h3,
+.alfa-training-live-plans .btn.btn-secondary.active p{
+    color: #fff
+}
+/*live*/
+.alfa-training-nav.nav-item{
+    font-size: 20px;
+}
+.alfa-training-nav-bar.nav{
+    border-color: red;
+}
+.alfa-training-live-plans .btn.btn-secondary{
+    margin: 0 16px 24px;
+    padding: 16px 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: 'Lato';
+    border-width: 2px;
+    text-align: center;
+}
+.alfa-training-live-plans.btn-group>.btn-group:not(:last-child)>.btn, 
+.alfa-training-live-plans.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 6px;
+}
+.alfa-training-live-plans .btn.btn-secondary h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.alfa-training-live-plans .btn.btn-secondary p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.alfa-training-live-plans .btn.btn-secondary .alfa-button-payment{
+    border-radius: 50px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.alfa-training-live-plans .btn.btn-secondary.green p{
+    color:#2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green{
+    border-color: #2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green .alfa-button-payment{
+    background-color: #2fda61;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.green.active,
+.alfa-training-live-plans .btn.btn-secondary.green.focus,
+.alfa-training-live-plans .btn.btn-secondary.green:active {
+    background-color: #2fda61;
+}
+.alfa-training-live-plans .btn.btn-secondary.green.active .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.green.focus .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.green:active .alfa-button-payment{
+    background-color: #fff;
+    color: #2fda61;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue{
+    border-color: #185d92;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue .alfa-button-payment{
+    background-color: #185d92;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue p{
+    color:#185d92;
+}
+.alfa-training-live-plans .btn.btn-secondary.blue.active,
+.alfa-training-live-plans .btn.btn-secondary.blue.focus,
+.alfa-training-live-plans .btn.btn-secondary.blue:active {
+    background-color: #185d92;
+    color:white;
+} 
+.alfa-training-live-plans .btn.btn-secondary.blue.active .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.blue.focus .alfa-button-payment,
+.alfa-training-live-plans .btn.btn-secondary.blue:active .alfa-button-payment{
+    background-color: #fff;
+    color: #185d92;
+    border: none;
+}
+.alfa-training-live-plans .btn.btn-secondary.active h3,
+.alfa-training-live-plans .btn.btn-secondary.active p{
+    color: #fff
+}
+/*appointment*/
+
+.alfa-training-appointment-plans .btn.btn-secondary{
+    margin: 0 16px 24px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: 'Lato';
+    border-width: 2px;
+    text-align: center;
+}
+.alfa-training-appointment-plans.btn-group>.btn-group:not(:last-child)>.btn, 
+.alfa-training-appointment-plans.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 6px;
+}
+.alfa-training-appointment-plans .btn.btn-secondary h3{
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.alfa-training-appointment-plans .btn.btn-secondary p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    font-size: 30px;
+    
+}
+.alfa-training-appointment-plans .btn.btn-secondary ul{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: left;
+    padding: 20px;
+}
+.alfa-training-appointment-plans .btn.btn-secondary hr{
+    border: 1px solid black;
+}
+.alfa-training-appointment-plans .btn.btn-secondary .alfa-button-payment{
+    border-radius: 50px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.green p{
+    color:#2fda61;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.green{
+    border-color: #2fda61;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.green .alfa-button-payment{
+    background-color: #2fda61;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.green.active,
+.alfa-training-appointment-plans .btn.btn-secondary.green.focus,
+.alfa-training-appointment-plans .btn.btn-secondary.green:active {
+    background-color: #2fda61;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.green.active .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.green.focus .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.green:active .alfa-button-payment{
+    background-color: #fff;
+    color: #2fda61;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.blue{
+    border-color: #185d92;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.blue .alfa-button-payment{
+    background-color: #185d92;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.blue p{
+    color:#185d92;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.blue.active,
+.alfa-training-appointment-plans .btn.btn-secondary.blue.focus,
+.alfa-training-appointment-plans .btn.btn-secondary.blue:active {
+    background-color: #185d92;
+    color:white;
+} 
+.alfa-training-appointment-plans .btn.btn-secondary.blue.active .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.blue.focus .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.blue:active .alfa-button-payment{
+    background-color: #fff;
+    color: #185d92;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.red{
+    border-color:#e8342b;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.red .alfa-button-payment{
+    background-color: #e8342b;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.red p{
+    color:#e8342b;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.red.active,
+.alfa-training-appointment-plans .btn.btn-secondary.red.focus,
+.alfa-training-appointment-plans .btn.btn-secondary.red:active {
+    background-color: #e8342b;
+    color:white;
+} 
+.alfa-training-appointment-plans .btn.btn-secondary.red.active .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.red.focus .alfa-button-payment,
+.alfa-training-appointment-plans .btn.btn-secondary.red:active .alfa-button-payment{
+    background-color: #fff;
+    color: #e8342b;
+    border: none;
+}
+.alfa-training-appointment-plans .btn.btn-secondary.active h3,
+.alfa-training-appointment-plans .btn.btn-secondary.active hr,
+.alfa-training-appointment-plans .btn.btn-secondary.active ul,
+.alfa-training-appointment-plans .btn.btn-secondary.active p{
+    color: #fff;
+    border-color: white;
+}
+/*history*/
+.alfa-payment-history{
+    border-radius: 10px;
+    filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.16));
+    background-color: #ffffff;
+    padding: 20px 0;
+    
+}
+.alfa-payment-history-table-head-title{
+    font-size: 18px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: center;
+    margin: 0 0 0 8px;
+}
+.alfa-payment-history-paymentmethod-mastercard-img{
+    max-width: 30px;
+    margin-right: 2px;
+} 
+.alfa-payment-history-paymentmethod-paypal-img{
+    max-width: 70px;
+    margin-right: 2px;
+}  
+
+.alfa-payment-history-table-head-coupon{
+    font-size: 18px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.alfa-payment-history-id{
+    font-size: 20px;
+    color: #11e6e6;
+    font-weight: 600;
+    font-family: "Lato";
+    margin: 0 0 0 8px;  
+}
+.alfa-payment-history-amount{
+    font-size: 20px;
+    color: #11e6e6;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: left;
+
+}
+.alfa-payment-history-date{
+    font-size: 14px;
+    color: #11e6e6;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: left;
+
+}
+.alfa-payment-history-time{
+    font-size: 14px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: left;
+
+}
+.alfa-payment-history-coupon{
+    font-size: 14px;
+    color: #e8342b;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: left;
+ 
+
+}
+.alfa-payment-history-product{
+    font-size: 15px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: right;
+    margin: 0 14px ;
+
+}
+.alfa-payment-history-payment-method{
+    font-size: 12px;
+    color: #2e2e2e;
+    font-weight: 600;
+    font-family: "Lato";
+    text-align: right;
+   
+
+}
+.alfa-sidebar-main-card  .alfa-payment-history-id::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 4px;
+    background-color: #11e6e6;
+    bottom: -15px;
+    left: 15px;
+    border-bottom-left-radius: 10px;
+}
+
+
+

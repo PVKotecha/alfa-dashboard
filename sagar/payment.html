@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+    <link rel="stylesheet" href="css/alfa-sagar.css">
+
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <link rel="stylesheet" href="fonts/stancil-fonts.css">
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/alfa.svg" alt="logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mt-4 mt-lg-0 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Practice</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                            <div class="container d-block">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/speaking.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-speaking-menu-title">Speaking</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-test-read-aloud.html">Read Aloud</a>
+                                        <a class="dropdown-item" href="practice-test-repeat-sentence.html">Repeat
+                                            Sentence</a>
+                                        <a class="dropdown-item" href="practice-test-discribe-img.html">Describe
+                                            Image</a>
+                                        <a class="dropdown-item" href="practice-test-re-tell-lecture.html">Re-Tell
+                                            Lecture</a>
+                                        <a class="dropdown-item" href="practice-test-answer-short-que.html">Answer Short
+                                            Question</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/writing.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-writing-menu-title">writing</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerized
+                                            Written Text </a>
+                                        <a class="dropdown-item" href="practice-summerize-write-essay.html">Write
+                                            Essay</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/reading.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-reading-menu-title">reading</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-multi-choice-multi-ans.html">Multiple
+                                            Choice, Single Answer</a>
+                                        <a class="dropdown-item" href="practice-multi-choice-single-ans.html">Multiple
+                                            Choice, Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-reorder-para.html">Re-Order
+                                            Paragraph</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks.html">Reading: Fill
+                                            in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-rw.html">Reading
+                                            &amp; Writing: Fill in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Test</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/listening.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-listening-menu-title">listening</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-summerize-spoken-test.html">Summerize
+                                            Spoken Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-multi-ans-spoken.html">Multiple Choice, Multiple
+                                            Answer</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-spoken.html">Reading:
+                                            Fill in the Blanks</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-correct-summary.html">Highlight Correct Summery</a>
+                                        <a class="dropdown-item" href="practice-summerize-written-test.html">Summerize
+                                            Written Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-single-ans-spoken.html">Multiple Choice,
+                                            Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-select-missing-word.html">Select Missing
+                                            Words</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-incorrect-words.html">Highlight Correct Words</a>
+                                        <a class="dropdown-item" href="practice-write-from-dictation.html">Write From
+                                            Ditection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="latest-pte-exam-predicon-download.html">Predictions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mock Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="strategy-video.html">Strategy Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback-and-faq.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcement.html">Announcement</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/Icon-awesome-user-circle.svg" alt="user dd icon">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right alfa-user-dd" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item media" href="#">
+                                <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
+                                <div class="media-body align-self-center">
+                                    <small>John Doe<br>
+                                        johndoe@gmail.com</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-star-of-david align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Upgrade to VIP
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="profile.html">
+                                <i class="fa fa-user-circle align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Profile Center
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-sign-out-alt align-self-center "></i>
+                                <div class="media-body align-self-center">
+                                    Logout
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Nav End-->
+
+    <!--Alfa body-->
+    <div class="alfa-body">
+        <div class="alfa-section-payment">
+            <div class="container">
+                <div class="row ">
+                    <div class="col">
+                        <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-Subscription-tab" data-toggle="pill"
+                                    href="#pills-Subscription" role="tab" aria-controls="pills-Subscription"
+                                    aria-selected="true">Subscription</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-Mock-Test-tab" data-toggle="pill" href="#pills-Mock-Test"
+                                    role="tab" aria-controls="pills-Mock-Test" aria-selected="false">Mock Tests</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-Training-tab" data-toggle="pill" href="#pills-Training"
+                                    role="tab" aria-controls="pills-Training" aria-selected="false">Training</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-Account-History-tab" data-toggle="pill"
+                                    href="#pills-Account-History" role="tab" aria-controls="pills-Account-History"
+                                    aria-selected="false">Account History</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-Subscription" role="tabpanel"
+                                aria-labelledby="pills-Subscription-tab">
+                                <div class="card alfa-PT-Examination-card alfa-Payemnt-card">
+                                    <div class="card-body ">
+                                        <div class="container">
+                                            <div class="row text-center">
+                                                <div class="col-lg-12">
+                                                    <h2 class="alfa-section-payment-title-start-text">premium user plans
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center">
+                                                <div class="col-lg-12">
+                                                    <div class="btn-group btn-group-toggle alfa-payment-plans"
+                                                        data-toggle="buttons">
+                                                        <label class="btn btn-secondary blue active">
+                                                            <input type="radio" name="options" id="option1" checked>
+                                                            <h3>30 Days</h3>
+                                                            <p>AUD $19.95</p>
+                                                            <i class="fa fa-check-circle"></i>
+                                                            <button class="alfa-button-payment">
+                                                                Choose
+                                                            </button>
+                                                        </label>
+                                                        <label class="btn btn-secondary green">
+                                                            <input type="radio" name="options" id="option2">
+                                                            <h3>60 Days</h3>
+                                                            <p>AUD $34.95</p>
+                                                            <button class="alfa-button-payment">
+                                                                Choose
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-lg-12">
+                                                <button class="alfa-section-payment-pay-button">Confirm Payment:AUD xxx
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-PT-Examination-card ">
+                                    <div class="card-header">
+                                        <h2 class=" text-center">FEATURES</h2>
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="container">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class=" card features-card">
+                                                        <img src="./img/alpfa-payment-svg/ai.svg"
+                                                            class="features-card-svg" alt="">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">AI-Powered</h5>
+                                                            <p class="features-card-text">Unlimited AI Clicks for
+                                                                scoring in all the speaking & writing questions.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/score.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Score Checks</h5>
+                                                            <p class="features-card-text">Unlimited Score Checks to know
+                                                                exactly how the PTE marks are distributed accross
+                                                                various modules , for all questions</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/prediction.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Latest Prediction Files</h5>
+                                                            <p class="features-card-text"> Two of our latest version of
+                                                                our weekly prediction files will be available</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/report-templates.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Templates</h5>
+                                                            <p class="features-card-text">Our tried & proven Writting
+                                                                templates for Essay & Summerize Spoken Text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col-start mt-3">
+                                                    <div class="alfa-section-payment-card-bottom">
+                                                        <div class="card features-card">
+                                                            <img src="./img/alpfa-payment-svg/videos.svg"
+                                                                class="features-card-svg" alt="...">
+                                                            <div class="features-card-body">
+                                                                <h5 class="features-card-title">Stragey Videos</h5>
+                                                                <p class="features-card-text">Multi-lingual videos
+                                                                    giving in depth knowledge of the strategies,usage of
+                                                                    templates , various tips & tricks for all question
+                                                                    types </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/traget-wise.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Traget wise Study-Plan</h5>
+                                                            <p class="features-card-text">A Tailor-made plan that has
+                                                                been designed in accordance with the students requirded
+                                                                score to provide an effective learning path</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-3 alfa-section-col-end mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/score.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Mock Test</h5>
+                                                            <p class="features-card-text"> A simulated Scored Mock Test
+                                                                with smillar to 95% real exam scoring repoet that can be
+                                                                attempted multiple times</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Mock-Test" role="tabpanel"
+                                aria-labelledby="pills-Mock-Test-tab">
+                                <div class="card alfa-PT-Examination-card alfa-Payemnt-card">
+                                    <div class="card-body ">
+                                        <div class="container">
+                                            <div class="row text-center">
+                                                <div class="col-lg-12">
+                                                    <div class="btn-group btn-group-toggle alfa-mock-plans"
+                                                        data-toggle="buttons">
+                                                        <label class="btn btn-secondary blue active">
+                                                            <input type="radio" name="options" id="option1" checked>
+                                                            <h3>1 xFull AI Scored <br> Mock Test</h3>
+                                                            <p>AUD $19.95</p>
+                                                            <button class="alfa-button-payment">
+                                                                Choose
+                                                            </button>
+                                                        </label>
+                                                        <label class="btn btn-secondary green">
+                                                            <input type="radio" name="options" id="option2">
+                                                            <h3>3 xFull AI Scored <br> Mock Test</h3>
+                                                            <p>AUD $22.95</p>
+                                                            <button class="alfa-button-payment">
+                                                                Choose
+                                                            </button>
+                                                        </label>
+                                                        <label class="btn btn-secondary red">
+                                                            <input type="radio" name="options" id="option2">
+                                                            <h3>5 xFull AI Scored <br> Mock Test</h3>
+                                                            <p>AUD $34.95</p>
+                                                            <button class="alfa-button-payment">
+                                                                Choose
+                                                            </button>
+                                                        </label>
+                                                        <label class="btn btn-secondary brown">
+                                                            <input type="radio" name="options" id="option2">
+                                                            <h3>Buying in <br> Bulk ?</h3>
+
+                                                            <button class="alfa-button-payment">
+                                                                Contact Us
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-lg-12 px-5">
+                                                <p class="Select-mock-test">Select mock test
+                                                    <span class="Selected">Selected</span>
+                                                </p>
+                                                <select class="form-control selectpicker" multiple>
+                                                    <option>mock-test-1</option>
+                                                    <option>mock-test-2</option>
+                                                    <option>mock-test-3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-lg-12">
+                                                <button class="alfa-section-payment-pay-button">Confirm Payment:AUD xxx
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-PT-Examination-card ">
+                                    <div class="card-header">
+                                        <h2 class=" text-center">FEATURES</h2>
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="container">
+
+                                            <div class="row text-center justify-content-center ">
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class=" card features-card">
+                                                        <img src="./img/alpfa-payment-svg/ai.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">AI_Powered</h5>
+                                                            <p class="features-card-text">The Mock test score is
+                                                                generated by state-of-art AI algorithms
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/score.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Score Test</h5>
+                                                            <p class="features-card-text">ALl the offered mock test are
+                                                                fully scored.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/accurate scoring.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Accurate Scoring</h5>
+                                                            <p class="features-card-text">The scores are 95% accurate &
+                                                                in accordance</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/report-templates.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Score Report</h5>
+                                                            <p class="features-card-text">A detailed(smillar to PTE) &
+                                                                downloadable score report will be genrated</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col-start mt-3">
+                                                    <div class="alfa-section-payment-card-bottom">
+                                                        <div class="card features-card">
+                                                            <img src="./img/alpfa-payment-svg/instant result.svg"
+                                                                class="features-card-svg" alt="...">
+                                                            <div class="features-card-body">
+                                                                <h5 class="features-card-title">Instant Result</h5>
+                                                                <p class="features-card-text">The result will be
+                                                                    genrated instaneously(within 5-10 mins max) </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 alfa-section-col mt-3">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/analysis.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Report Analysis</h5>
+                                                            <p class="features-card-text"> A user will be able to go
+                                                                back & check all the responses for a better
+                                                                understanding of the score achieved</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="pills-Training" role="tabpanel"
+                                aria-labelledby="pills-Training-tab">
+                                <div class="card alfa-PT-Examination-card alfa-Payemnt-card">
+                                    <div class="card-body ">
+                                        <div class="container">
+                                            <div class="row text-center">
+                                                <div class="col-lg-12">
+                                                    <ul class="nav alfa-training-nav-bar justify-content-center  nav-pills mb-3 "
+                                                        id="pills-tab" role="tablist">
+                                                        <li class="alfa-training-nav nav-item" role="presentation">
+                                                            <a class="nav-link active" id="pills-Live-class-tab"
+                                                                data-toggle="pill" href="#pills-Live-class" role="tab"
+                                                                aria-controls="pills-Live-class" aria-selected="true">
+                                                                <i class="fa fa-tv mr-2"></i>
+                                                                Live Class
+                                                            </a>
+                                                        </li>
+                                                        <li class="alfa-training-nav nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-Appointments-tab"
+                                                                data-toggle="pill" href="#pills-Appointments" role="tab"
+                                                                aria-controls="pills-Appointments"
+                                                                aria-selected="false">
+                                                                <i class="fa fa-calendar"></i>
+                                                                Appointments
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="pills-Live-class"
+                                                            role="tabpanel" aria-labelledby="pills-Live-class-tab">
+                                                            <div class="row text-center">
+                                                                <div class="col-lg-12">
+                                                                    <div class="btn-group btn-group-toggle alfa-training-live-plans"
+                                                                        data-toggle="buttons">
+                                                                        <label class="btn btn-secondary blue active">
+                                                                            <input type="radio" name="options"
+                                                                                id="option1" checked>
+                                                                            <h3>3 Appointments X 40 Minutes</h3>
+                                                                            <p>AUD $140</p>
+                                                                            <button class="alfa-button-payment">
+                                                                                Choose
+                                                                            </button>
+                                                                        </label>
+                                                                        <label class="btn btn-secondary green">
+                                                                            <input type="radio" name="options"
+                                                                                id="option2">
+                                                                            <h3>5 Appointments X 40 Minutes</h3>
+                                                                            <p>AUD $195</p>
+                                                                            <button class="alfa-button-payment">
+                                                                                Choose
+                                                                            </button>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row text-center">
+                                                                <div class="col-lg-12">
+                                                                    <button
+                                                                        class="alfa-section-payment-pay-button">Confirm
+                                                                        Payment:AUD xxx
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card alfa-PT-Examination-card ">
+                                                                <div class="card-header">
+                                                                    <h2 class=" text-center">FEATURES</h2>
+                                                                </div>
+                                                                <div class="card-body ">
+                                                                    <div class="container">
+                                                                        <div
+                                                                            class="row text-center justify-content-center">
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class=" card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/ai.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Flexible Timings</h5>
+                                                                                        <p class="features-card-text">
+                                                                                            The classes will be run in
+                                                                                            various batches that will be
+                                                                                            suitable for students
+                                                                                            joining from different zones
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Expert faculty</h5>
+                                                                                        <p class="features-card-text">
+                                                                                            The trainer at <span
+                                                                                                style="font-weight:700;">AlfaPTE</span>
+                                                                                            bring enormous industry
+                                                                                            experience & knowledge with
+                                                                                            which they have already
+                                                                                            helped 1000s students
+                                                                                            achieve their desired score
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/prediction.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Complete Guidance</h5>
+                                                                                        <p class="features-card-text"> A
+                                                                                            student is free to ask any
+                                                                                            doubts & queries from the
+                                                                                            trainers and can get
+                                                                                            Guidance from A-Z of PTE
+                                                                                            Academic</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-Appointments"
+                                                            role="tabpanel" aria-labelledby="pills-Appointments-tab">
+                                                            <div
+                                                                class="card alfa-PT-Examination-card alfa-Payemnt-card">
+                                                                <div class="card-body ">
+                                                                    <div class="container">
+
+                                                                        <div class="row text-center">
+                                                                            <div class="col-lg-12">
+                                                                                <div class="btn-group btn-group-toggle alfa-training-appointment-plans"
+                                                                                    data-toggle="buttons">
+                                                                                    <label
+                                                                                        class="btn btn-secondary blue active">
+                                                                                        <input type="radio"
+                                                                                            name="options" id="option1"
+                                                                                            checked>
+                                                                                        <h3>30 Days Course
+                                                                                        </h3>
+                                                                                        <p>AUD $300</p>
+                                                                                        <hr>
+                                                                                        <ul>
+                                                                                            <li>1-month
+                                                                                                PREMIUM
+                                                                                                access to
+                                                                                                alfapte.com
+                                                                                            </li>
+                                                                                            <li>1 x Scored
+                                                                                                Mock Test
+                                                                                            </li>
+                                                                                            <li>Unlimited
+                                                                                                one on one
+                                                                                                appointment
+                                                                                                with a
+                                                                                                trainer</li>
+                                                                                        </ul>
+                                                                                        <button
+                                                                                            class="alfa-button-payment">
+                                                                                            Choose
+                                                                                        </button>
+                                                                                    </label>
+                                                                                    <label
+                                                                                        class="btn btn-secondary green">
+                                                                                        <input type="radio"
+                                                                                            name="options" id="option2">
+                                                                                        <h3>90 Days Course
+                                                                                        </h3>
+                                                                                        <p>AUD $450</p>
+                                                                                        <hr>
+                                                                                        <ul>
+                                                                                            <li>3-month
+                                                                                                PREMIUM
+                                                                                                access to
+                                                                                                alfapte.com
+                                                                                            </li>
+                                                                                            <li>3 x Scored
+                                                                                                Mock Test
+                                                                                            </li>
+                                                                                            <li>Unlimited
+                                                                                                one on one
+                                                                                                appointment
+                                                                                                with a
+                                                                                                trainer</li>
+                                                                                        </ul>
+                                                                                        <button
+                                                                                            class="alfa-button-payment">
+                                                                                            Choose
+                                                                                        </button>
+                                                                                    </label>
+                                                                                    <label
+                                                                                        class="btn btn-secondary red">
+                                                                                        <input type="radio"
+                                                                                            name="options" id="option2">
+                                                                                        <h3>Unlimited Course
+                                                                                        </h3>
+                                                                                        <p>AUD $600</p>
+                                                                                        <hr>
+                                                                                        <ul>
+                                                                                            <li>12-month
+                                                                                                PREMIUM
+                                                                                                access to
+                                                                                                alfapte.com
+                                                                                            </li>
+                                                                                            <li>12 x Scored
+                                                                                                Mock Test
+                                                                                            </li>
+                                                                                            <li>Unlimited
+                                                                                                one on one
+                                                                                                appointment
+                                                                                                with a
+                                                                                                trainer</li>
+                                                                                        </ul>
+                                                                                        <button
+                                                                                            class="alfa-button-payment">
+                                                                                            Choose
+                                                                                        </button>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row text-center">
+                                                                        <div class="col-lg-12">
+                                                                            <button
+                                                                                class="alfa-section-payment-pay-button">Confirm
+                                                                                Payment:AUD xxx
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card alfa-PT-Examination-card ">
+                                                                <div class="card-header">
+                                                                    <h2 class=" text-center">FEATURES</h2>
+                                                                </div>
+                                                                <div class="card-body ">
+                                                                    <div class="container">
+                                                                        <div
+                                                                            class="row text-center justify-content-center">
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class=" card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/ai.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+
+                                                                                            Live Classes
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            Interactive
+                                                                                            online session
+                                                                                            will be
+                                                                                            conducted daily
+                                                                                            through zoom &
+                                                                                            can easily
+                                                                                            accessed by the
+                                                                                            students from
+                                                                                            anywhere in the
+                                                                                            world</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Limited Capacity
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            Multiple session
+                                                                                            will be
+                                                                                            conducted in
+                                                                                            smillar groups
+                                                                                            to facililate
+                                                                                            effective
+                                                                                            learning among
+                                                                                            students</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Expert faculty
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            The trainer at
+                                                                                            <span
+                                                                                                style="font-weight:700;">AlfaPTE</span>
+                                                                                            bring enormous
+                                                                                            industry
+                                                                                            experience &
+                                                                                            knowledge with
+                                                                                            which they have
+                                                                                            already helped
+                                                                                            1000s students
+                                                                                            achieve their
+                                                                                            desired score
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/report-templates.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Individual
+                                                                                            Appointments
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            A student is
+                                                                                            free to book an
+                                                                                            appointment &
+                                                                                            speak to the
+                                                                                            trainer
+                                                                                            One-on-One to
+                                                                                            clear all doubts
+                                                                                            & Queries</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class=" card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/ai.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Flexible Timings
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            The classes will
+                                                                                            be run in
+                                                                                            various batches
+                                                                                            that will be
+                                                                                            suitable for
+                                                                                            students joining
+                                                                                            from different
+                                                                                            zones</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 alfa-section-col mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/traget-wise.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            AlfaPTE.com</h5>
+                                                                                        <p class="features-card-text">
+                                                                                            Is the most
+                                                                                            advance PTE
+                                                                                            practice
+                                                                                            platfrom powered
+                                                                                            by highly
+                                                                                            accurate
+                                                                                            Artificial
+                                                                                            intelligency
+                                                                                            that works
+                                                                                            according to the
+                                                                                            PTE standards
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class=" col-lg-3 alfa-section-col-end mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            PREMIUM access
+                                                                                        </h5>
+                                                                                        <p class="features-card-text">
+                                                                                            A Premium user
+                                                                                            will be able to
+                                                                                            access unlimited
+                                                                                            AI Clicks &
+                                                                                            score checks ,
+                                                                                            lastest
+                                                                                            prediction
+                                                                                            files,Strategy
+                                                                                            Videos,Templates
+                                                                                            and study plans
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class=" col-lg-3 alfa-section-col-end mt-3">
+                                                                                <div class="card features-card">
+                                                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                                                        class="features-card-svg"
+                                                                                        alt="...">
+                                                                                    <div class="features-card-body">
+                                                                                        <h5 class="features-card-title">
+                                                                                            Mock Test</h5>
+                                                                                        <p class="features-card-text">
+                                                                                            A simulated
+                                                                                            Scored Mock Test
+                                                                                            with smillar to
+                                                                                            95% real exam
+                                                                                            scoring repoet
+                                                                                            that can be
+                                                                                            attempted
+                                                                                            multiple times
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="pills-Account-History" role="tabpanel"
+                                aria-labelledby="pills-Account-History-tab">
+                                <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-table-head-title">Transaction ID</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-table-head-title">
+                                                        Product</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-table-head-title">
+                                                       Payment Method</span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-table-head-title">Date&Time<br>
+                                               
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-table-head-coupon">Coupon</span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-table-head-title">Amount</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-payment-method">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-mastercard.png" class="alfa-payment-history-paymentmethod-mastercard-img img-fluid" alt="">
+                                                       2142**** ****2142</span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-product">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-paypal.png" alt="" class="alfa-payment-history-paymentmethod-paypal-img img-fluid">
+                                                       </span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                                 <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-payment-method">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-mastercard.png" class="alfa-payment-history-paymentmethod-mastercard-img img-fluid" alt="">
+                                                       2142**** ****2142</span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-product">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-paypal.png" alt="" class="alfa-payment-history-paymentmethod-paypal-img img-fluid">
+                                                       </span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                                 <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-payment-method">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-mastercard.png" class="alfa-payment-history-paymentmethod-mastercard-img img-fluid" alt="">
+                                                       2142**** ****2142</span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card alfa-sidebar-main-card">
+                                    <div class="row">
+                                        <div class="col-lg-2 align-self-center ">
+                                               <span class="alfa-payment-history-id">#1111</span>
+                                        </div>
+                                                <div class="col-lg-2 align-self-center text-center">
+                                                 <span class="alfa-payment-history-product">
+                                                        Mock Test</span>
+                                                    </div>
+                                                        <div class="col-lg-3 align-self-center text-center ">
+                                                    <span class="alfa-payment-history-product">
+                                                        <img src="./img/alpfa-payment-svg/payment-history-paypal.png" alt="" class="alfa-payment-history-paymentmethod-paypal-img img-fluid">
+                                                       </span>
+                                            </div>
+                                        <div class=" col-lg-2 align-self-center text-center">
+                                            <span class="alfa-payment-history-date">2020/06/08<br>
+                                                <span class="alfa-payment-history-time">06:15:22</span>
+                                        </div>
+                                        <div class=" col-lg-1 align-self-center text-center " >
+                                            <span class="alfa-payment-history-coupon"> Alfa50 </span>
+                                        </div>
+                                            <div class="col-lg-2 align-self-center text-center ">
+                                                <span class="alfa-payment-history-amount text-right">$30</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!--Alfa body end-->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/circles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/alfa-scripts.js"></script>
+
+    <script>
+        $('.accordion').on('shown.bs.collapse', function (e) {
+            var $card = $(this).closest('.card');
+            $('html,body').animate({
+                scrollTop: $card.offset().top
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
