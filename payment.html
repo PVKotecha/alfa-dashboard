@@ -1012,6 +1012,22 @@
                 width: 180px;
                 bottom: -26px;
             }
+            .alfa-header-top-info-button{
+                top:16px;
+            }
+        }
+        @media(max-width: 1024px){
+            .alfa-header-top-info-button{
+                top:16px;
+            }
+
+        }
+        @media(max-width: 360px){
+            .alfa-header-top-info-button{
+                top:22px;
+                right:2px
+            }
+
         }
         @media(max-width: 767px){
             .alfa-sidebar-main-card .alfa-payment-history-id::after{
@@ -1025,13 +1041,71 @@
             .alfa-payment-td{
                 min-width: 200px;
             }
+            .alfa-header-top-info-button{
+                top: 14px;
+            }
         }
+        .alfa-header-top-info-text{
+            font-size: 15px;
+            color:white;
+            font-weight: 600;
+            font-family: "Lato";
+            text-align: center;
+            margin-top: 8px;
+            
+        }
+        .alfa-header-top-info-button{
+            border-radius: 20px;
+            font-size: 15px;
+            color:white;
+            font-weight: 600;
+            font-family: "Lato";
+            float: right;
+            padding-bottom: 2px;
+            border: none;
+            background-color: transparent;
+            line-height: 1;
+            position:absolute;
+            right: 6px;
+           
+        }
+        .alfa-header-top-info-background{
+            background-color:  #185d92;
+
+        }
+        .alfa-section-header-top-info .fa.fa-info-circle{
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        .alfa-section-header-top-info{
+           width: 100%;
+        }
+        .alfa-header-top-info-conatiner{
+            position: relative;
+        }
+        .alfa-section-header-top.alfa-navbar.fixed-top{
+            top: -8px;
+        }
+        
+        
     </style>
 </head>
 
 <body>
+   
     <!--Nav-->
-    <nav class="navbar alfa-navbar navbar-expand-lg shadow-sm bg-white fixed-top">
+    <nav class="navbar alfa-navbar navbar-expand-lg alfa-section-header-top shadow-sm bg-white fixed-top" id="alfaNavbar">
+        <div class="alfa-section-header-top-info">
+            <div class="alfa-header-top-info-conatiner" id="alfaHeaderTopInfoConatiner">
+                <div class="row text-center">
+                    <div class="col-lg-12 alfa-header-top-info-background">
+                        <span><h2 class="alfa-header-top-info-text"> 
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>We're aware you might be experiencing issues on Flverr, caused by on of our service providers. We're working hard to solve this issues and apologize for the inconvenience 
+                            <button class="alfa-header-top-info-button" onclick="alfaHeaderTopInfoButton()"> x </button></h2>
+                        </span>
+                    </div>
+                </div>
+            </div>
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/alfa.svg" alt="logo" loading="lazy">
@@ -1040,7 +1114,6 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mt-4 mt-lg-0 active">
@@ -1189,6 +1262,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </nav>
     <!--Nav End-->
 
@@ -1926,6 +2000,7 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                        
                                     <!-- <div class="row py-2">
                                         <div class="col-md-2 align-self-center ">
                                             <p class="alfa-payment-history-table-head-title">Transaction ID</p>
@@ -2122,8 +2197,8 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+   
+    
 
 
 
@@ -2147,6 +2222,10 @@
                 scrollTop: $card.offset().top
             }, 500);
         });
+    function alfaHeaderTopInfoButton(){
+        document.getElementById("alfaHeaderTopInfoConatiner").style.display = "none";
+        document.getElementById("alfaNavbar").style.top = "0";
+    }
     </script>
 </body>
 
