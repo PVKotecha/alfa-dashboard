@@ -1097,7 +1097,9 @@
             top: -8px;
         }
 
-        /*popup*/
+        /*
+            popup
+        */
         .alfa-subs-modal .conatiner-modal {
             width: 100%;
         }
@@ -1213,12 +1215,28 @@
             margin-bottom: 0;
         }
 
+        .alfa-subs-modal .visa.vleft .form-control{
+            border-left: 0;
+            border-right: 1px solid #ced4da; 
+        }
+
         .alfa-subs-modal .visa .input-group-text{
             background: transparent;
             border-left: 0;
             padding: 0 8px;
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
+        }
+
+        .alfa-subs-modal .visa.vleft .input-group-text{
+            background: transparent;
+            border-right: 0;
+            padding: 0 8px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            min-width: 32px;
         }
 
         .alfa-subs-modal .total-text {
@@ -1314,7 +1332,7 @@
             font-size: 20px;
             left: -19px;
             top: -3px;
-        }
+        }  
     </style>
 </head>
 
@@ -2517,12 +2535,18 @@
 
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subsModal">
+        Subscription
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appointmentModal">
+        Appointment
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mockTestModalLabel">
+        Mocktest
     </button>
 
     <!-- Modal -->
-    <div class="modal alfa-subs-modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal alfa-subs-modal fade" id="subsModal" tabindex="-1" aria-labelledby="subsModal"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -2555,21 +2579,380 @@
                                 <p class="coupon-text">Coupon code Applied</p> 
                                 <p class="coupon-text text-danger">Invalid Coupon code</p> 
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6">
                                         <p class="subtotal-text"> Subtotal</p>
                                         <p class="discount-text"> Discount</p>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6">
                                         <p class="price-first-text"> AUD $19.95</p>
                                         <p class="price-second-text"> -AUD $14</p>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6">
                                         <p class="total-text"> Total</p>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <p class="total-price"> AUD $14.95</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pl-lg-5">
+                                <div class="row">
+                                  <div class="col-lg-12 text-center mb-3">
+                                    <div class="" data-toggle="buttons">
+                                        <label class="btn btn-secondary active">
+                                            Credit / Debit Card <input type="radio" name="options" id="option1" checked class="ml-2"> 
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <img src="img/paypal.svg" class="img-fluid" style="max-width: 80px;">
+                                          <input type="radio" name="options" id="option2" class="ml-2">  
+                                        </label> 
+                                      </div>
+                                  </div>
+                                    <!-- <button class="credit">credit/debit card</button>
+                                    <button class="paypal">paypal</button> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="card Number"> -->
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" placeholder="Card Number" aria-label="Amount (to the nearest dollar)">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <img src="img/visa.svg" class="img-fluid">
+                                              </span>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Card Holder Name">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-user" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Expiry Date">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-calendar" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div>  
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="cvv">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-info-circle" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div>   
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="nonpractice1">
+                                            <label class="custom-control-label" for="nonpractice1"> <span class="ml-2" style="vertical-align: middle;">Save this card for next payment</span></label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="row ">
+                        <button type="button" class="confirm-btn" data-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal alfa-subs-modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header modal-header">
+
+                    <h5 class="modal-title mb-0" id="exampleModalLabel">Appointment Form &amp; Payment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 pr-lg-5" style="border-right: 3px solid #cacaca;">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="input-group shadow-sm visa vleft mb-3"> 
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="background-color: #11e6e6;">
+                                                    <i class="fa fa-user-circle text-white"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Name"> 
+                                          </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="input-group shadow-sm visa vleft mb-3"> 
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="background-color: #11e6e6;">
+                                                    <i class="fa fa-envelope text-white"></i>
+                                                </span>
+                                            </div>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Email"> 
+                                          </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-lg-6">
+                                        <div class="input-group shadow-sm visa vleft mb-3"> 
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="background-color: #11e6e6;">
+                                                    <i class="fa fa-phone-alt text-white"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Mobile"> 
+                                          </div> 
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group shadow-sm visa vleft mb-3"> 
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="background-color: #11e6e6;">
+                                                    <i class="fa fa-building text-white"></i>
+                                                </span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option value="Malbourne">Malbourne</option>
+                                                <option value="Perth">Perth</option>
+                                                <option value="Sydney">Sydney</option>
+                                            </select>
+                                          </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="input-group shadow-sm visa vleft mb-3"> 
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="background-color: #11e6e6;">
+                                                    <i class="fa fa-calendar-check text-white"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Required Score"> 
+                                          </div> 
+                                    </div>
+                                </div>
+
+                                <hr class="mt-2">
+                                
+                                <div class="media">
+                                    <img src="img/liveTest.svg" class="mr-2" alt="liveTest" style="max-width: 57px">
+                                    <div class="media-body"> 
+                                        <span class="float-right mt-3 price-first-text"> AUD $19.95</span>
+                                        <div class="sub-title">Subscription</div>
+                                        <div class="course-title">30 days Course</div>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-2">
+                                 
+                                <input type="text" class="form-control form-control-coupon-code shadow-sm" id="exampleFormControlInput1"
+                                        placeholder="Coupon Code">
+                                    <button class="apply-btn shadow-sm">apply</button> 
+                                <p class="coupon-text">Coupon code Applied</p> 
+                                <p class="coupon-text text-danger">Invalid Coupon code</p> 
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="subtotal-text"> Subtotal</p>
+                                        <p class="discount-text"> Discount</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="price-first-text"> AUD $19.95</p>
+                                        <p class="price-second-text"> -AUD $14</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="total-text"> Total</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="total-price"> AUD $14.95</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pl-lg-5">
+                                <div class="row">
+                                  <div class="col-lg-12 text-center mb-3">
+                                    <div class="" data-toggle="buttons">
+                                        <label class="btn btn-secondary active">
+                                            Credit / Debit Card <input type="radio" name="options" id="option1" checked class="ml-2"> 
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <img src="img/paypal.svg" class="img-fluid" style="max-width: 80px;">
+                                          <input type="radio" name="options" id="option2" class="ml-2">  
+                                        </label> 
+                                      </div>
+                                  </div>
+                                    <!-- <button class="credit">credit/debit card</button>
+                                    <button class="paypal">paypal</button> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="card Number"> -->
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" placeholder="Card Number" aria-label="Amount (to the nearest dollar)">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <img src="img/visa.svg" class="img-fluid">
+                                              </span>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Card Holder Name">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-user" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Expiry Date">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-calendar" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div>  
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group shadow-sm visa mb-3"> 
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="cvv">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">
+                                                  <i class="fa fa-info-circle" style="color: #11e6e6;"></i>
+                                              </span>
+                                            </div>
+                                          </div>   
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="nonpractice1">
+                                            <label class="custom-control-label" for="nonpractice1"> <span class="ml-2" style="vertical-align: middle;">Save this card for next payment</span></label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="row ">
+                        <button type="button" class="confirm-btn" data-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal alfa-subs-modal fade" id="mockTestModalLabel" tabindex="-1" aria-labelledby="mockTestModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header modal-header">
+
+                    <h5 class="modal-title mb-0" id="exampleModalLabel">Mock Test</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 pr-lg-5" style="border-right: 3px solid #cacaca;">
+                                <div class="media">
+                                    <img src="img/liveTest.svg" class="mr-2" alt="liveTest" style="max-width: 57px">
+                                    <div class="media-body"> 
+                                        <span class="float-right mt-3 price-first-text"> AUD $19.95</span>
+                                        <div class="sub-title">Subscription</div>
+                                        <div class="course-title">3x Full AI scored Mock test</div>
+                                    </div>
+                                </div>
+                                
+                                <hr class="my-2">
+
+                                <ul class="pl-0 list-unstyled">
+                                    <li class="font-weight-bold"><span style="color: #11e6e6;">1) </span> Mock Test 2</li>
+                                    <li class="font-weight-bold"><span style="color: #11e6e6;">2) </span> Mock Test 5</li>
+                                    <li class="font-weight-bold"><span style="color: #11e6e6;">3) </span> Mock Test 11</li>
+                                </ul>
+
+                                <hr class="mt-2">
+                                 
+                                <input type="text" class="form-control form-control-coupon-code shadow-sm" id="exampleFormControlInput1"
+                                        placeholder="Coupon Code">
+                                    <button class="apply-btn shadow-sm">apply</button> 
+                                <p class="coupon-text">Coupon code Applied</p> 
+                                <p class="coupon-text text-danger">Invalid Coupon code</p> 
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="subtotal-text"> Subtotal</p>
+                                        <p class="discount-text"> Discount</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="price-first-text"> AUD $19.95</p>
+                                        <p class="price-second-text"> -AUD $14</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="total-text"> Total</p>
+                                    </div>
+                                    <div class="col-sm-6">
                                         <p class="total-price"> AUD $14.95</p> 
                                     </div>
                                 </div>
