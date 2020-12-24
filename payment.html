@@ -1070,7 +1070,140 @@
         .alfa-section-header-top.alfa-navbar.fixed-top{
             top: -8px;
         }
+        /*popup*/
+        .conatiner-modal{
+            width: 100%;
+        }
+        .modal-header .modaltitle{
+            text-align: center;
+            margin: 0;
+        }
+        .modal-content .modal-header{
+            background-color: #00cdcd;
+            text-align: center;
+            padding: 5px;
+            font-weight: 900;
+            color: white;
+        }
+        .modal-footer .confirm-btn{
+            background-color: blue;
+            padding: 5px 12px;
+            border: transparent;
+            text-transform: capitalize;
+            font-weight: 900;
+            color: white;
+            font-size: 20px;
+        }
+        .sub-title{
+            font-size: 20px;
+            color:#00cdcd ;
+            font-weight: 900;
+        }
+        .course-title{
+            font-size: 20px;
+            color:black ;
+            font-weight: 400;
+        }
+        .form-control-new{
+            font-size: 20px;
+            color:#00cdcd ;
+            font-weight: 900;
+        }
+        .apply-btn{
+            background-color:#00cdcd;
+            padding: 10px 35px;
+            border: transparent;
+            text-transform: capitalize;
+            font-weight: 900;
+            color: white;
+            font-size: 15px;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            border-radius: 5%;
+            
+        }
+        .form-control-card{
+            font-weight: 900;
+            color:#00cdcd;
+            margin: 10px 20px ;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        .form-control-holder-name{
+            font-weight: 900;
+            color:#00cdcd;
+            margin: 10px 20px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        .form-control-date{
+            font-weight: 900;
+            color:#00cdcd;
+            margin: 10px 0;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        .form-control-cvv{
+            font-weight: 900;
+            color:#00cdcd;
+            margin:  10px 0;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        .form-control-coupon{
+            font-weight: 900;
+            color:#00cdcd;
+            margin:  10px 0;
+            width: 76%;
+            padding: 5px 10px;
+        }
+        .total-text{
+            font-size: 25px;
+            font-weight: 900;
+            color: black;
+            margin: 5px
+        }
+        .total-price{
+            font-size: 25px;
+            font-weight: 900;
+            color:#00cdcd;
+            text-align: right;
+            margin: 5px
+        }
+        .subtotal-text{
+            font-size: 22px;
+            font-weight: 400;
+            color: black;
+           
+        }
+        .discount-text{
+            font-size: 15px;
+            font-weight: 400;
+            color: black;
+            
+        }
+        .price-first-text{
+            font-size: 22px;
+            font-weight: 400;
+            color: black;
+           
+            text-align: right;
+        }
+        .price-second-text{
+            font-size: 15px;
+            font-weight: 400;
+            color: red;
+            
+            text-align: right;
+            margin-right: 56px;
+        }
+        .coupon-text{
+            color: #2fda61;
+            margin-left: 10px;
+        }
         
+        
+
         
     </style>
 </head>
@@ -2184,9 +2317,98 @@
             </div>
         </div>
     </div>
-   
     
-
+   
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header modal-header">
+         
+             <span class="modaltitle" id="exampleModalLabel">Modal title</span>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+         <div class="row">
+             <div class="col-lg-6">
+                 <div class="row">
+                     <div class="sub-title">Subscription</div>
+                     <div class="course-title">30 days Course</div>
+                 </div>
+                     <hr>
+                     <div class="=row">
+                     <span><input type="text" class="form-control-coupon" id="exampleFormControlInput1" placeholder="coupon code">
+                     <button class="apply-btn">apply</button></span>
+                     </div>
+                     <div class="row">
+                     <p class="coupon-text">Coupon code Applied</p>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6 text-left">
+                           <p class="subtotal-text"> Subtotal<p>
+                            <p class="discount-text"> Discount<p>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <p class="price-first-text"> AUD $19.95<p>
+                            <p class="price-second-text"> -AUD $14<p>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-lg-6 text-left">
+                           <p class="total-text"> Total<p>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <p class="total-price"> AUD $14.95<p>
+                            
+                        </div>
+                     </div>
+             </div>
+             <div class="col-lg-6">
+                 <div class="row">
+                    <button class="credit">credit/debit card</button>
+                    <button class="paypal">paypal</button>
+                 </div>
+               <div class="row"> 
+                   <input type="text" class="form-control-card" id="exampleFormControlInput1" placeholder="card Number">
+                </div>
+               <div class="row"> 
+                   <input type="text" class="form-control-holder-name" id="exampleFormControlInput1" placeholder="card holder name">
+                </div>
+               <div class="row">
+                   <div class="col-6"> 
+                       <input type="text" class="form-control-date" id="exampleFormControlInput1" placeholder="expiry Date">
+                    </div>
+                   <div class="col-6">
+                    <input type="text" class="form-control-cvv" id="exampleFormControlInput1" placeholder="cvv">
+                   </div>
+                 </div>
+               <div class="row">
+                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                 <p class="check-box-text">save this card for next payment</p>
+                  
+                </div>
+             </div>
+         </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row "> 
+                <button type="button" class="confirm-btn" data-dismiss="modal">Confirm</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!--Alfa body end-->
