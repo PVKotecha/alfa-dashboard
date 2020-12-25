@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <link rel="stylesheet" href="fonts/stancil-fonts.css">
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        /*
+            popup
+        */
+        .alfa-subs-modal .conatiner-modal {
+            width: 100%;
+        }
+
+        .alfa-subs-modal .modal-header .modaltitle {
+            text-align: center;
+            margin: 0;
+        }
+
+        .alfa-subs-modal .modal-title {
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-weight: 600;
+            padding-left: 45px;
+        }
+
+        .alfa-subs-modal .modal-header .close span {
+            background-color: #fff;
+            padding: 0px 8px;
+            border-radius: 50px;
+        }
+
+        .alfa-subs-modal .modal-header .close {
+            opacity: 1;
+            color: #00cdcd;
+            padding-top: 20px;
+        }
+
+        .alfa-subs-modal .modal-content {
+            border-radius: 10px;
+        }
+
+        .alfa-subs-modal .modal-content .modal-header {
+            background-color: #00cdcd;
+            text-align: center;
+            padding: 5px;
+            font-weight: 900;
+            color: white;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .alfa-subs-modal .modal-footer .confirm-btn {
+            background-color: #5300c6;
+            padding: 5px 20px;
+            border: transparent;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: white;
+            font-size: 19px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        .alfa-subs-modal .sub-title {
+            font-size: 18px;
+            color: #11e6e6;
+            font-weight: 900;
+            margin-bottom: 0px;
+        }
+
+        .alfa-subs-modal .course-title {
+            font-size: 18px;
+            color: #505050;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .alfa-subs-modal .form-control-new {
+            font-size: 20px;
+            color: #00cdcd;
+            font-weight: 900;
+        }
+
+        .alfa-subs-modal .apply-btn {
+            background-color: #11e6e6;
+            padding: 10px 35px;
+            border: transparent;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            border-radius: 5%;
+
+        }
+
+        .alfa-subs-modal .form-control {
+            font-weight: 600;
+            color: #333;
+            padding: 5px 10px;
+            width: 100%;
+            margin-bottom: 14px;
+            height: 42px;
+            border-radius: 6px;
+        }
+
+        .alfa-subs-modal .form-control::placeholder {
+            color: #11e6e6;
+        }
+
+        .alfa-subs-modal .form-control.form-control-coupon-code {
+            max-width: 75%;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .alfa-subs-modal .visa .form-control {
+            border-right: 0;
+            width: 80%;
+            margin-bottom: 0;
+        }
+
+        .alfa-subs-modal .visa.vleft .form-control {
+            border-left: 0;
+            border-right: 1px solid #ced4da;
+        }
+
+        .alfa-subs-modal .visa .input-group-text {
+            background: transparent;
+            border-left: 0;
+            padding: 0 8px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .alfa-subs-modal .visa.vleft .input-group-text {
+            background: transparent;
+            border-right: 0;
+            padding: 0 8px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            min-width: 32px;
+        }
+
+        .alfa-subs-modal .total-text {
+            font-size: 23px;
+            font-weight: 900;
+            color: #2e2e2e;
+            margin-bottom: 0;
+        }
+
+        .alfa-subs-modal .total-price {
+            font-size: 23px;
+            font-weight: 900;
+            color: #11e6e6;
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        .alfa-subs-modal .subtotal-text {
+            font-size: 21px;
+            font-weight: 600;
+            color: #2e2e2e;
+            margin-bottom: 8px;
+        }
+
+        .alfa-subs-modal .discount-text {
+            font-size: 15px;
+            font-weight: 600;
+            color: #2e2e2e;
+            margin-bottom: 0;
+
+        }
+
+        .alfa-subs-modal .price-first-text {
+            font-size: 21px;
+            font-weight: 600;
+            color: #2e2e2e;
+            margin-bottom: 8px;
+            text-align: right;
+        }
+
+        .alfa-subs-modal .price-second-text {
+            font-size: 15px;
+            font-weight: 600;
+            color: red;
+            text-align: right;
+            margin-right: 56px;
+            margin-bottom: 0;
+        }
+
+        .alfa-subs-modal .coupon-text {
+            color: #2fda61;
+        }
+
+        .alfa-subs-modal .btn.btn.btn-secondary {
+            background-color: transparent;
+            color: #333;
+            margin: 0 12px;
+            padding: 8px 22px;
+            border-radius: 6px;
+            border-width: 3px;
+            border-color: #ccc;
+        }
+
+        .alfa-subs-modal .btn-group>.btn:not(:first-child) {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        .alfa-subs-modal .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .alfa-subs-modal .btn-secondary:not(:disabled):not(.disabled).active,
+        .alfa-subs-modal .btn-secondary:not(:disabled):not(.disabled):active,
+        .alfa-subs-modal .show>.btn-secondary.dropdown-toggle {
+            border-color: #11e6e6;
+            /* background-color: #11e6e6; */
+        }
+
+        .alfa-subs-modal .custom-checkbox .custom-control-label::before {
+            border-radius: .25rem;
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        .alfa-subs-modal .custom-control-input:checked~.custom-control-label::before {
+            border: 2px solid #11e5e5;
+            background: none;
+
+        }
+
+        .alfa-subs-modal .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+            background: none;
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            color: #11e5e5;
+            font-size: 20px;
+            left: -19px;
+            top: -3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <nav class="navbar alfa-navbar navbar-expand-lg alfa-section-header-top shadow-sm bg-white fixed-top"
+        id="alfaNavbar"> 
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/alfa.svg" alt="logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mt-4 mt-lg-0 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Practice</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                            <div class="container d-block">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/speaking.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-speaking-menu-title">Speaking</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="practice-test-read-aloud.html">Read Aloud</a>
+                                        <a class="dropdown-item" href="practice-test-repeat-sentence.html">Repeat
+                                            Sentence</a>
+                                        <a class="dropdown-item" href="practice-test-discribe-img.html">Describe
+                                            Image</a>
+                                        <a class="dropdown-item" href="practice-test-re-tell-lecture.html">Re-Tell
+                                            Lecture</a>
+                                        <a class="dropdown-item" href="practice-test-answer-short-que.html">Answer
+                                            Short
+                                            Question</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/writing.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-writing-menu-title">writing</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item"
+                                            href="practice-summerize-written-test.html">Summerized
+                                            Written Text </a>
+                                        <a class="dropdown-item" href="practice-summerize-write-essay.html">Write
+                                            Essay</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/reading.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-reading-menu-title">reading</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-multi-ans.html">Multiple
+                                            Choice, Single Answer</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-single-ans.html">Multiple
+                                            Choice, Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-reorder-para.html">Re-Order
+                                            Paragraph</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks.html">Reading:
+                                            Fill
+                                            in the Blanks</a>
+                                        <a class="dropdown-item" href="practice-fill-in-the-blanks-rw.html">Reading
+                                            &amp; Writing: Fill in the Blanks</a>
+                                        <a class="dropdown-item"
+                                            href="practice-summerize-written-test.html">Summerize
+                                            Written Test</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="media">
+                                            <img src="img/listening.svg" class="mr-3" alt="...">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 alfa-listening-menu-title">listening</h5>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item"
+                                            href="practice-summerize-spoken-test.html">Summerize
+                                            Spoken Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-multi-ans-spoken.html">Multiple Choice,
+                                            Multiple
+                                            Answer</a>
+                                        <a class="dropdown-item"
+                                            href="practice-fill-in-the-blanks-spoken.html">Reading:
+                                            Fill in the Blanks</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-correct-summary.html">Highlight Correct
+                                            Summery</a>
+                                        <a class="dropdown-item"
+                                            href="practice-summerize-written-test.html">Summerize
+                                            Written Text</a>
+                                        <a class="dropdown-item"
+                                            href="practice-multi-choice-single-ans-spoken.html">Multiple Choice,
+                                            Multiple Answer</a>
+                                        <a class="dropdown-item" href="practice-select-missing-word.html">Select
+                                            Missing
+                                            Words</a>
+                                        <a class="dropdown-item"
+                                            href="practice-highlight-incorrect-words.html">Highlight Correct
+                                            Words</a>
+                                        <a class="dropdown-item" href="practice-write-from-dictation.html">Write
+                                            From
+                                            Ditection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="latest-pte-exam-predicon-download.html">Predictions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mock Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="strategy-video.html">Strategy Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback-and-faq.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcement.html">Announcement</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/Icon-awesome-user-circle.svg" alt="user dd icon">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right alfa-user-dd"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item media" href="#">
+                                <img src="img/user.jpg" class="mr-3 align-self-center" alt="user">
+                                <div class="media-body align-self-center">
+                                    <small>John Doe<br>
+                                        johndoe@gmail.com</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-star-of-david align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Upgrade to VIP
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="profile.html">
+                                <i class="fa fa-user-circle align-self-center"></i>
+                                <div class="media-body align-self-center">
+                                    Profile Center
+                                </div>
+                            </a>
+                            <a class="dropdown-item media" href="#">
+                                <i class="fa fa-sign-out-alt align-self-center "></i>
+                                <div class="media-body align-self-center">
+                                    Logout
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+    <!--Nav End-->
+
+    <!--Alfa body-->
+    <div class="alfa-body">
+        <div class="alfa-section-payment">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="modal alfa-subs-modal fade show d-block" style="top: 72px" id="subsModal" tabindex="-1" aria-labelledby="subsModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header modal-header">
+
+                                        <h5 class="modal-title mb-0" id="exampleModalLabel">Subscription</h5>
+                                        <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6 pr-lg-5" style="border-right: 3px solid #cacaca;">
+                                                    <div class="media">
+                                                        <img src="img/liveTest.svg" class="mr-2" alt="liveTest"
+                                                            style="max-width: 57px">
+                                                        <div class="media-body">
+                                                            <span class="float-right mt-3 price-first-text"> AUD
+                                                                $19.95</span>
+                                                            <div class="sub-title">Subscription</div>
+                                                            <div class="course-title">30 days Course</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="mt-2">
+
+                                                    <input type="text"
+                                                        class="form-control form-control-coupon-code shadow-sm"
+                                                        id="exampleFormControlInput1" placeholder="Coupon Code">
+                                                    <button class="apply-btn shadow-sm">apply</button>
+                                                    <p class="coupon-text">Coupon code Applied</p>
+                                                    <p class="coupon-text text-danger">Invalid Coupon code</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <p class="subtotal-text"> Subtotal</p>
+                                                            <p class="discount-text"> Discount</p>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p class="price-first-text"> AUD $19.95</p>
+                                                            <p class="price-second-text"> -AUD $14</p>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <p class="total-text"> Total</p>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p class="total-price"> AUD $14.95</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 pl-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 text-center mb-3">
+                                                            <div class="" data-toggle="buttons">
+                                                                <label class="btn btn-secondary active">
+                                                                    Credit / Debit Card <input type="radio"
+                                                                        name="options" id="option1" checked
+                                                                        class="ml-2">
+                                                                </label>
+                                                                <label class="btn btn-secondary">
+                                                                    <img src="img/paypal.svg" class="img-fluid"
+                                                                        style="max-width: 80px;">
+                                                                    <input type="radio" name="options" id="option2"
+                                                                        class="ml-2">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <button class="credit">credit/debit card</button>
+                                    <button class="paypal">paypal</button> -->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="card Number"> -->
+                                                            <div class="input-group shadow-sm visa mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Card Number"
+                                                                    aria-label="Amount (to the nearest dollar)">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <img src="img/visa.svg" class="img-fluid">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="input-group shadow-sm visa mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleFormControlInput1"
+                                                                    placeholder="Card Holder Name">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <i class="fa fa-user"
+                                                                            style="color: #11e6e6;"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="input-group shadow-sm visa mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleFormControlInput1"
+                                                                    placeholder="Expiry Date">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <i class="fa fa-calendar"
+                                                                            style="color: #11e6e6;"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="input-group shadow-sm visa mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleFormControlInput1" placeholder="cvv">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <i class="fa fa-info-circle"
+                                                                            style="color: #11e6e6;"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="nonpractice1">
+                                                                <label class="custom-control-label" for="nonpractice1">
+                                                                    <span class="ml-2"
+                                                                        style="vertical-align: middle;">Save this card
+                                                                        for next payment</span></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <div class="row ">
+                                            <button type="button" class="confirm-btn"
+                                                data-dismiss="modal">Confirm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
