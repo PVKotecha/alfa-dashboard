@@ -82,7 +82,9 @@
         .features-card {
             /* filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.3)); */
             min-height: 260px; 
-        }
+        }        
+        .circles-text{color: #11e6e6; line-height: 62px !important; font-size: 21px !important;}
+        .circles-subtext{line-height: 0;font-size: 12px;color: #666;position: absolute;left: 50%;bottom: 16px;transform: translate(-50%, 0);}
     </style>
 </head>
 
@@ -93,8 +95,8 @@
             <div class="row pt-3">
                 <div class="col-lg-12  align-self-center">
                     <div class="card my-5">
-                        <div class="card-body">
-                            <img src="img/alfa.svg" alt="alfa logo" class="img-thumbnail alfa-logo">
+                        <img src="img/alfa.svg" alt="alfa logo" class="img-thumbnail alfa-logo">
+                        <div class="card-body" id="1div"> 
                             <h3 class="text-center mt-5 mb-3"><b class="text-uppercase">John Doe</b> has sent <br> <span class="text-uppercase">Free</span> Premium Hours</h3>
                             <div class="alfa-blue-horizon-line"></div>
                             <form class="profile-form report-exam-details mt-3">  
@@ -108,10 +110,10 @@
                                         <input type="email" class="form-control" value="john@email.com" aria-label="Username" aria-describedby="basic-addon1">
                                     </div>  
                                 </div>
-                                <button class="btn btn-block receive-premium-access-btn ml-auto mr-auto mt-3 mb-3">
+                                <button type="button" id="clickBtn" class="btn btn-block receive-premium-access-btn ml-auto mr-auto mt-3 mb-3">
                                     Receive Premium Access
                                 </button>
-                                <a href="#" class="text-secondary"><i><u>Click here for Sharing Rules</u></i></a>
+                                <a href="#" class="text-secondary" ><i><u>Click here for Sharing Rules</u></i></a>
                             </form>
                             <div class="card alfa-PT-Examination-card mt-4">
                                 <div class="card-header">
@@ -210,6 +212,39 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-body" id="2div" style="display: none;">
+                            <div class="alfa-blue-horizon-line mt-5"></div>
+                            <h5 class="text-center text-danger my-3 font-weight-bold">Congratulations !!</h5>
+                            <h5 class="text-center my-3">You now have Premium access for</h5>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <div id="circles-days" class="d-inline-block"></div> 
+                                        <div id="circles-hrs" class="d-inline-block mx-4"></div> 
+                                        <div id="circles-mins" class="d-inline-block"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <h5 class="text-center my-3">To use these Premium Hours</h5> 
+                            <div class="mt-3">   
+                                <button class="btn btn-block receive-premium-access-btn ml-auto mr-auto mt-3 mb-3">
+                                    Go to AlfaPTE.com
+                                </button> 
+                            </div> 
+                            <div class="alfa-blue-horizon-line"></div>
+                            <h5 class="text-center text-danger my-3 font-weight-bold">Congratulations !!</h5>
+                            <h5 class="text-center my-3">You now have Premium access for</h5>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <div id="circles-days1" class="d-inline-block"></div> 
+                                        <div id="circles-hrs1" class="d-inline-block mx-4"></div> 
+                                        <div id="circles-mins1" class="d-inline-block"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <h5 class="text-center my-3">To use these Premium Hours <br> Check your mailbox &amp; confirm your account</h5> 
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -227,7 +262,120 @@
     <script src="js/wavesurfer.min.js"></script>
     <script src="js/jquery.simplePagination.js"></script>
     <script src="js/alfa-scripts.js"></script>
-
+    <script>
+        var myCircle = Circles.create({
+        id: 'circles-days',
+        radius: 40,
+        value: 43,
+        maxValue: 100,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">DAYS</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#185d92'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-hrs',
+        radius: 40,
+        value: 6,
+        maxValue: 12,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">HOURS</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-mins',
+        radius: 40,
+        value: 60,
+        maxValue: 100,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">MINUTES</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-days1',
+        radius: 40,
+        value: 43,
+        maxValue: 100,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">DAYS</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#185d92'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-hrs1',
+        radius: 40,
+        value: 6,
+        maxValue: 12,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">HOURS</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#ec935f'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    var myCircle = Circles.create({
+        id: 'circles-mins1',
+        radius: 40,
+        value: 60,
+        maxValue: 100,
+        width: 5,
+        text: function(value) {
+            return value + '<p class="circles-subtext">MINUTES</p>';
+        },
+        colors: ['rgba(47, 218, 97, .2)', '#2fda61'],
+        duration: 400,
+        wrpClass: 'circles-wrp',
+        textClass: 'circles-text',
+        valueStrokeClass: 'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper: true,
+        styleText: true
+    });
+    $('#clickBtn').on('click', function(){
+        $('#1div').hide()
+        $('#2div').show()
+    })
+    </script>
 </body>
 
 </html>
