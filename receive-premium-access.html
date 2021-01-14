@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+    <!--Exam Countdown css FlipClock-->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!--ALFA CSS-->
+    <link rel="stylesheet" href="css/alfa-style.css">
+
+    <!--LATO Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <!--LineIcons-->
+    <link rel="stylesheet" href="css/LineIcons.css">
+
+    <title>Alfa Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        .alfa-body{height: 100%; padding: 0;}
+        .receive-premium-access-btn{
+            background-color: #5200c6;color: #fff; max-width: 260px;
+        }
+        .receive-premium-access-btn:hover{
+            background-color: #34007e;color: #fff; max-width: 260px;
+        }
+        .alfa-logo{
+            max-width: 100px;
+            padding: 28px 6px;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            max-width: 100px;
+            border-radius: 10px;
+        }
+        .alfa-blue-horizon-line{background-color: #11e5e5; height: 8px; width: 100%; border-radius: 8px;}
+        .features-card-svg {
+            max-width: 80px;
+            margin: 5px auto;
+        } 
+        .features-card-body {
+            padding: 0 8px;
+        } 
+        .features-card-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #2e2e2e;
+            font-weight: 600;
+            font-family: "Raleway";
+            text-align: center; 
+        } 
+        .features-card-text {
+            margin-top: 15px;
+            color: #2e2e2e;
+            font-weight: 500;
+            font-family: "Raleway";
+            text-align: center;
+            font-size: 14px; 
+        } 
+        .features-card {
+            /* filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.3)); */
+            min-height: 260px; 
+        }
+    </style>
+</head>
+
+<body> 
+    <!--Alfa body-->
+    <div class="alfa-body alfa-PT-sidebar profile bg-cyan">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg-12  align-self-center">
+                    <div class="card my-5">
+                        <div class="card-body">
+                            <img src="img/alfa.svg" alt="alfa logo" class="img-thumbnail alfa-logo">
+                            <h3 class="text-center mt-5 mb-3"><b class="text-uppercase">John Doe</b> has sent <br> <span class="text-uppercase">Free</span> Premium Hours</h3>
+                            <div class="alfa-blue-horizon-line"></div>
+                            <form class="profile-form report-exam-details mt-3">  
+                                <div class="form-row"> 
+                                    <div class="col-lg-12 input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <i class="fa fa-envelope"></i>
+                                            </span>
+                                        </div>
+                                        <input type="email" class="form-control" value="john@email.com" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>  
+                                </div>
+                                <button class="btn btn-block receive-premium-access-btn ml-auto mr-auto mt-3 mb-3">
+                                    Receive Premium Access
+                                </button>
+                                <a href="#" class="text-secondary"><i><u>Click here for Sharing Rules</u></i></a>
+                            </form>
+                            <div class="card alfa-PT-Examination-card mt-4">
+                                <div class="card-header">
+                                    <h2 class=" text-center">FEATURES</h2>
+                                </div>
+                                <div class="p-0 pb-3">
+                                    <div class="container">
+                                        <div class="row text-center justify-content-center">
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class=" card features-card">
+                                                    <img src="./img/alpfa-payment-svg/ai.svg"
+                                                        class="features-card-svg" alt="">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">AI Clicks</h5>
+                                                        <p class="features-card-text">Unlimited AI Clicks for
+                                                            scoring in all the Speaking & Writing questions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="card features-card">
+                                                    <img src="./img/alpfa-payment-svg/score.svg"
+                                                        class="features-card-svg" alt="...">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">Score Checks</h5>
+                                                        <p class="features-card-text">Unlimited Score Checks to know
+                                                            exactly how the PTE marks are distributed accross
+                                                            various modules, for all questions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="card features-card">
+                                                    <img src="./img/alpfa-payment-svg/prediction.svg"
+                                                        class="features-card-svg" alt="...">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">Latest Prediction Files</h5>
+                                                        <p class="features-card-text"> Two of our latest version of
+                                                            our weekly prediction files will be available</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="card features-card">
+                                                    <img src="./img/alpfa-payment-svg/report-templates.svg"
+                                                        class="features-card-svg" alt="...">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">Templates</h5>
+                                                        <p class="features-card-text">Our tried & proven Writing
+                                                            templates for Essay & Summarize Spoken Text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="alfa-section-payment-card-bottom">
+                                                    <div class="card features-card">
+                                                        <img src="./img/alpfa-payment-svg/videos.svg"
+                                                            class="features-card-svg" alt="...">
+                                                        <div class="features-card-body">
+                                                            <h5 class="features-card-title">Strategy Videos</h5>
+                                                            <p class="features-card-text">Multi-lingual videos
+                                                                giving in depth knowledge of the strategies, usage
+                                                                of
+                                                                templates, various tips & tricks for all
+                                                                question-types </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="card features-card">
+                                                    <img src="./img/alpfa-payment-svg/traget-wise.svg"
+                                                        class="features-card-svg" alt="...">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">Target wise Study-Plan</h5>
+                                                        <p class="features-card-text">A tailor-made plan that has
+                                                            been designed in accordance with a student's required
+                                                            score to provide an effective learning path</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 alfa-section-col mt-3">
+                                                <div class="card features-card">
+                                                    <img src="./img/alpfa-payment-svg/mock-test-icon.svg"
+                                                        class="features-card-svg" alt="mock-test-icon">
+                                                    <div class="features-card-body">
+                                                        <h5 class="features-card-title">Mock Test</h5>
+                                                        <p class="features-card-text"> A simulated Scored Mock Test
+                                                            with similar to 95% real exam scoring report that can be
+                                                            attempted multiple times</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Alfa body End-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/circles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/wavesurfer.min.js"></script>
+    <script src="js/jquery.simplePagination.js"></script>
+    <script src="js/alfa-scripts.js"></script>
+
+</body>
+
+</html>
