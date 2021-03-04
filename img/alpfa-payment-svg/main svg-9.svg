@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" width="65" height="64">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #2dd85d } 
+		.txt1 { font-size: 16px;fill: #ffffff;font-family: "Stencil" } 
+	</style>
+	<g id="alfa home – 2">
+		<g id="Group 1328">
+			<path id="Ellipse 107" class="shp0" d="M32.5 56C18.95 56 8 45.27 8 32C8 18.73 18.95 8 32.5 8C46.05 8 57 18.73 57 32C57 45.27 46.05 56 32.5 56Z" />
+			<text id="MCM" style="transform: matrix(1,0,0,1,15,38)" >
+				<tspan x="0" y="0" class="txt1">MCM</tspan>
+			</text>
+		</g>
+	</g>
+</svg>

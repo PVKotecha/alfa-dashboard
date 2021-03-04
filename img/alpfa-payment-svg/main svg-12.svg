@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" width="65" height="64">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #2dd85d } 
+		.txt1 { font-size: 16px;line-height: 17px;fill: #ffffff;font-family: "Stencil";text-anchor: middle } 
+	</style>
+	<g id="alfa home – 2">
+		<g id="Group 1330">
+			<path id="Ellipse 107" class="shp0" d="M32 56C18.73 56 8 45.27 8 32C8 18.73 18.73 8 32 8C45.27 8 56 18.73 56 32C56 45.27 45.27 56 32 56Z" />
+			<text id="RW
+FIB" style="transform: matrix(1,0,0,1,32,29)" >
+				<tspan x="0" y="0" class="txt1">RW</tspan>
+				<tspan x="0" y="17.92" class="txt1">FIB</tspan>
+			</text>
+		</g>
+	</g>
+</svg>
